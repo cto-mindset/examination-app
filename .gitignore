@@ -30,5 +30,6 @@ Thumbs.db
 # Tauri signing keys
 *.key
 *.key.pub
+.tauri/
 ~/.tauri/
 ~/
