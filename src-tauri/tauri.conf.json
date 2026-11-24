@@ -42,10 +42,5 @@
         "https://github.com/cto-mindset/examination-app/releases/latest/download/latest.json"
       ]
     }
-  },
-  "plugins": {
-    "updater": {
-      "requireSignedVersion": true
-    }
   }
 }
