@@ -26,3 +26,9 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Tauri signing keys
+*.key
+*.key.pub
+~/.tauri/
+~/
