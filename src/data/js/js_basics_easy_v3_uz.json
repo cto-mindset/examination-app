@@ -1,0 +1,252 @@
+{
+  "test_id": "js_basics_easy_v3_uz",
+  "title": "JavaScript Asoslari (3-Versiya, Oson Daraja)",
+  "difficulty": "easy",
+  "total_minutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "JavaScript da o'zgaruvchi e'lon qilinib, unga hech qanday qiymat berilmasa (masalan, 'let x;'), uning qiymati nimaga teng bo'ladi?",
+      "options": [
+        "null",
+        "0",
+        "undefined",
+        "empty"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ingliz tilida 'aniqlanmagan' ma'nosini bildiruvchi maxsus qiymat.",
+      "explanation": "Qiymat tayinlanmagan o'zgaruvchilar avtomatik ravishda 'undefined' qiymatiga ega bo'ladi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Massivning (array) boshiga (eng birinchi o'ringa) yangi element qo'shish uchun qaysi metod ishlatiladi?",
+      "options": [
+        "push()",
+        "unshift()",
+        "shift()",
+        "prepend()"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "shift() boshidan o'chiradi, bu metod esa boshiga qo'shadi.",
+      "explanation": "unshift() metodi massivning boshiga bir yoki bir nechta element qo'shadi va massivning yangi uzunligini qaytaradi."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "Massiv ichida ma'lum bir element bor yoki yo'qligini (true / false) tekshirish uchun qaysi metod ishlatiladi?",
+      "options": [
+        "has()",
+        "contains()",
+        "includes()",
+        "exists()"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ingliz tilida 'o'z ichiga oladi' degan ma'noni bildiruvchi metod.",
+      "explanation": "includes() metodi massiv (yoki satr) tarkibida ko'rsatilgan qiymat mavjud bo'lsa true, aks holda false qaytaradi."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nlet sonlar = [10, 20, 30];\nsonlar[1] = 50;\nconsole.log(sonlar);",
+      "options": [
+        "[50, 20, 30]",
+        "[10, 50, 30]",
+        "[10, 20, 50]",
+        "Xatolik yuz beradi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "1-indeks massivdagi ikkinchi elementni bildiradi.",
+      "explanation": "Massiv indekslari 0 dan boshlangani uchun sonlar[1] ikkinchi elementni (20) 50 ga o'zgartiradi."
+    },
+    {
+      "id": 5,
+      "type": "multiple",
+      "question": "JavaScript da 'Math' obyekti yordamida sonlarni yaxlitlash uchun qaysi metodlardan foydalanish mumkin? (Bir nechta javobni belgilang)",
+      "options": [
+        "Math.round()",
+        "Math.floor()",
+        "Math.ceil()",
+        "Math.fix()"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Eng yaqin songa, pastga qarab va yuqoriga qarab yaxlitlovchi 3 ta standart Math metodini tanlang.",
+      "explanation": "Math.round() eng yaqin butun songa, Math.floor() pastga, Math.ceil() esa yuqoriga qarab yaxlitlaydi. Math.fix() mavjud emas."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "0 dan 1 gacha (1 kirmaydi) tasodifiy kasr son generatsiya qilish uchun qaysi metod ishlatiladi?",
+      "options": [
+        "Math.rand()",
+        "Math.random()",
+        "Math.number()",
+        "Random.get()"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Math obyektining 'random' metodidan foydalaniladi.",
+      "explanation": "Math.random() 0 (kiradi) va 1 (kirmaydi) oralig'ida psevdo-tasodifiy son qaytaradi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Matn satrining (string) boshi va oxiridagi ortiqcha bo'sh joylarni (probellarni) olib tashlash uchun qaysi metod qo'llaniladi?",
+      "options": [
+        "strip()",
+        "clean()",
+        "trim()",
+        "cut()"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ingliz tilida 'qirqib tekislash' ma'nosini bildiruvchi 4 harfli metod.",
+      "explanation": "trim() metodi satrning ikki chetidagi bo'shliqlarni olib tashlaydi (masalan, '  salom  '.trim() -> 'salom')."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Quyidagi kod natijasi nima bo'ladi?\n\nlet yosh = 18;\nlet holat = yosh >= 18 ? 'Katta' : 'Kichik';\nconsole.log(holat);",
+      "options": [
+        "'Kichik'",
+        "'Katta'",
+        "true",
+        "undefined"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ternary (uchlik) operatorda shart rost (true) bo'lsa '?' dan keyingi birinchi qiymat tanlanadi.",
+      "explanation": "yosh >= 18 sharti true bo'lgani uchun ternary operator birinchi qiymatni ('Katta') qaytaradi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Tugma (button) bosilganda ma'lum bir funksiyani ishga tushirish uchun zamonaviy DOM da qaysi metoddan foydalanish tavsiya etiladi?",
+      "options": [
+        "btn.onClick('click', fn)",
+        "btn.addEventListener('click', fn)",
+        "btn.attachEvent('click', fn)",
+        "btn.listen('click', fn)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Hodisani tinglovchi (event listener) qo'shuvchi standart metod.",
+      "explanation": "addEventListener('hodisa_nomi', funksiya) bitta elementga bir nechta hodisa tinglovchilarini bog'lash imkonini beradi."
+    },
+    {
+      "id": 10,
+      "type": "multiple",
+      "question": "JavaScript da 'switch' konstruksiyasida ishlatiladigan kalit so'zlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "case",
+        "break",
+        "default",
+        "otherwise"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Holatlarni tekshirish, blokdan chiqish va hech biri mos kelmaganda bajariluvchi kalit so'zlarni tanlang.",
+      "explanation": "switch operatorida holatlar uchun 'case', blokni to'xtatish uchun 'break' va standart holat uchun 'default' kalit so'zlari ishlatiladi."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Massiv elementlarini ma'lum bir ajratuvchi belgi (masalan, vergul yoki chiziqcha) bilan bitta matnga (string) birlashtirish uchun qaysi metod ishlatiladi?",
+      "options": [
+        "split()",
+        "join()",
+        "concat()",
+        "merge()"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "split() matnni massivga bo'ladi, bu metod esa massivni matnga birlashtiradi.",
+      "explanation": "join('-') metodi massiv elementlarini '-' belgisi orqali birlashtirib, bitta string qaytaradi (masalan, ['a', 'b'].join('-') -> 'a-b')."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Foydalanuvchidan 'OK' yoki 'Cancel' (Bekor qilish) tugmalari orqali tasdiq so'rovchi oynani chiqarish uchun qaysi funksiya ishlatiladi?",
+      "options": [
+        "alert()",
+        "prompt()",
+        "confirm()",
+        "verify()"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "OK bosilganda true, Cancel bosilganda false qaytaruvchi funksiya.",
+      "explanation": "confirm('Oʻchirishni tasdiqlaysizmi?') foydalanuvchiga tasdiqlash oynasini ko'rsatadi va boolean (true/false) qiymat qaytaradi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nlet a = 5;\na += 3;\nconsole.log(a);",
+      "options": [
+        "5",
+        "3",
+        "8",
+        "53"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'a += 3' yozuvi 'a = a + 3' ifodasining qisqartmasidir.",
+      "explanation": "a ning dastlabki qiymati 5 ga 3 qo'shiladi va natija (8) yana a ga tayinlanadi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Tsikl (loop) bajarilishini muddatidan oldin butunlay to'xtatib, undan chiqib ketish uchun qaysi kalit so'z ishlatiladi?",
+      "options": [
+        "stop",
+        "exit",
+        "break",
+        "continue"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'continue' faqat joriy qadamni o'tkazib yuboradi, bu kalit so'z esa tsiklni to'liq to'xtatadi.",
+      "explanation": "break operatori tsiklni darhol to'xtatadi va boshqaruvni tsikldan keyingi qatorga o'tkazadi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "HTML elementining matnli mazmunini o'zgartirish yoki o'qish uchun xavfsizroq va tezroq ishlaydigan DOM xususiyati qaysi?",
+      "options": [
+        "element.textContent",
+        "element.valueHTML",
+        "element.setText()",
+        "element.innerValue"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "HTML teglarini parse qilmasdan faqat sof matn bilan ishlaydigan xususiyat.",
+      "explanation": "textContent element ichidagi sof matnni o'qiydi va o'zgartiradi (innerHTML dan farqli o'laroq HTML teglarini bajarib yubormaydi va XSS xavfidan xoli)."
+    }
+  ]
+}

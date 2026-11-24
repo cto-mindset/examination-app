@@ -1,0 +1,337 @@
+{
+  "test_id": "ux_ui_9sinf_hafta01_mixed_v2_uz",
+  "title": "9-sinf UX/UI Dizayn: 1-hafta (1–3-darslar) Bo'yicha Test (2-Versiya)",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Do'kon eshigi misolida eshik chiroyli bo'lsa-yu, lekin uni itarish kerakmi yoki tortish kerakmi tushunib bo'lmasa, bu holat nimani isbotlaydi?",
+      "options": [
+        "Yaxshi UX ni odamlar har doim maqtaydi, yomon UX esa sezilmaydi",
+        "Yaxshi UX odatda sezilmaydi («o'zi bo'ladi»), yomon UX esa foydalanuvchini darhol chalkashtirib, g'azablantiradi",
+        "Eshiklarda faqat UI muhim, UX esa faqat mobil ilovalarga tegishli",
+        "Tutqich shakli faqat UI ga tegishli bo'lib, foydalanish qulayligiga ta'sir qilmaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "1-darsdagi «Eshik misoli: nega UX ko'rinmaydi?» bo'limini eslang.",
+      "explanation": "Yaxshi UX shunchalik tabiiy ishlaydiki, odam unga e'tibor ham bermaydi. Yomon UX esa darhol noqulaylik va asabiylashish keltirib chiqaradi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Bitta element (masalan, ekrandagi tugma) ham UI, ham UX ga qanday aloqador bo'lishi mumkin?",
+      "options": [
+        "Tugma faqat UI elementidir, uning UX ga aloqasi yo'q",
+        "Tugmaning rangi va shakli — UI ga, uning qayerda joylashgani va nima qilishini darhol tushunish — UX ga tegishli",
+        "Tugmaning rangi — UX ga, bosilganda qaysi sahifaga o'tishi — UI ga tegishli",
+        "Tugma faqat UX dizayner tomonidan chiziladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Tashqi ko'rinish (rang, bezak) va foydalanish mantig'ini (joylashuv, tushunarlilik) ajrating.",
+      "explanation": "Bitta UI elementi ikkala tomonga ham tegishli bo'ladi: uning rangi va shrifti UI, qulay joylashuvi hamda tushunarliligi esa UX hisoblanadi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "UX/UI dizayn qanday mahsulot va sohalarda qo'llaniladi? (Bir nechta javobni belgilang)",
+      "options": [
+        "Veb-saytlar va mobil ilovalar",
+        "Dashboardlar (ma'lumotlar panellari)",
+        "Aqlli qurilmalar (aqlli soat, televizor ekranlari)",
+        "Faqat bosma kitoblar va gazetalarda"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Raqamli ekran va foydalanuvchi bilan muloqot mavjud bo'lgan zamonaviy IT-mahsulotlarni tanlang.",
+      "explanation": "UX/UI dizayn veb-saytlar, mobil ilovalar, dashboardlar hamda aqlli soat va televizor kabi qurilmalar interfeyslarida keng qo'llaniladi."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Kichik startaplar va katta IT kompaniyalarda UX va UI dizaynerlarning ish taqsimoti qanday farq qiladi?",
+      "options": [
+        "Kichik startaplarda faqat UI dizayner ishlaydi, UX kerak emas",
+        "Kichik startaplarda bitta dizayner ham UX, ham UI ishlarini bajaradi; katta kompaniyalarda esa ular alohida lavozim va jamoalarga ajratiladi",
+        "Katta kompaniyalarda UX va UI ishlarini faqat dasturchilar bajaradi",
+        "Hech qanday farqi yo'q, hamma joyda bitta odam ishlaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Jamoa hajmiga qarab vazifalarning birlashishi yoki alohida mutaxassislarga bo'linishini eslang.",
+      "explanation": "Kichik jamoa va startaplarda ko'pincha bitta UX/UI dizayner ikkala vazifani bajaradi, yirik kompaniyalarda esa UX tadqiqotchi, UX dizayner va UI dizayner alohida lavozimlar bo'ladi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Atamalar lug'atiga ko'ra «Dashboard» nima?",
+      "options": [
+        "Ekranning oddiy, rangsiz sxemasi",
+        "Grafiklar va muhim raqamlarni bitta ekranda jamlab ko'rsatuvchi ma'lumotlar paneli",
+        "Foydalanuvchidan intervyu olish varaqasi",
+        "Mobil ilovaning kirish (login) ekrani"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Avtomobil boshqaruv paneliga o'xshash, ko'rsatkichlarni bir joyda jamlovchi ekran.",
+      "explanation": "Dashboard — grafiklar, jadvallar va asosiy raqamli ko'rsatkichlarni bir ekranda qulay tahlil qilish uchun ko'rsatadigan ma'lumotlar paneli."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "Yaxshi UX/UI dizayn biznes uchun qanday asosiy foyda keltiradi?",
+      "options": [
+        "Dastur kodining hajmini qisqartiradi",
+        "Foydalanuvchilar mamnunligini oshiradi, raqobatda yutishga va brendga ishonch uyg'otishga yordam beradi",
+        "Server xarajatlarini butunlay nolga tushiradi",
+        "Reklama qilishga umuman hojat qoldirmaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Foydalanuvchi o'ziga qulay va ishonchli tuyulgan mahsulotga yana qaytib keladi.",
+      "explanation": "Sifatli UX/UI mijozlar qoniqishini oshiradi, ularni qayta qaytishga undaydi, brendga ishonch hosil qiladi va raqobatchilardan ustunlik beradi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Dizayn tamoyillarini (masalan, 4C va 7 ta UX tamoyili) bilish jamoada ishlashda nima uchun muhim?",
+      "options": [
+        "Ular shaxsiy «menga yoqdi / yoqmadi» fikri o'rniga dizaynni aniq dalillar bilan o'lchaydigan «chizg'ich» vazifasini bajaradi",
+        "Faqat imtihondan o'tish uchun kerak, amaliyotda ishlatilmaydi",
+        "Ranglarni avtomatik tanlab beruvchi dastur bo'lgani uchun",
+        "Dasturchilarga kod yozishni o'rgatish uchun"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "2-darsdagi «Tamoyil nima va nega ularni bilish kerak?» bo'limini eslang.",
+      "explanation": "Tamoyillar subyektiv bahslarni kamaytiradi: dizayner «yoqmadi» deyish o'rniga «bu yerda Feedback yo'q» yoki «Cognitive Load yuqori» deb aniq dalil keltira oladi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Design Thinking (Dizayn fikrlash) jarayonining 5 ta bosqichi qaysi qatorda to'g'ri ketma-ketlikda berilgan?",
+      "options": [
+        "G'oya -> Empatiya -> Prototip -> Muammo -> Test",
+        "Empatiya -> Muammo -> G'oya -> Prototip -> Test",
+        "Muammo -> Test -> Empatiya -> G'oya -> Prototip",
+        "Prototip -> Test -> Muammo -> G'oya -> Empatiya"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Avval foydalanuvchini his qilish (empatiya) va muammoni aniqlashdan boshlanadi.",
+      "explanation": "Design Thinking 5 bosqichdan iborat: 1) Empatiya, 2) Muammoni aniqlash, 3) G'oya yaratish, 4) Prototip yasash, 5) Test qilish."
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "question": "UX dizaynning 7 ta asosiy tamoyili qatoriga kiruvchi tushunchalarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Foydalanuvchi markazida bo'lish",
+        "Oddiylik va aniqlik",
+        "Moslashuvchanlik va Accessibility (barcha uchun ochiqlik)",
+        "Testlash va takomillashtirish",
+        "Iloji boricha ko'p animatsiya qo'shish"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Ortiqcha bezak va animatsiya UX tamoyili hisoblanmaydi.",
+      "explanation": "UX ning 7 tamoyili: foydalanuvchi markazida, qulaylik va intuitivlik, izchillik, oddiylik va aniqlik, feedback, moslashuvchanlik va accessibility, testlash va takomillashtirish."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "UX/UI dizaynda «Accessibility» atamasi nimani anglatadi?",
+      "options": [
+        "Ilovaning faqat bepul tarqatilishini",
+        "Mahsulotning turli imkoniyatli, jumladan ko'rish, eshitish yoki harakatlanishda cheklovi bo'lgan odamlar uchun ham qulay va ochiq bo'lishini",
+        "Saytga parolsiz kirish imkoniyatini",
+        "Ilovaning faqat kuchli kompyuterlarda ishlashini"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Har qanday jismoniy imkoniyatga ega inson interfeysdan bemalol foydalana olishi.",
+      "explanation": "Accessibility (ochiqlik/foydalanish imkoniyati) — interfeysni turli imkoniyatli barcha foydalanuvchilar, shu jumladan nogironligi bo'lgan shaxslar uchun ham moslashtirishdir."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "4C tamoyilidagi «Comfortability» (qulaylik) nimaga e'tibor qaratadi?",
+      "options": [
+        "Faqat xatoni bekor qilish (Undo) tugmasiga",
+        "Matnlarning oson o'qilishi, elementlar orasidagi qulay masofa va ko'zni toliqtirmaydigan joylashuvga",
+        "Server tezligiga",
+        "Foydalanuvchidan so'rovnoma olishga"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "O'qish va bosishda vizual hamda jismoniy qulaylik yaratish.",
+      "explanation": "Comfortability — foydalanuvchi uchun qulay shrift o'lchami, yetarli bo'shliqlar va tugmalarni bosishda qulaylikni ta'minlash tamoyilidir."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Nima uchun «Prototip» ni yaratib, sinovdan so'ng uni tashlab yuborish yoki butunlay o'zgartirish dizayner uchun normal holat hisoblanadi?",
+      "options": [
+        "Chunki prototip yakuniy mahsulot emas, u g'oyani arzon va tez sinab ko'rish, xatolarni dasturlashdan oldin topish uchun xizmat qiladi",
+        "Chunki prototiplar hech qachon kompyuterda saqlanmaydi",
+        "Chunki dasturchilar prototipga qaramaydi",
+        "Chunki prototip faqat bezak uchun chiziladi"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Xatoni kod yozilmasdan oldin qog'ozda yoki prototipda tuzatish ancha arzon tushadi.",
+      "explanation": "Prototip g'oyani real foydalanuvchilarda tez sinab ko'rish vositasidir. Agar testda xato chiqsa, uni o'zgartirish yoki qaytadan yasash katta xarajatlarni tejaydi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "«Iteratsiya» tushunchasi UX dizayn jarayonida nimani bildiradi?",
+      "options": [
+        "Dizaynni bir marta chizib, umrbod o'zgartirmaslikni",
+        "Test natijalari asosida mahsulotni qayta-qayta takomillashtirib borish siklini",
+        "Barcha ekranlarni bitta rangga bo'yashni",
+        "Foydalanuvchilarni ro'yxatdan o'tkazish jarayonini"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "UX dizayn jarayoni mahsulot ishga tushgandan keyin ham to'xtab qolmaydi.",
+      "explanation": "Iteratsiya — kuzatuv va test natijalari asosida dizaynga qayta qaytib, uni doimiy ravishda yaxshilab borish jarayonidir."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Nima uchun «Foydalanuvchi — men emas» qoidasi UX tadqiqotlarida juda muhim?",
+      "options": [
+        "Chunki dizayner texnologiyani yaxshi biladi, lekin boshqa yosh yoki tajribadagi foydalanuvchi (masalan, 60 yoshli buvi) uchun o'sha interfeys chalkash bo'lishi mumkin",
+        "Chunki dizaynerlar o'zlari yasagan ilovadan foydalanishi taqiqlangan",
+        "Chunki barcha odamlar bir xil fikrlaydi",
+        "Chunki faqat dasturchilar haqiqiy foydalanuvchi hisoblanadi"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Dizaynerning taxmini va real foydalanuvchining odatlari ko'pincha farq qiladi.",
+      "explanation": "Dizayner o'zini «o'rtacha foydalanuvchi» deb hisoblasa xatoga yo'l qo'yadi; shuning uchun qarorlar shaxsiy did emas, haqiqiy foydalanuvchi tadqiqoti asosida qilinadi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "«Yarim tuzilgan intervyu» (semi-structured interview) qanday o'tkaziladi?",
+      "options": [
+        "Hech qanday savol tayyorlanmasdan, faqat tasodifiy suhbat quriladi",
+        "Asosiy savollar oldindan tayyorlanadi, lekin suhbat davomida qiziq fikr chiqsa, rejadan chiqib qo'shimcha («nega?») savollar berish mumkin",
+        "Faqat «Ha» yoki «Yo'q» deb javob beriladigan test tarqatiladi",
+        "Bir vaqtda 100 kishiga savol beriladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Oldindan reja bor, lekin chuqurroq o'rganish uchun moslashuvchanlik ham saqlanadi.",
+      "explanation": "Yarim tuzilgan intervyuda tayyor savollar ro'yxati bo'ladi, biroq suhbatdoshning kutilmagan yoki muhim javoblaridan kelib chiqib qo'shimcha savollar beriladi."
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "«Ilovani tez-tez va yoqimli ishlatasizmi?» degan tadqiqot savolida qanday xatolar mavjud?",
+      "options": [
+        "Hech qanday xato yo'q, juda yaxshi savol",
+        "Ham noaniq («tez-tez» degani qancha?), ham bitta savolda ikkita alohida narsa (foydalanish chastotasi va yoqimliligi) aralashtirib so'ralgan",
+        "Faqat juda uzun yozilgan",
+        "Savol ingliz tilida yozilmagan"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "3-darsdagi «Yaxshi savol qanday bo'ladi?» va «Xato savolni toping» bo'limlarini eslang.",
+      "explanation": "«Tez-tez» so'zi noaniq (o'rniga «haftada necha marta?» deyish kerak) hamda bitta savolda ikki xil tushuncha («tez-tez» va «yoqimli») birlashtirilgan."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "Fokus guruh (Focus group) usuli qanday tashkil etiladi va uning ehtimoliy xavfi nimada?",
+      "options": [
+        "1 kishi bilan yopiq xonada o'tkaziladi; xavfi — vaqt kamligi",
+        "5–10 kishilik guruhda moderator boshqaruvida muhokama qilinadi; xavfi — ayrim faol ishtirokchilar boshqalar fikriga ta'sir o'tkazib qo'yishi mumkin",
+        "Saytdagi kliklarni dastur orqali sanash; xavfi — internet uzilishi",
+        "Faqat bolalar o'rtasida o'tkaziladigan o'yin"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Guruh muhokamasida boshqalarning fikriga ergashib ketish ehtimoli mavjud.",
+      "explanation": "Fokus guruh 5–10 kishi va moderatordan iborat muhokama bo'lib, unda ba'zi ishtirokchilar boshqalar fikriga ta'sir qilmasligi uchun moderator tajribasi muhim."
+    },
+    {
+      "id": 18,
+      "type": "multiple",
+      "question": "Foydalanuvchi tadqiqotining 6 ta asosiy usulidan miqdoriy (quantitative — «qancha?») ma'lumot beruvchi usullarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "So'rovnoma (Survey — tanlovli va shkalali savollar)",
+        "Ma'lumot tahlili (saytda kliklar soni va sarflangan vaqtni o'lchash)",
+        "Chuqur intervyu (Interview)",
+        "Passiv kuzatuv (Observation)"
+      ],
+      "correct_indices": [
+        0,
+        1
+      ],
+      "hint": "Raqamlar, foizlar va statistika beruvchi usullarni tanlang.",
+      "explanation": "So'rovnoma (tanlovli/raqamli) va ma'lumot tahlili (analitika) miqdoriy ma'lumot beradi. Intervyu va kuzatuv esa asosan sifat (qualitative) usullaridir."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Nima uchun kuzatuv (Observation) usulida «foydalanuvchining gapirganidan ko'ra qilganini ko'ring» tamoyili muhim?",
+      "options": [
+        "Chunki foydalanuvchilar ataylab yolg'on gapiradi",
+        "Chunki odamlar ko'pincha «hammasi tushunarli» deydi, lekin amalda tugmani yarim daqiqa qidirib qiynalishini o'zlari ham sezmasligi mumkin",
+        "Chunki intervyu olish har doim befoyda",
+        "Chunki kuzatuvda hech narsa yozib olish shart emas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Insonning so'zi va real harakati o'rtasida farq bo'lishi mumkin.",
+      "explanation": "Kuzatuv foydalanuvchi o'zi payqamagan yoki aytishga iymangan haqiqiy qiyinchiliklarni (og'riq nuqtalarini) jonli jarayonda ko'rish imkonini beradi."
+    },
+    {
+      "id": 20,
+      "type": "multiple",
+      "question": "Persona va Segmentatsiya haqidagi to'g'ri fikrlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Bitta mahsulotning bir nechta personasi bo'lishi mumkin (masalan, E-Kutubxonada o'quvchi, o'qituvchi va kutubxonachi)",
+        "Segmentatsiya — o'xshash ehtiyoj va xususiyatlarga ega foydalanuvchilarni guruhlarga ajratish",
+        "Persona kartasidagi har bir ma'lumot (odat, maqsad, og'riq nuqtasi) haqiqiy tadqiqot natijasiga asoslanishi kerak",
+        "Barcha foydalanuvchilar uchun har doim faqat bitta umumiy persona yetarli bo'ladi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Turli foydalanuvchi guruhlari (segmentlar) turli maqsad va muammolarga ega bo'ladi.",
+      "explanation": "Mahsulot turli segmentlarga xizmat qilgani uchun bir nechta personaga ega bo'lishi mumkin; segmentatsiya ularni guruhlaydi va har bir persona real tadqiqotga tayanadi."
+    }
+  ]
+}

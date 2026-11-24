@@ -1,0 +1,338 @@
+{
+  "test_id": "ux_ui_9sinf_hafta04_mixed_uz",
+  "title": "9-sinf UX/UI Dizayn: 4-hafta (10–12-darslar) Bo'yicha Umumiy Test",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Tipografiyada «Typeface» va «Font» tushunchalari o'rtasidagi asosiy farq nimada?",
+      "options": [
+        "Typeface faqat sarlavhalar uchun, Font esa faqat oddiy matn uchun ishlatiladi",
+        "Typeface — butun shrift oilasining nomi (masalan, Roboto); Font — shu oila ichidagi aniq qalinlik va o'lchamdagi ko'rinish (masalan, Roboto Bold 16px)",
+        "Font — shrift oilasi, Typeface esa uning rang kodi",
+        "Ikkalasi ham bir xil ma'noni anglatadi, hech qanday farqi yo'q"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Oila nomi va shu oila ichidagi aniq bir uslub o'rtasidagi farqni eslang.",
+      "explanation": "Typeface — shrift oilasining umumiy dizayn uslubi (masalan, Roboto yoki Times New Roman), Font esa uning aniq vazn va o'lchamdagi ko'rinishi (masalan, Roboto Bold 16px)."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Veb-saytlar va mobil ilovalar interfeysi uchun 1-raqamli standart hisoblanuvchi, harflar uchida mayda chiziqchalari (ilmoqchalari) bo'lmagan zamonaviy shrift turi qaysi?",
+      "options": [
+        "Serif",
+        "Dekorativ",
+        "Sans Serif",
+        "Skript"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Fransuz tilidan «sans» so'zi «-siz» (ilmoqchasiz) degan ma'noni anglatadi.",
+      "explanation": "Sans Serif (Roboto, Inter, Arial) chiziqchasiz va tekis shrift bo'lib, mobil ekranlarda Serif shriftlarga qaraganda 20% tezroq o'qiladi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "Shriftning 4 ta asosiy turi va ularning to'g'ri misollari keltirilgan variantlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Serif — Times New Roman, Merriweather",
+        "Sans Serif — Roboto, Inter, Arial",
+        "Dekorativ — Lobster, Cooper Black",
+        "Skript — Pacifico, Caveat"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "10-dars xulosasidagi shrift turlari va ularning mashhur namunalarini eslang.",
+      "explanation": "Barcha 4 ta juftlik to'g'ri: Serif (klassik chiziqchali), Sans Serif (zamonaviy tekis), Dekorativ (badiiy sarlavha) va Skript (qo'l yozuviga o'xshash)."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Tipografiyada «Jakob qonuni» (Jakob's Law) dizaynerga qanday xulosa beradi?",
+      "options": [
+        "Har bir yangi ilovada mutlaqo notanish dekorativ shrift ishlatish kerak",
+        "Foydalanuvchilar o'zlari o'rganib qolgan sohaviy shriftlarni kutishadi (masalan, bank ilovasida ishonchli sans-serif, kitob ilovasida serif)",
+        "Barcha matnlar faqat 12px o'lchamda yozilishi shart",
+        "Bitta ekranda kamida 5 xil shrift oilasi bo'lishi kerak"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Foydalanuvchilar vaqtining ko'p qismini boshqa ilovalarda o'tkazishadi, shuning uchun tanish uslublarni kutishadi.",
+      "explanation": "Jakob qonuniga ko'ra, foydalanuvchilar sohaga mos tanish shriftlarni kutishadi — bank ilovasida toza sans-serif ishonch uyg'otsa, kitob o'qish ilovasida serif qulaylik beradi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Asosiy matn (body text) o'qishga qulay bo'lishi uchun uning o'lchami (Font Size) va satrlararo masofasi (Line Height) qancha bo'lishi tavsiya etiladi?",
+      "options": [
+        "Font Size: 10px | Line Height: 100%",
+        "Font Size: 14–16px | Line Height: 140–150%",
+        "Font Size: 24–32px | Line Height: 80%",
+        "Font Size: 8px | Line Height: 200%"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "12px faqat kichik eslatmalar uchun, 24–32px esa sarlavhalar uchun ishlatiladi.",
+      "explanation": "Asosiy matn uchun 14–16px o'lcham va matn balandligining 140–150% miqdoridagi Line Height ko'zni toliqtirmasdan o'qishni ta'minlaydi."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "Do'stingiz uzun maqolaning asosiy matniga «Lobster» (dekorativ) shriftini 12px o'lchamda qo'llagan. Bu yerda qanday xatolar bor?",
+      "options": [
+        "Hech qanday xato yo'q, maqola juda chiroyli chiqadi",
+        "Dekorativ shrift uzun matnlarni o'qish uchun mos emas va 12px asosiy matn uchun juda kichik (14–16px kerak)",
+        "Faqat shrift nomi noto'g'ri, 12px esa ideal o'lcham",
+        "Faqat Line Height yetishmaydi, Lobster esa uzun maqolalar uchun eng yaxshi shrift"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Dekorativ shriftlar faqat qisqa badiiy sarlavhalar uchun mo'ljallangan.",
+      "explanation": "Uzun matnlarda dekorativ shrift ko'zni tez charchatadi, 12px esa mobil va veb asosiy matni uchun haddan tashqari kichik hisoblanadi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Apple va Google kompaniyalari o'z operatsion tizimlari (iOS/macOS va Android) uchun noldan ishlab chiqqan maxsus Sans Serif shriftlari qaysi qatorda to'g'ri berilgan?",
+      "options": [
+        "Apple: Times New Roman | Google: Pacifico",
+        "Apple: San Francisco | Google: Roboto",
+        "Apple: Arial | Google: Merriweather",
+        "Apple: Lobster | Google: Caveat"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "10-darsdagi «Bilasizmi?» bo'limidagi ikkita mashhur tizim shriftini eslang.",
+      "explanation": "Apple o'z ekotizimi uchun San Francisco, Google esa Android va Material Design uchun Roboto shriftini yaratgan."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Rang g'ildiragida (Color Wheel) bir-biriga qarama-qarshi joylashgan va maksimal kontrast hosil qiluvchi ranglar juftligi (masalan, ko'k va to'q sariq) qaysi palitra turiga kiradi?",
+      "options": [
+        "Monoxromatik",
+        "Analog",
+        "Komplementar (Qo'shimcha)",
+        "Triadik"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ingliz tilida «Complementary» deb ataluvchi, maksimal kontrast beradigan palitra turi.",
+      "explanation": "Komplementar (qo'shimcha) palitra rang g'ildiragida bir-birining qarshisida turgan ranglardan iborat bo'lib, kuchli vizual kontrast yaratadi."
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "question": "Rang palitralarining 4 ta asosiy turi va ularning ta'riflari to'g'ri moslashtirilgan qatorlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Monoxromatik — bitta rangning och va to'q tuslari (eng toza va xavfsiz)",
+        "Analog — rang g'ildiragida yonma-yon turgan ranglar (tabiiy, tinchlantiruvchi)",
+        "Triadik — g'ildirakda teng masofada joylashgan 3 ta rang (boy va dinamik)",
+        "Komplementar — faqat oq va qora ranglardan iborat palitra"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Komplementar palitra oq-qora emas, balki g'ildirakda qarama-qarshi turgan ranglardir.",
+      "explanation": "Monoxromatik (bitta rang soyalari), Analog (yonma-yon ranglar) va Triadik (teng masofadagi 3 rang) ta'riflari to'g'ri."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "UI dizayndagi mashhur «60-30-10» rang taqsimoti qoidasida har bir ulush nimaga ajratiladi?",
+      "options": [
+        "60% — aksent (CTA) rangi, 30% — fon, 10% — matn",
+        "60% — dominant fon rangi, 30% — ikkilamchi struktura rangi, 10% — yorqin aksent (CTA tugma) rangi",
+        "60% — qizil, 30% — yashil, 10% — ko'k",
+        "60% — rasmlar, 30% — shriftlar, 10% — bo'sh joy"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Eng yorqin aksent rang faqat eng muhim harakat tugmalari va havolalarga kam miqdorda (10%) beriladi.",
+      "explanation": "60-30-10 qoidasiga ko'ra: 60% asosiy fon, 30% yordamchi blok/struktura va 10% e'tiborni tortuvchi yorqin aksent (CTA) rangi bo'lishi muvozanatli ko'rinish beradi."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "WCAG (Web Content Accessibility Guidelines) standartiga ko'ra, matn va fon orasidagi minimal kontrast nisbati oddiy matn hamda yirik sarlavhalar uchun qancha bo'lishi shart?",
+      "options": [
+        "Oddiy matn: 2:1 | Yirik sarlavha: 1.5:1",
+        "Oddiy matn: kamida 4.5:1 | Yirik sarlavha: kamida 3:1",
+        "Oddiy matn: kamida 10:1 | Yirik sarlavha: kamida 8:1",
+        "Ikkalasi uchun ham 1:1 yetarli"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Kichikroq matnni o'qish qiyinroq bo'lgani uchun unga yuqoriroq kontrast talab qilinadi.",
+      "explanation": "WCAG AA talabiga ko'ra oddiy matn uchun kontrast nisbati kamida 4.5:1, yirik sarlavhalar uchun esa kamida 3:1 bo'lishi shart."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Dizaynerlar uchun eng qulay hisoblangan HSB rang modelidagi H, S va B harflari nimani anglatadi?",
+      "options": [
+        "Height, Size, Border",
+        "Hue (rangning o'zi: 0–360°), Saturation (to'yinganlik: 0–100%), Brightness (yorqinlik: 0–100%)",
+        "Hex, Shadow, Background",
+        "Highlight, Style, Balance"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Bitta rangning och-to'q soyalarini yasashda H (ton) o'zgarmaydi, faqat S va B o'zgartiriladi.",
+      "explanation": "HSB modeli Hue (rang toni), Saturation (to'yinganlik) va Brightness (yorqinlik) ko'rsatkichlaridan iborat."
+    },
+    {
+      "id": 13,
+      "type": "multiple",
+      "question": "Rang psixologiyasi va daltonizm (rang ajrata olmaslik) bo'yicha to'g'ri fikrlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Ko'k rang ishonchlilik, xavfsizlik va barqarorlik hissini uyg'otadi (Facebook, Telegram)",
+        "Yashil rang o'sish, muvaffaqiyat va moliya bilan bog'lanadi (Spotify, Uzum Bank)",
+        "Qizil rang tezlik, e'tibor va ishtaha uyg'otadi (YouTube, Netflix, KFC)",
+        "Daltonizm (taxminan 8% erkaklar va 0.5% ayollarda) tufayli muhim ma'lumotni faqat rang bilan emas, matn yoki ikonka bilan ham ko'rsatish kerak"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "11-darsdagi rang psixologiyasi va «Bilasizmi?» bo'limidagi faktlarni tekshiring.",
+      "explanation": "Barcha 4 ta bayonot to'g'ri: brendlar rang psixologiyasidan ongli foydalanadi va accessibility uchun ma'lumot hech qachon faqat rangga tayanmasligi kerak."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "UI kompozitsiyasining 4 ta asosiy tamoyili qaysi qatorda to'liq va to'g'ri keltirilgan?",
+      "options": [
+        "Balans, Kompozitsion markaz (Focal Point), Ritm, Kontrast",
+        "Serif, Sans Serif, Dekorativ, Skript",
+        "HEX, RGB, HSB, CMYK",
+        "Wireframe, Mockup, Prototip, Hand-off"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "12-darsdagi «Kompozitsiyaning 4 asosiy tamoyili» ro'yxatini eslang.",
+      "explanation": "UI kompozitsiyasi 4 ta asosiy tamoyilga tayanadi: Balans (muvozanat), Kompozitsion markaz (Focal Point), Ritm va Kontrast."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Simmetrik va asimmetrik balans (muvozanat) o'rtasidagi asosiy farq nimada?",
+      "options": [
+        "Simmetrik balansda elementlar betartib joylashadi, asimmetrikda esa markazga tekislanadi",
+        "Simmetrik balansda chap va o'ng tomonlar bir xil bo'ladi (klassik barqarorlik); asimmetrik balansda elementlar har xil, lekin vizual og'irlik teng taqsimlangan bo'ladi (zamonaviy)",
+        "Asimmetrik balansda hech qanday muvozanat bo'lmaydi",
+        "Simmetrik balans faqat mobil ilovalarda ishlatiladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Rasm chapda, matn va tugma o'ngda joylashgan karta asimmetrik muvozanatga misol bo'ladi.",
+      "explanation": "Simmetrik balans o'qqa nisbatan teng aks etishni, asimmetrik balans esa turli shakl va o'lchamdagi elementlarning vizual og'irligi bo'yicha muvozanatini bildiradi."
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "Kompozitsiyada «White Space» (Bo'sh joy / Negative Space) nima uchun zarur?",
+      "options": [
+        "Bu dizaynerning ulgurmay qolgan bo'sh qismlari bo'lib, ularni reklama bilan to'ldirish kerak",
+        "Elementlarning bir-biriga yopishib ketmasligi, o'qishni osonlashtirish va foydalanuvchi miyasiga tanaffus berish uchun",
+        "Faqat oq rangli fon ishlatilgandagina kerak bo'ladi",
+        "Fayl hajmini kichraytirish uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Apple o'z taqdimot sahifalarida ekran maydonining 60% dan ortig'ini aynan shunga ajratadi.",
+      "explanation": "White Space (bo'sh joy) interfeysga «nafas» beradi, vizual shovqinni kamaytiradi va asosiy elementlarni yaqqol ajratib ko'rsatadi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "UI dizaynda keng qo'llaniladigan «8-point Grid» tizimiga ko'ra quyidagi masofa va o'lchamlardan qaysi qator TO'G'RI hisoblanadi?",
+      "options": [
+        "7px, 13px, 22px, 35px",
+        "8px, 16px, 24px, 32px, 48px",
+        "5px, 10px, 15px, 25px",
+        "3px, 9px, 17px, 29px"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Barcha masofalar va chekinishlar 8 soniga qoldiqsiz bo'linishi (karrali bo'lishi) kerak.",
+      "explanation": "8-point Grid tizimida barcha padding, margin va o'lchamlar 8 ga karrali (8, 16, 24, 32, 48px...) qilib olinadi, bu esa ritm va turli ekranlarda aniqlikni ta'minlaydi."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "F-pattern va Z-pattern skanerlash naqshlari qaysi turdagi sahifalarda qo'llaniladi?",
+      "options": [
+        "F-pattern — kam matnli reklama sahifalarida; Z-pattern — uzun maqolalarda",
+        "F-pattern — matn ko'p bo'lgan saytlarda (yangiliklar, bloglar); Z-pattern — landing page va ilova bosh sahifalarida (Logotip -> Menyu -> Markaziy rasm -> CTA)",
+        "Ikkalasi ham faqat elektron jadvallarda ishlatiladi",
+        "Z-pattern faqat o'ngdan chapga yoziladigan tillar uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ko'p matnli sahifalarda ko'z yuqoridan pastga chap chet bo'ylab (F), kam matnli reklama sahifalarida esa diagonal bo'ylab (Z) harakatlanadi.",
+      "explanation": "Matnli sahifalarda (blog, yangiliklar) foydalanuvchilar F-pattern bo'yicha, kam matnli landing page va bosh sahifalarda esa Z-pattern bo'yicha ko'z yugurtiradi."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Dizaynda «Kompozitsion markaz» (Focal Point) va «3 soniya qoidasi» birgalikda nimani ta'minlaydi?",
+      "options": [
+        "Sahifa 3 soniyada avtomatik yopilishini",
+        "Foydalanuvchi ekranga qaraganidan so'ng 3 soniya ichida ilova nima haqidaligini va birinchi bo'lib qaysi asosiy tugmani (Focal Point / CTA) bosish kerakligini tushunishini",
+        "Animatsiya davomiyligi har doim 3 soniya bo'lishini",
+        "Har 3 soniyada ekran rangi o'zgarib turishini"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ko'z birinchi to'xtaydigan nuqta foydalanuvchiga darhol yo'nalish berishi kerak.",
+      "explanation": "Aniq Focal Point (kompozitsion markaz) 3 soniya qoidasini bajarishga yordam beradi: foydalanuvchi ortiqcha izlanmasdan darhol sahifa maqsadi va asosiy harakatni ko'radi."
+    },
+    {
+      "id": 20,
+      "type": "multiple",
+      "question": "Vizual ierarxiya va kompozitsiya xatolarini aniqlang: agar ekranda barcha sarlavhalar bir xil o'lchamda, oraliqlar 7px/13px/22px va 3 ta bir xil yorqin tugma bo'lsa, qaysi tamoyillar buzilgan? (Bir nechta javobni belgilang)",
+      "options": [
+        "Vizual ierarxiya (qaysi matn muhimroq ekanligi ajralmaydi)",
+        "Ritm va 8-point Grid tizimi (oraliqlar tartibsiz va 8 ga karrali emas)",
+        "Kompozitsion markaz va Kontrast (3 ta bir xil yorqin tugma diqqatni bo'lib yuboradi, bitta asosiy CTA ajralmaydi)",
+        "Tipografiya faqat Sans Serif bo'lishi kerakligi qoidasi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "12-darsdagi 11-topshiriq («Xatoni toping») shartini tahlil qiling.",
+      "explanation": "Bir xil sarlavhalar vizual ierarxiyani, tartibsiz piksellar (7, 13, 22px) 8-point grid va ritmni, 3 ta bir xil yorqin tugma esa kompozitsion markaz (yagona asosiy CTA) tamoyilini buzadi."
+    }
+  ]
+}

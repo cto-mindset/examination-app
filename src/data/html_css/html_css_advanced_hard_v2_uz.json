@@ -1,0 +1,253 @@
+{
+  "test_id": "html_css_advanced_hard_v2_uz",
+  "title": "HTML5 va CSS3 Chuqurlashtirilgan Texnik Test (2-Versiya, Qiyin Daraja)",
+  "difficulty": "hard",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "HTML <link rel='modulepreload' href='app.js'> va oddiy <link rel='preload' as='script' href='app.js'> o'rtasidagi asosiy texnik farq nimada?",
+      "options": [
+        "modulepreload faqat CSS fayllarni yuklaydi",
+        "modulepreload skriptni tarmoqdan yuklash bilan birga uni JavaScript dvigatelida parse va kompilyatsiya qiladi hamda uning ichki import (dependency) daraxtini ham oldindan yuklaydi",
+        "preload skriptni darhol ishga tushiradi, modulepreload esa kutadi",
+        "Hech qanday farqi yo'q, ikkalasi ham bir xil kesh mexanizmidan foydalanadi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "ES modullari uchun tarmoq yuklanishidan tashqari parse/compile va bog'liqliklar zanjirini oldindan tayyorlashni eslang.",
+      "explanation": "rel='modulepreload' ES modulini yuklab oladi, uni parse/compile qilib xotiraga tayyorlaydi va modul ichidagi import qilingan sub-modullarni ham parallel yuklash imkonini beradi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "HTML <script type='importmap'> mexanizmi zamonaviy brauzerlarda qaysi muammoni hal qiladi?",
+      "options": [
+        "CSS fayllarni avtomatik minifikatsiya qiladi",
+        "Hech qanday bundler (Webpack/Vite) ishlatmasdan turib, brauzerda 'bare module specifiers' (masalan, import { ref } from 'vue') ni aniq URL manzillarga xaritalash (mapping) imkonini beradi",
+        "Barcha JavaScript o'zgaruvchilarini shifrlaydi",
+        "HTML teglarini dinamik generatsiya qiladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Node.js dagi kabi paket nomlari orqali import qilishni to'g'ridan-to'g'ri brauzer muhitida ishlatish.",
+      "explanation": "<script type='importmap'> JSON obyekti orqali 'lodash' yoki 'react' kabi qisqa paket nomlarini CDN yoki lokal fayl URL manzillariga bog'lab beradi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "HTML da 'loading=\"lazy\"' va 'fetchpriority=\"high\"' atributlarini rasmlarga (<img>) qo'llash bo'yicha eng yaxshi amaliyot (Best Practices) qoidalarini belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Sahifaning eng yuqori qismidagi asosiy LCP (Largest Contentful Paint) rasmiga hech qachon loading='lazy' qo'ymaslik kerak",
+        "Asosiy LCP rasmiga fetchpriority='high' berish brauzerga uni CSS va boshqa resurslardan oldinroq yuklashga signal beradi",
+        "Ekrandan pastda (below-the-fold) joylashgan rasmlar uchun loading='lazy' ishlatish tarmoq trafikini tejaydi",
+        "Barcha rasmlarga bir vaqtning o'zida ham loading='lazy', ham fetchpriority='high' berish kerak"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Above-the-fold (birinchi ekrandagi) asosiy rasmni kechiktirish LCP ko'rsatkichini yomonlashtiradi.",
+      "explanation": "LCP rasmiga loading='lazy' qo'yish yuklanishni sekinlashtiradi; unga fetchpriority='high' berish, pastki rasmlarga esa loading='lazy' qo'yish optimal yondashuvdir."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "HTML <iframe sandbox> atributi hech qanday qiymatsiz (<iframe src='...' sandbox></iframe>) yozilganda qanday cheklovlar kuchga kiradi?",
+      "options": [
+        "Faqat JavaScript o'chiriladi, qolgan barcha amallar ruxsat etiladi",
+        "Barcha cheklovlar maksimal darajada yoqiladi: iframe noyob (opaque) origin oladi, skriptlar, formalar, popuplar, top-navigation va asosiy sahifa DOM/cookie lariga kirish to'liq bloklanadi",
+        "Iframe faqat HTTPS saytlarni ochadi",
+        "Iframe ekranda ko'rinmaydigan holatga o'tadi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Bo'sh sandbox atributi eng qat'iy izolyatsiya rejimini faollashtiradi va ruxsatlar faqat 'allow-*' tokenlari bilan qaytariladi.",
+      "explanation": "Qiymatsiz sandbox atributi barcha xavfsizlik cheklovlarini yoqadi; alohida ruxsatlar (masalan, allow-scripts, allow-forms) ataylab qo'shilishi kerak."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "HTML5 <details> va <summary> teglari bilan bog'liq quyidagi texnik xususiyatlardan qaysi biri to'g'ri?",
+      "options": [
+        "Bir xil 'name' atributiga ega bo'lgan bir nechta <details name='faq'> elementlari JavaScript yozmasdan avtomatik ravishda eksklyuziv akkordeon (exclusive accordion — biri ochilsa boshqasi yopiladigan) sifatida ishlaydi",
+        "<details> ichidagi matn yopiq holatda qidiruv tizimlari (SEO) tomonidan indekslanmaydi",
+        "<summary> tegi <details> ning eng oxirida yozilishi shart",
+        "<details> ni ochish uchun albatta JavaScript event listener kerak"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Zamonaviy HTML spetsifikatsiyasida <details> ga qo'shilgan 'name' atributi radio-tugmalar kabi guruhlashni ta'minlaydi.",
+      "explanation": "Bir xil name='...' atributiga ega <details> teglari o'zaro bog'lanadi va ulardan bir vaqtda faqat bittasi ochiq turadi (native exclusive accordion)."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "WAI-ARIA da 'aria-live=\"polite\"' va 'aria-live=\"assertive\"' hududlari (Live Regions) o'rtasidagi asosiy farq nimada?",
+      "options": [
+        "polite faqat mobil ekran o'quvchilarda ishlaydi",
+        "polite ekran o'quvchi (screen reader) joriy o'qiyotgan gapini tugatgandan so'ng yangilanishni e'lon qiladi; assertive esa joriy nutqni darhol uzib, yangi xabarni o'qiydi",
+        "assertive xabarni faqat 1 marta o'qiydi, polite esa 3 marta",
+        "Ikkalasi ham faqat <dialog> ichida ishlaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Foydalanuvchi ishini bo'lib yuborish darajasi (xatolik ogohlantirishlari vs oddiy holat xabarlari).",
+      "explanation": "aria-live='polite' joriy nutq tugashini kutadi (masalan, 'Savatga qo'shildi'), aria-live='assertive' esa shoshilinch xabarlar uchun nutqni darhol to'xtatib o'qiydi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "CSS Scroll-Driven Animations spetsifikatsiyasida 'animation-timeline: view();' va 'animation-timeline: scroll();' o'rtasidagi farq nimada?",
+      "options": [
+        "scroll() faqat gorizontal, view() esa faqat vertikal yo'nalishda ishlaydi",
+        "scroll() scroll konteynerining umumiy aylantirish progressiga (0% dan 100% gacha) bog'lanadi; view() esa elementning o'zi ko'rish maydoniga (scrollport) kirib kelishi va chiqib ketishi progressiga bog'lanadi",
+        "view() faqat rasmlar uchun ishlaydi",
+        "Ikkalasi ham JavaScript IntersectionObserver ni talab qiladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Sahifa tepasidagi o'qish progress-bari uchun scroll(), element ekranga kirganda paydo bo'lishi uchun view() ishlatiladi.",
+      "explanation": "scroll() timeline aylantirish pozitsiyasini kuzatadi, view() timeline esa elementning ko'rinish sohasidagi ko'rinish ulushini (IntersectionObserver ning sof CSS muqobili) kuzatadi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "CSS Anchor Positioning API da 'position-anchor: --my-btn;' va 'anchor()' funksiyasi qaysi muammoni JavaScript siz hal qiladi?",
+      "options": [
+        "Sahifadagi barcha havolalarni avtomatik tekshiradi",
+        "Tooltip, popover yoki dropdown menyuni sahifadagi istalgan boshqa elementga (anchor) nisbatan joylashtirish va ekran chetiga taqalganda avtomatik joylashuvini (position-try-fallbacks) o'zgartirish imkonini beradi",
+        "Elementni sahifa markaziga qotirib qo'yadi",
+        "Scroll bar pozitsiyasini saqlab qoladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "DOM daraxtida bir-birining ichida joylashmagan ikki elementni (tugma va uning tooltipini) bog'lash.",
+      "explanation": "CSS Anchor Positioning bir elementni (masalan, Top Layer dagi popover ni) DOM dagi boshqa bir element koordinatalariga bog'lash va viewport chegarasidan chiqib ketmaslik uchun avtomatik qayta joylashtirish imkonini beradi."
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "question": "CSS 'color-mix(in oklch, blue 70%, white)' funksiyasida 'oklch' rang fazosining 'srgb' ga nisbatan asosiy ustunliklari qaysilar? (Bir nechta javobni belgilang)",
+      "options": [
+        "Perceptual uniformity — inson ko'zi uchun yorqinlik (lightness) darajasi barcha rang tuslarida (hue) bir xil idrok etiladi",
+        "Ranglarni aralashtirganda o'rtada xira kulrang (muddy gray) tuslar hosil bo'lishining oldini oladi",
+        "Display P3 kabi keng rang gamutlarini (wide-gamut colors) qo'llab-quvvatlaydi",
+        "oklch faqat oq-qora ekranlar uchun mo'ljallangan"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "sRGB va HSL da sariq va ko'k ranglarning bir xil lightness qiymati inson ko'ziga turlicha yorqinlikda ko'rinadi; OKLCH buni tuzatadi.",
+      "explanation": "OKLCH inson ko'zining idrokiga moslashgan (perceptually uniform) rang fazosi bo'lib, ranglarni aralashtirishda toza o'tishlar va keng rang gamutlarini ta'minlaydi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "CSS da 'light-dark(#111, #eee)' rang funksiyasi to'g'ri ishlashi uchun hujjatda (yoki ota elementda) qaysi CSS xususiyati belgilangan bo'lishi SHART?",
+      "options": [
+        "theme-mode: auto;",
+        "color-scheme: light dark;",
+        "prefers-color-scheme: both;",
+        "background-blend-mode: normal;"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Brauzerga element ham yorug', ham qorong'i mavzularni qo'llab-quvvatlashini bildiruvchi xususiyat.",
+      "explanation": "light-dark() funksiyasi elementning hisoblangan 'color-scheme' qiymatiga qarab ishlaydi. Shuning uchun :root { color-scheme: light dark; } yozilishi shart."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "CSS '@starting-style' qoidasining asosiy vazifasi nimadan iborat?",
+      "options": [
+        "Sahifa yuklanishidan oldin kritik CSS ni ajratib olish",
+        "'display: none' dan 'display: block' ga o'tayotgan yoki DOM ga yangi qo'shilayotgan elementlar (masalan, <dialog> va popover) uchun kirish animatsiyasining (entry transition) boshlang'ich holatini belgilash",
+        "CSS faylning birinchi qatoridagi shriftlarni yuklash",
+        "Reset CSS o'rnida barcha stillarni nolga tushirish"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ilgari display: none dan chiqqan elementda CSS transition ishlamas edi, chunki boshlang'ich kadr yo'q edi.",
+      "explanation": "@starting-style element birinchi marta render qilinganda yoki display: none dan ko'rinadigan holatga o'tganda qaysi stillardan boshlab transition qilishini belgilaydi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "CSS da 'transition-behavior: allow-discrete;' xususiyati qanday imkoniyat beradi?",
+      "options": [
+        "Barcha transition larni bir vaqtda to'xtatib turadi",
+        "'display' va 'overlay' kabi uzlukli (discrete — oraliq sonli qiymatlari bo'lmagan) xususiyatlarni transition zanjiriga qo'shib, yopilish animatsiyasi tugagandan keyingina display: none ga o'tkazish imkonini beradi",
+        "Animatsiyani faqat butun sonli piksellarda bajaradi",
+        "Transition tezligini tasodifiy o'zgartiradi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Modal yoki popover yopilayotganda opacity: 0 bo'lib ulgurmasidan display: none bo'lib darhol g'oyib bo'lishining oldini oladi.",
+      "explanation": "allow-discrete rejimida brauzer 'display: none' ga o'tishni animatsiya oxirigacha kechiktiradi, bu esa @starting-style bilan birgalikda silliq kirish va chiqish animatsiyalarini yaratadi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "CSS '@scope (.card) to (.card-content) { img { border-radius: 8px; } }' qoidasi (Donut Scope) qanday ishlaydi?",
+      "options": [
+        "Faqat .card-content ichidagi rasmlarga ta'sir qiladi",
+        ".card ichidagi barcha <img> elementlariga ta'sir qiladi, LEKIN .card-content ichida joylashgan <img> elementlarini istisno qiladi (ularga ta'sir qilmaydi)",
+        "Sahifadagi barcha rasmlarni yumaloqlaydi",
+        "Faqat bitta rasmga ta'sir qiladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Yuqori chegara (.card) dan pastki chegaragacha (.card-content) bo'lgan oraliqni qamrab oluvchi 'teshikli' (donut) qamrov.",
+      "explanation": "@scope ning 'to (...)' qismi pastki chegarani belgilaydi: stillar .card dan boshlanadi, biroq .card-content ichiga kirmaydi (ichki komponentlar izolyatsiyasi uchun ideal)."
+    },
+    {
+      "id": 14,
+      "type": "multiple",
+      "question": "CSS Grid da 'subgrid' dan foydalanganda qaysi xususiyatlar ota grid konteyneridan meros qilib olinadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "Ota gridning ustun yoki qator chiziqlari (track sizes) va ularning nomlari (line names)",
+        "Ota gridning 'gap' (row-gap / column-gap) qiymati (agar ichki gridning o'zida qayta yozilmagan bo'lsa)",
+        "Ota gridning background-color xususiyati",
+        "Ota gridning border xususiyati"
+      ],
+      "correct_indices": [
+        0,
+        1
+      ],
+      "hint": "Subgrid faqat tarmoq tuzilishi (tracks, line names va gap) ni ota griddan oladi.",
+      "explanation": "Subgrid ota gridning track o'lchamlari, chiziq nomlari va standart holatda gap qiymatini meros oladi; vizual stillar (fon, chegara) meros olinmaydi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "CSS da 'text-wrap: balance;' va 'text-wrap: pretty;' qiymatlari o'rtasidagi asosiy farq nimada?",
+      "options": [
+        "balance barcha qatorlar kengligini tenglashtirishga harakat qiladi (sarlavhalar uchun, odatda 6 qatorgacha cheklangan); pretty esa uzun paragraflarning oxirgi qatorida bitta so'z yolg'iz qolib ketishining (orphan) oldini oladi",
+        "pretty matnni markazga tekislaydi, balance esa chapga",
+        "balance faqat raqamlar uchun ishlaydi",
+        "Hech qanday farqi yo'q"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Qisqa sarlavhalar (headings) uchun muvozanat, uzun matn bloklari (body copy) uchun esa oxirgi qator estetikasi.",
+      "explanation": "text-wrap: balance sarlavhalardagi qatorlar uzunligini teng taqsimlaydi (brauzerlarda unumdorlik uchun ~6-10 qator bilan cheklangan), text-wrap: pretty esa uzun matnlarda oxirgi qatorda yolg'iz so'z qolishini bartaraf etadi."
+    }
+  ]
+}

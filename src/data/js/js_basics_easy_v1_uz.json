@@ -1,0 +1,254 @@
+{
+  "test_id": "js_basics_easy_v1_uz",
+  "title": "JavaScript Asoslari (1-Versiya, Oson Daraja)",
+  "difficulty": "easy",
+  "total_minutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "JavaScript da o'zgarmas (qayta qiymat tayinlab bo'lmaydigan) o'zgaruvchi e'lon qilish uchun qaysi kalit so'z ishlatiladi?",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "static"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ingliz tilidagi 'constant' (doimiy) so'zining qisqartmasi.",
+      "explanation": "const kalit so'zi orqali e'lon qilingan o'zgaruvchiga keyinchalik yangi qiymat tayinlab bo'lmaydi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Brauzer konsoliga (Console) ma'lumot chiqarish uchun qaysi buyruqdan foydalaniladi?",
+      "options": [
+        "print('Salom')",
+        "console.log('Salom')",
+        "echo('Salom')",
+        "document.writeLine('Salom')"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "console obyektining 'log' metodidan foydalaniladi.",
+      "explanation": "console.log() metodi dasturchilar uchun brauzer konsoliga xabar yoki o'zgaruvchi qiymatini chiqarish vazifasini bajaradi."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "JavaScript da bir qatorli izoh (comment) qanday yoziladi?",
+      "options": [
+        "<!-- bu izoh -->",
+        "# bu izoh",
+        "// bu izoh",
+        "** bu izoh **"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ikkita qiya chiziq (slash) belgisidan foydalaniladi.",
+      "explanation": "JavaScript da bir qatorli izohlar '//' bilan, ko'p qatorli izohlar esa '/* ... */' bilan yoziladi."
+    },
+    {
+      "id": 4,
+      "type": "multiple",
+      "question": "Quyidagilardan qaysilari JavaScript ning sodda (primitive) ma'lumot turlari hisoblanadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "undefined"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "hint": "array (massiv) JavaScript da object turiga kiradi; qolgan 4 tasi sodda (primitive) turlardir.",
+      "explanation": "string, number, boolean va undefined JavaScript dagi sodda (primitive) ma'lumot turlaridir. array esa maxsus turdagi obyekt (object) hisoblanadi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconsole.log(typeof '2026');",
+      "options": [
+        "number",
+        "string",
+        "integer",
+        "text"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Qo'shtirnoq ichiga olingan har qanday belgi matn (satr) hisoblanadi.",
+      "explanation": "'2026' qiymati qo'shtirnoq ichida yozilgani uchun u raqam emas, balki 'string' (satr) ma'lumot turiga kiradi."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "Qiymatlarni ham, ma'lumot turlarini ham qat'iy solishtirish (strict equality) uchun qaysi operator ishlatiladi?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        "!="
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Uchta tenglik belgisidan iborat operator.",
+      "explanation": "=== operatori avval ma'lumot turini, keyin qiymatini tekshiradi (masalan, 5 === '5' natijasi false qaytaradi)."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "HTML hujjatga tashqi JavaScript faylini ulash uchun qaysi teg va atributdan foydalaniladi?",
+      "options": [
+        "<js src='app.js'>",
+        "<script href='app.js'></script>",
+        "<script src='app.js'></script>",
+        "<link rel='script' href='app.js'>"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "<script> tegi va fayl manzilini ko'rsatuvchi 'src' atributi ishlatiladi.",
+      "explanation": "Tashqi JS fayllarni ulash uchun <script src='fayl.js'></script> konstruksiyasidan foydalaniladi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Massiv (array) oxiriga yangi element qo'shish uchun qaysi metod ishlatiladi?",
+      "options": [
+        "pop()",
+        "push()",
+        "shift()",
+        "add()"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ingliz tilida 'itarib kiritmoq' ma'nosini bildiruvchi metod.",
+      "explanation": "push() metodi massivning oxiriga bir yoki bir nechta yangi element qo'shadi; pop() esa oxirgi elementni o'chiradi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Quyidagi kod natijasi nimaga teng bo'ladi?\n\nlet mevalar = ['olma', 'banan', 'uzum'];\nconsole.log(mevalar.length);",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "undefined"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "length xususiyati massivdagi elementlarning umumiy sonini qaytaradi.",
+      "explanation": "Massivda 3 ta element borligi sababli mevalar.length qiymati 3 ga teng bo'ladi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "JavaScript da funksiya yaratishning to'g'ri sintaksisi qaysi?",
+      "options": [
+        "def salomBer() { }",
+        "function salomBer() { }",
+        "func salomBer() { }",
+        "create function salomBer() { }"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "To'liq 'function' kalit so'zi yoziladi.",
+      "explanation": "JavaScript da standart funksiya 'function funksiyaNomi() { ... }' ko'rinishida e'lon qilinadi."
+    },
+    {
+      "id": 11,
+      "type": "multiple",
+      "question": "JavaScript da mantiqiy (logical) operatorlar qatoriga qaysilar kiradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "&& (VA / AND)",
+        "|| (YOKI / OR)",
+        "! (EMAS / NOT)",
+        "??= (Assign)"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Ikkita ampersand, ikkita vertikal chiziq va undov belgisini tanlang.",
+      "explanation": "&& (mantiqiy VA), || (mantiqiy YOKI) va ! (mantiqiy INKOR) JavaScript ning asosiy mantiqiy operatorlaridir."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Foydalanuvchiga ekranda 'OK' tugmali oddiy ogohlantirish oynasini chiqarish uchun qaysi funksiya ishlatiladi?",
+      "options": [
+        "msg('Xush kelibsiz!')",
+        "alert('Xush kelibsiz!')",
+        "popup('Xush kelibsiz!')",
+        "notice('Xush kelibsiz!')"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ingliz tilida 'ogohlantirish' degan ma'noni anglatuvchi funksiya.",
+      "explanation": "alert() funksiyasi brauzerda matnli xabar va 'OK' tugmasidan iborat modal ogohlantirish oynasini chiqaradi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "HTML sahifadagi 'id=\"sarlavha\"' bo'lgan elementni JavaScript orqali tanlab olish uchun qaysi metod ishlatiladi?",
+      "options": [
+        "document.getElement('sarlavha')",
+        "document.getElementById('sarlavha')",
+        "document.querySelectorAll('sarlavha')",
+        "document.findById('#sarlavha')"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "camelCase uslubida yozilgan 'getElementById' metodini tanlang (ichida '#' belgisi yozilmaydi).",
+      "explanation": "document.getElementById('id_nomi') hujjatdan ko'rsatilgan id ga ega yagona elementni qaytaradi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda 'natija' o'zgaruvchisining qiymati nima bo'ladi?\n\nlet a = 10;\nlet b = 3;\nlet natija = a % b;",
+      "options": [
+        "3",
+        "1",
+        "3.33",
+        "0"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'%' operatori bo'lishdan qolgan qoldiqni (remainder) hisoblaydi.",
+      "explanation": "10 ni 3 ga bo'lganda bo'linma 3 ga, qoldiq esa 1 ga teng bo'ladi (10 = 3 * 3 + 1)."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Shartli operator 'if' ning to'g'ri sintaksisi qaysi variantda ko'rsatilgan?",
+      "options": [
+        "if x == 5 then { ... }",
+        "if (x === 5) { ... }",
+        "if x === 5: { ... }",
+        "if [x === 5] { ... }"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Shart oddiy qavslar '()' ichida, bajariladigan kod bloki esa jingalak qavslar '{}' ichida yoziladi.",
+      "explanation": "JavaScript da shart operatori 'if (shart) { kod }' shaklida yoziladi."
+    }
+  ]
+}

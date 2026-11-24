@@ -1,0 +1,343 @@
+{
+  "test_id": "ux_ui_9sinf_hafta05_mixed_uz",
+  "title": "9-sinf UX/UI Dizayn: 5-hafta (13–15-darslar) Bo'yicha Umumiy Test",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "UI Kit va Dizayn tizimi (Design System) o'rtasidagi asosiy farq LEGO o'xshatishida qanday tushuntiriladi?",
+      "options": [
+        "UI Kit — faqat yo'riqnoma; Dizayn tizimi — faqat ranglar jadvali",
+        "UI Kit — tayyor LEGO bo'laklari qutisi; Dizayn tizimi — shu quti bilan birga yig'ish yo'riqnomasi, qoidalar va hujjatlar to'plami",
+        "Ikkalasi ham bir xil tushuncha bo'lib, faqat turli dasturlarda har xil nomlanadi",
+        "UI Kit faqat dasturchilar uchun, Dizayn tizimi esa faqat mijozlar uchun yaratiladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Yo'riqnomasiz bo'laklardan har kim har xil narsa yig'adi, yo'riqnoma bilan esa butun jamoa bir xil uslubda ishlaydi.",
+      "explanation": "UI Kit — tayyor, qayta ishlatiladigan komponentlar to'plami (konstruktor), Dizayn tizimi esa komponentlarga qo'shimcha ravishda tokenlar, qoidalar (guidelines) va hujjatlarni o'z ichiga olgan yagona tizimdir."
+    },
+    {
+      "id": 2,
+      "type": "multiple",
+      "question": "UI Kit dan foydalanishning 4 ta asosiy afzalligini belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Vaqtni tejash",
+        "Vizual uyg'unlik",
+        "Moslashuvchanlik",
+        "Jamoaviy ishlash",
+        "Internet tezligini oshirish"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "13-dars xulosasidagi «4 afzallik» bandini eslang.",
+      "explanation": "UI Kit dizayner va dasturchilarga vaqtni tejash, vizual uyg'unlikni saqlash, moslashuvchanlik va jamoada bir uslubda ishlash imkonini beradi."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "Dizayn tizimida «Design Token» (dizayn tokeni) nimani anglatadi?",
+      "options": [
+        "Ilovaga kirish uchun bir martalik SMS parol",
+        "Dizayn qarorining nomlangan qiymati (masalan, color-primary = #2563EB yoki space-m = 16px)",
+        "Figma dasturining pullik obuna kaliti",
+        "Tayyor veb-sahifa shabloni"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Rang, shrift yoki bo'shliq qiymatiga mantiqiy nom berish orqali uni tizim bo'ylab yagona saqlash.",
+      "explanation": "Design Token — rang, masofa yoki shrift o'lchami kabi dizayn qiymatining nomlangan o'zgaruvchisi (masalan, color-primary = #2563EB, space-m = 16px)."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "«Kichikdan kattaga» (Atomic Design) tuzilmasida «qidiruv maydoni = input + tugma + lupa ikonkasi» va «header = logotip + qidiruv + profil + savat» mos ravishda qaysi darajalarga kiradi?",
+      "options": [
+        "Qidiruv maydoni — Atom | Header — Molekula",
+        "Qidiruv maydoni — Molekula | Header — Organizm",
+        "Qidiruv maydoni — Organizm | Header — Sahifa",
+        "Ikkalasi ham Atom darajasiga kiradi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Atom — eng kichik bo'lak (ikonka, rang, tugma); bir nechta atom — molekula; bir nechta molekula — organizm.",
+      "explanation": "Input, tugma va ikonka birlashib qidiruv maydoni (Molekula) ni, qidiruv maydoni, logotip, profil va savat birlashib esa Header (Organizm) ni hosil qiladi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Figma'da ranglarni va matnlarni «Color style» hamda «Text style» sifatida saqlab ishlatishning eng katta amaliy foydasi nimada?",
+      "options": [
+        "Fayl hajmini 10 baravar kichraytiradi",
+        "Stil qiymati o'zgartirilganda, u ishlatilgan barcha ekranlardagi elementlar bir zumda avtomatik yangilanadi",
+        "Dizaynni avtomatik ravishda Android ilovaga aylantiradi",
+        "Faqat oq-qora ranglarda ishlashga majbur qiladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "10 ta ekrandagi Primary tugmalar rangini bitta joydan o'zgartirish imkoniyatini eslang.",
+      "explanation": "Color style va Text style orqali bitta markaziy uslub o'zgartirilsa, unga bog'langan barcha elementlar loyiha bo'ylab avtomatik ravishda yangilanadi."
+    },
+    {
+      "id": 6,
+      "type": "multiple",
+      "question": "Dizayn tizimining 5 ta asosiy qismi qatoriga kiruvchi elementlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Komponentlar",
+        "Vizual uslublar (tokenlar)",
+        "Shablonlar (Templates)",
+        "Prinsip, qo'llanmalar (Guidelines) va hujjatlashtirish (Documentation)",
+        "Kompyuter protsessori xususiyatlari"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "13-darsdagi «Dizayn tizimining 5 qismi» ro'yxatini eslang.",
+      "explanation": "Dizayn tizimi 5 qismdan iborat: komponentlar, vizual uslublar (tokenlar), shablonlar, prinsip va qo'llanmalar hamda hujjatlashtirish."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Mashhur kompaniyalar va ularning rasmiy dizayn tizimlari qaysi qatorda to'g'ri juftlashtirilgan?",
+      "options": [
+        "Google — Polaris | IBM — Material Design | Shopify — Carbon",
+        "Google — Material Design | IBM — Carbon | Shopify — Polaris",
+        "Google — HIG | Apple — Bootstrap | IBM — Material UI",
+        "Shopify — Ant Design | Google — Carbon | IBM — HIG"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "13-darsdagi «Bilasizmi?» bo'limidagi 3 ta mashhur dizayn tizimi nomini eslang.",
+      "explanation": "Google — Material Design (2014), IBM — Carbon, Shopify esa Polaris nomli dizayn tizimlariga ega."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Human Interface Guidelines (HIG) qaysi kompaniyaga tegishli va u ilk bor qachon boshlangan?",
+      "options": [
+        "Google; 2014-yil Android 5 dan boshlangan",
+        "Apple; 1977-yil Apple II dan boshlangan",
+        "Twitter; 2011-yil Bootstrap bilan boshlangan",
+        "Alibaba; 2015-yil React bilan boshlangan"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "iOS, macOS, watchOS, tvOS va visionOS uchun yaratilgan rasmiy qo'llanma.",
+      "explanation": "Human Interface Guidelines (HIG) Apple kompaniyasining dizayn qo'llanmasi bo'lib, uning tarixi 1977-yildagi Apple II dan boshlanadi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Ko'p jadval, murakkab formalar va pagination (sahifalash) talab qilinadigan korporativ admin-panel (React.js asosida) yaratish uchun qaysi UI kit eng mos keladi?",
+      "options": [
+        "Apple HIG",
+        "Ant Design",
+        "Faqat Figma UI Kit",
+        "visionOS Kit"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ant Group (Alibaba guruhi) tomonidan React.js asosida korporativ veb-ilovalar uchun yaratilgan kutubxona.",
+      "explanation": "Ant Design React.js asosida ishlaydigan va ko'p jadval, forma hamda boshqaruv panellariga ega korporativ tizimlar uchun mo'ljallangan UI kutubxonadir."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Dastlab «Twitter Blueprint» deb atalgan, HTML, CSS va JS asosida ishlaydigan hamda asosiy kuchi «responsiv dizayn» bo'lgan UI kutubxona qaysi?",
+      "options": [
+        "Material UI (MUI)",
+        "Bootstrap",
+        "Ant Design",
+        "Human Interface Guidelines"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "2011-yilda Twitter dasturchilari tomonidan ochiq kod sifatida e'lon qilingan.",
+      "explanation": "Bootstrap — Twitter dasturchilari yaratgan, HTML/CSS/JS asosidagi mashhur responsiv (turli ekranlarga moslashuvchan) UI kutubxona."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Material UI (MUI) kutubxonasini React loyihasiga o'rnatish buyrug'i qaysi?",
+      "options": [
+        "npm install bootstrap-mui",
+        "npm install @mui/material",
+        "pip install material-ui",
+        "git clone mui-design"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "@mui skopi ostidagi material paketini o'rnatish buyrug'ini tanlang.",
+      "explanation": "Google Material Design tamoyiliga asoslangan React komponentlari kutubxonasi `npm install @mui/material` buyrug'i bilan o'rnatiladi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Material UI da katta (large), chegarali (outlined) va faol bo'lmagan (disabled) tugma kodi qaysi variantda to'g'ri yozilgan?",
+      "options": [
+        "<Button type=\"border\" scale=\"big\" active={false}>Button</Button>",
+        "<Button variant=\"outlined\" size=\"large\" disabled>Button</Button>",
+        "<Button variant=\"contained\" size=\"small\" disabled>Button</Button>",
+        "<Button style=\"outlined\" size=\"large\" off>Button</Button>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "MUI Button komponentida ko'rinish 'variant', o'lcham 'size', nofaollik esa 'disabled' prop orqali beriladi.",
+      "explanation": "MUI da chegarali tugma `variant=\"outlined\"`, katta o'lcham `size=\"large\"`, nofaol holat esa `disabled` atributi bilan yoziladi."
+    },
+    {
+      "id": 13,
+      "type": "multiple",
+      "question": "Apple Human Interface Guidelines (HIG) ning asosiy 6 bo'limi qatoriga kiruvchi bandlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Platforms va Foundations",
+        "Patterns va Components",
+        "Inputs va Technologies",
+        "Databases va Servers"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "14-dars xulosasidagi HIG ning 6 ta bo'limini eslang.",
+      "explanation": "HIG ning 6 ta asosiy bo'limi: Platforms, Foundations, Patterns, Components, Inputs va Technologies."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Figma Community'dan tayyor UI kitni topib, «Open in Figma» tugmasini bosganingizda fayl nusxasi qayerga tushadi?",
+      "options": [
+        "Kompyuterning Recycle Bin (Savat) papkasiga",
+        "Figma hisobingizdagi «Drafts» (Qoralamalar) bo'limiga",
+        "Avtomatik ravishda GitHub ga",
+        "Faqat o'qish rejimida ochiladi, nusxa olinmaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "U yerdan komponentlarni bemalol nusxalab o'z loyihangizda ishlatishingiz mumkin.",
+      "explanation": "Figma Community'da «Open in Figma» bosilganda kit nusxasi shaxsiy Drafts bo'limiga saqlanadi va uni tahrirlash hamda komponentlarni ko'chirish mumkin bo'ladi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Figma'da balandligi 50 px bo'lgan qidiruv maydonini to'liq yumaloq «pill» (kapsula) shakliga keltirish uchun «Corner radius» qiymati nechaga teng bo'lishi kerak?",
+      "options": [
+        "5 px",
+        "10 px",
+        "25 px",
+        "50 px dan kichik bo'lmasligi kerak, aks holda uchburchak bo'ladi"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "15-darsdagi «Radius siri» bo'limini eslang: burchaklar yarim doira bo'lishi uchun balandlikning yarmi olinadi.",
+      "explanation": "Balandlikning yarmiga teng Corner radius (50 px / 2 = 25 px) burchaklarni mukammal yarim doira qilib, elementga yumaloq «pill» shaklini beradi."
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "Figma'da panellarga chegara (Stroke) berishda nima uchun ko'pincha «Stroke Inside» joylashuvi tanlanadi?",
+      "options": [
+        "Chunki Stroke Inside rangni avtomatik oq qiladi",
+        "Chunki Stroke Inside elementning tashqi umumiy o'lchamini (W va H) o'zgartirmaydi",
+        "Chunki Center va Outside faqat chiziqlar uchun ishlaydi",
+        "Chunki Stroke Inside soyani avtomatik qo'shadi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Outside chegara elementni kattalashtirib, grid va masofalarni buzishi mumkin.",
+      "explanation": "Stroke Inside chegara chizig'ini shaklning ichki tomonidan chizadi, shuning uchun panelning belgilangan W va H o'lchamlari o'zgarishsiz qoladi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "Figma'da Rectangle shakli ichiga lupa yoki profil ikonkasini joylashtirish va uni moslashtirish uchun qaysi ketma-ketlik qo'llaniladi?",
+      "options": [
+        "Stroke -> Blur -> Opacity",
+        "Fill -> Image + Crop",
+        "Effects -> Drop shadow -> Fill",
+        "Text -> Font Family -> Image"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Shaklning ichki to'ldirish (Fill) bo'limida rang o'rniga rasm (Image) tanlanadi.",
+      "explanation": "Shakl ichiga rasm yoki ikonka joylash uchun Fill -> Image tanlanadi va uning joylashuvi Crop orqali moslashtiriladi; yorug'ligini esa Exposure bilan sozlash mumkin."
+    },
+    {
+      "id": 18,
+      "type": "multiple",
+      "question": "Figma Design panelidagi asosiy bo'limlar va ularning vazifalari to'g'ri moslashtirilgan qatorlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "W / H — elementning eni (width) va bo'yi (height)",
+        "X / Y — elementning sahifadagi koordinata joylashuvi",
+        "Effects — Drop shadow, Inner shadow va Blur effektlari",
+        "Exposure — shaklning burchak radiusini o'zgartirish"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Exposure rasmning yorug'ligini sozlaydi, burchak radiusini esa Corner radius boshqaradi.",
+      "explanation": "W/H o'lchamni, X/Y joylashuvni, Effects esa Drop shadow/Inner shadow/Blur effektlarini sozlaydi. Exposure esa rasm yorug'ligi sozlamasidir."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Figma'da tanlangan elementlar guruhini (masalan, qidiruv blokini) qayta ishlatiladigan Komponentga (Component) aylantirish uchun qaysi klaviatura tezkor tugmalari bosiladi?",
+      "options": [
+        "Ctrl/Cmd + C",
+        "Ctrl/Cmd + Alt/Option + K",
+        "Shift + R",
+        "Alt/Option + L"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "15-darsdagi «Foydali tugmalar» ro'yxatining oxirgi bandini eslang.",
+      "explanation": "Figma'da Ctrl + Alt + K (macOS'da Cmd + Option + K) tugmalari tanlangan blokni darhol Component ga aylantiradi."
+    },
+    {
+      "id": 20,
+      "type": "multiple",
+      "question": "Figma'da tezkor asboblar va «Red guides» bo'yicha to'g'ri fikrlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "R tugmasi — Rectangle (To'rtburchak) chizish asbobini tanlaydi",
+        "L tugmasi — Line (Chiziq) chizish asbobini tanlaydi",
+        "T tugmasi — Text (Matn) yozish asbobini tanlaydi",
+        "Alt (Option) tugmasini bosib turish elementlar orasidagi masofani ko'rsatuvchi qizil chiziqlarni (Red guides) chiqaradi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "15-darsdagi barcha foydali tezkor tugmalarni tekshiring.",
+      "explanation": "Barcha 4 ta bayonot to'g'ri: R (Rectangle), L (Line), T (Text) va Alt/Option (Red guides — aniq masofalarni tekshirish)."
+    }
+  ]
+}

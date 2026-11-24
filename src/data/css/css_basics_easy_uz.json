@@ -1,0 +1,332 @@
+{
+  "test_id": "css_basics_easy_uz",
+  "title": "CSS Asoslari (Boshlang'ich Daraja)",
+  "difficulty": "easy",
+  "total_minutes": 20,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "CSS qisqartmasining to'liq inglizcha kengaytmasi qaysi?",
+      "options": [
+        "Creative Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Style System",
+        "Colorful Style Syntax"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'Kaskadli stillar jadvali' degan ma'noni anglatadi.",
+      "explanation": "CSS — Cascading Style Sheets (Kaskadli stillar jadvali) so'zlarining qisqartmasi bo'lib, veb-sahifalarga dizayn berish uchun ishlatiladi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Matn rangini o'zgartirish uchun CSS da qaysi xususiyatdan foydalaniladi?",
+      "options": [
+        "text-color",
+        "font-color",
+        "color",
+        "foreground-color"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Eng oddiy va qisqa so'z ishlatiladi, oldiga 'text-' yoki 'font-' qo'shilmaydi.",
+      "explanation": "CSS da matn rangini belgilash uchun to'g'ridan-to'g'ri 'color' xususiyati ishlatiladi (masalan: color: blue;)."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "Elementning orqa fon (background) rangini o'zgartirish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "bgcolor",
+        "background-color",
+        "color-background",
+        "fill-color"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'background' va 'color' so'zlari chiziqcha (-) bilan bog'langan.",
+      "explanation": "background-color xususiyati HTML elementining fon rangini o'rnatish uchun xizmat qiladi."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "HTML faylga tashqi CSS faylni ulash uchun <head> ichida qaysi teg yoziladi?",
+      "options": [
+        "<style src='style.css'>",
+        "<css href='style.css'>",
+        "<link rel='stylesheet' href='style.css'>",
+        "<script src='style.css'>"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Tashqi resurslarni bog'lovchi yopuvchi tegsiz tegdan foydalaniladi.",
+      "explanation": "Tashqi CSS faylni ulash uchun <link rel='stylesheet' href='fayl_nomi.css'> tegi ishlatiladi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "CSS da ma'lum bir 'class' atributiga ega elementlarni tanlash uchun klass nomidan oldin qaysi belgi qo'yiladi?",
+      "options": [
+        "# (panjara)",
+        ". (nuqta)",
+        "* (yulduzcha)",
+        "@ (kuchukcha)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "ID uchun '#', klass uchun esa nuqta ishlatiladi.",
+      "explanation": "CSS da klass selektori nuqta (.) bilan boshlanadi, masalan: .btn { color: white; }."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "CSS da 'id' atributi 'menu' ga teng bo'lgan elementni qanday selektor bilan tanlaymiz?",
+      "options": [
+        ".menu",
+        "#menu",
+        "*menu",
+        "id.menu"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "ID selektori panjara (#) belgisi bilan yoziladi.",
+      "explanation": "ID selektori '#' belgisi orqali yoziladi: #menu { ... }."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "CSS fayl ichida izoh (comment) qanday yoziladi?",
+      "options": [
+        "// bu izoh",
+        "<!-- bu izoh -->",
+        "/* bu izoh */",
+        "# bu izoh"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Qiya chiziq va yulduzcha belgilaridan foydalaniladi.",
+      "explanation": "CSS da bir qatorli ham, ko'p qatorli ham izohlar /* ... */ belgilari orasiga yoziladi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Matn shriftining o'lchamini (kattaligini) o'zgartirish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "text-size",
+        "font-style",
+        "font-size",
+        "text-weight"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'font' (shrift) va 'size' (o'lcham) so'zlaridan tashkil topgan.",
+      "explanation": "font-size xususiyati matn harflarining o'lchamini belgilaydi (masalan: font-size: 18px;)."
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "question": "CSS ni HTML hujjatga qo'shishning 3 ta asosiy usuli qaysilar? (Bir nechta javobni belgilang)",
+      "options": [
+        "Inline CSS (teg ichidagi style atributi orqali)",
+        "Internal CSS (<head> ichidagi <style> tegi orqali)",
+        "External CSS (alohida .css fayl orqali)",
+        "Server CSS (database orqali)"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Ichki (inline), hujjat ichidagi (internal) va tashqi (external) usullarni tanlang.",
+      "explanation": "HTML sahifaga CSS kodlarini Inline, Internal va External usullarida qo'shish mumkin."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Matnni qalin (bold) ko'rinishga keltirish uchun qaysi CSS xususiyat va qiymat qo'llaniladi?",
+      "options": [
+        "font-weight: bold;",
+        "text-style: bold;",
+        "font-bold: true;",
+        "text-decoration: bold;"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Shriftning 'vazni' (qalinligi) ma'nosini bildiruvchi xususiyatni tanlang.",
+      "explanation": "font-weight: bold; (yoki font-weight: 700;) matnni qalin qilib ko'rsatadi."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Havola (<a>) ostidagi standart tagchiziqni (underline) olib tashlash uchun qaysi qoida yoziladi?",
+      "options": [
+        "text-underline: none;",
+        "text-decoration: none;",
+        "border-bottom: none;",
+        "font-decoration: off;"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Matn bezaklarini (tagchiziq, ustchiziq) boshqaruvchi xususiyat 'text-decoration' dir.",
+      "explanation": "text-decoration: none; xususiyati havolalardagi standart pastki chiziqni o'chiradi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Matnni blok ichida gorizontal markazga tekislash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "align: center;",
+        "text-align: center;",
+        "font-align: center;",
+        "center-text: true;"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'text' va 'align' so'zlaridan iborat.",
+      "explanation": "text-align: center; matnni element kengligi bo'yicha o'rtaga tekislaydi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "Elementning ichki kontenti va uning chegarasi (border) orasidagi ichki bo'shliq nima deb ataladi?",
+      "options": [
+        "margin",
+        "padding",
+        "spacing",
+        "gap"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Tashqi masofa 'margin', ichki masofa esa 'p' harfi bilan boshlanadi.",
+      "explanation": "padding — element kontenti va chegara (border) orasidagi ichki bo'shliqni belgilaydi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Elementning tashqi chegarasidan tashqaridagi, boshqa elementlar bilan orasidagi masofa qaysi xususiyat bilan beriladi?",
+      "options": [
+        "padding",
+        "margin",
+        "border-spacing",
+        "outline"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Elementni atrofdagi elementlardan tashqi tomondan surib turuvchi xususiyat.",
+      "explanation": "margin — element atrofidagi tashqi bo'shliq (masofa) yaratish uchun ishlatiladi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Element burchaklarini yumaloqlash (doirasimon qilish) uchun qaysi CSS xususiyati ishlatiladi?",
+      "options": [
+        "corner-radius",
+        "border-round",
+        "border-radius",
+        "box-radius"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Chegara (border) va radius so'zlari birikmasidan hosil bo'lgan.",
+      "explanation": "border-radius xususiyati element burchaklarini yumaloqlash uchun ishlatiladi (masalan: border-radius: 10px; yoki 50%)."
+    },
+    {
+      "id": 16,
+      "type": "multiple",
+      "question": "CSS da 'border' qisqartma xususiyatiga beriladigan asosiy qiymatlar qaysilar? (Bir nechta javobni belgilang)",
+      "options": [
+        "Chegara qalinligi (masalan, 2px)",
+        "Chegara chizig'i turi (masalan, solid, dashed)",
+        "Chegara rangi (masalan, black)",
+        "Chegara soyasi (masalan, shadow)"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Masalan: 'border: 2px solid black;' yozuvidagi 3 ta qiymatni eslang.",
+      "explanation": "border qisqartma xususiyati chegara qalinligi (border-width), chiziq uslubi (border-style) va rangini (border-color) qabul qiladi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "Foydalanuvchi sichqoncha kursorini element ustiga olib borganda stilni o'zgartirish uchun qaysi psevdo-klass ishlatiladi?",
+      "options": [
+        ":click",
+        ":focus",
+        ":hover",
+        ":active"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ingliz tilida 'ustida muallaq turmoq' ma'nosini bildiradi.",
+      "explanation": ":hover psevdo-klassi foydalanuvchi sichqoncha ko'rsatkichini element ustiga olib kelganda ishga tushadi."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "Ro'yxat (<ul> yoki <ol>) elementlari oldidagi nuqta yoki raqamlarni olib tashlash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "list-style-type: none;",
+        "bullet-style: none;",
+        "list-decoration: none;",
+        "marker: hidden;"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "'list-style-type' (yoki qisqacha 'list-style') xususiyatiga 'none' qiymati beriladi.",
+      "explanation": "list-style-type: none; ro'yxat bandlari oldidagi standart belgilarni (nuqta, raqam) olib tashlaydi."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Matnning shrift turini (masalan, Arial, Roboto) o'zgartirish uchun qaysi CSS xususiyatidan foydalaniladi?",
+      "options": [
+        "font-type",
+        "font-family",
+        "text-font",
+        "font-name"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'Shriftlar oilasi' degan ma'noni bildiruvchi xususiyat.",
+      "explanation": "font-family xususiyati matn uchun shrift yoki shriftlar ro'yxatini belgilaydi (masalan: font-family: Arial, sans-serif;)."
+    },
+    {
+      "id": 20,
+      "type": "single",
+      "question": "Sahifadagi BARCHA HTML elementlarini bittada tanlash uchun qaysi universal selektor ishlatiladi?",
+      "options": [
+        "all",
+        "body",
+        "*",
+        "#"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ko'pincha reset CSS yozishda '* { margin: 0; padding: 0; }' ko'rinishida ishlatiladi.",
+      "explanation": "Yulduzcha (*) universal selektor bo'lib, hujjatdagi barcha elementlarni tanlaydi."
+    }
+  ]
+}

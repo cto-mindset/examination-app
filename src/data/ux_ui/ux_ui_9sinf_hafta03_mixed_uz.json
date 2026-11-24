@@ -1,0 +1,338 @@
+{
+  "test_id": "ux_ui_9sinf_hafta03_mixed_uz",
+  "title": "9-sinf UX/UI Dizayn: 3-hafta (7–9-darslar) Bo'yicha Umumiy Test",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Axure RP da interaktiv bog'lanish (Interactions) mexanizmi qaysi uchta tarkibiy qismning to'g'ri ketma-ketligidan iborat?",
+      "options": [
+        "Action -> Target -> Trigger",
+        "Trigger (hodisa) -> Action (harakat) -> Target (nishon)",
+        "Target -> Trigger -> State",
+        "State -> Preview -> Export"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Avval foydalanuvchi harakati (hodisa), keyin bajariladigan buyruq, oxirida esa ta'sir qilinadigan obyekt tanlanadi.",
+      "explanation": "Interactions tuzilishi: Trigger (masalan, OnClick) -> Action (masalan, Open Link yoki Set Panel State) -> Target (ta'sir qiluvchi sahifa yoki element)."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Axure RP dasturida bir sahifadan boshqa sahifaga (masalan, Home_books dan Book_details ga) o'tish uchun qaysi Action (harakat) dan foydalaniladi?",
+      "options": [
+        "Set Panel State",
+        "Open Link",
+        "Show/Hide",
+        "Pin to Browser"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Yangi sahifa yoki havolani ochish buyrug'ini tanlang.",
+      "explanation": "Open Link harakati tugma yoki karta bosilganda foydalanuvchini boshqa sahifaga yo'naltirish uchun ishlatiladi."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "Dinamik panel (Dynamic Panel) nima va u qaysi UI elementlarini yaratishda eng qulay hisoblanadi?",
+      "options": [
+        "Faqat matn rangini o'zgartiruvchi panel",
+        "Bir joyning o'zida bir nechta holatlarni (States) saqlay oluvchi konteyner; tablar, modal oynalar va slayderlar yaratishda qulay",
+        "Faqat tashqi rasmlarni yuklash oynasi",
+        "Faylni PDF formatga o'tkazuvchi menyu"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Butun sahifani qayta ochmasdan, bitta ramka ichida turli holatlarni (States) almashtirish imkonini beruvchi vosita.",
+      "explanation": "Dynamic Panel bitta hududda bir nechta holatlarni (States) boshqaradi, bu esa tablar, slayderlar va modal oynalarni yangi sahifa ochmasdan yaratishga imkon beradi."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Kitob sahifasida 3 ta tab («Annotatsiya», «Muallif haqida», «Fikrlar») mavjud bo'lsa, uni Dinamik Panel yordamida loyihalash uchun nechta State kerak bo'ladi?",
+      "options": [
+        "1 ta State",
+        "3 ta State",
+        "6 ta State",
+        "Har bir tab uchun alohida yangi sahifa yaratish shart"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Har bir tabning o'ziga xos kontenti bitta alohida holat (State) ichida joylashadi.",
+      "explanation": "3 ta tab uchun Dinamik Panel ichida 3 ta State (Annotatsiya, Muallif haqida, Fikrlar) yaratiladi va tugmalar bosilganda Set Panel State orqali almashtiriladi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Foydalanuvchi saytning qaysi bo'limida turganini ko'rsatuvchi navigatsiya zanjiri (masalan: Bosh sahifa > Katalog > Badiiy kitoblar) nima deb ataladi?",
+      "options": [
+        "Dynamic Panel",
+        "Breadcrumb (Non ushoqlari)",
+        "Placeholder",
+        "Hand-off"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ingliz tilida «non ushoqlari» ma'nosini bildiruvchi navigatsiya elementi.",
+      "explanation": "Breadcrumb (Non ushoqlari) foydalanuvchiga sayt ierarxiyasida ayni damda qayerda turganini ko'rsatadi va oldingi bo'limlarga tez qaytish imkonini beradi."
+    },
+    {
+      "id": 6,
+      "type": "multiple",
+      "question": "Murakkab mantiqiy tizimlarni (bank ilovalari, CRM) loyihalashda Axure RP ning asosiy ustunliklari qaysilar? (Bir nechta javobni belgilang)",
+      "options": [
+        "Kod yozmasdan turib o'zgaruvchilar (Variables) va shartli tarmoqlanishlar (if / else) tuzish mumkin",
+        "Dinamik panellar orqali bitta ekranda ko'plab holatlarni sahifani ko'paytirmasdan boshqarish mumkin",
+        "Preview rejimi orqali interaktiv prototipni brauzerda haqiqiy dastur kabi sinab ko'rish mumkin",
+        "Faqat rangli illyustratsiyalar va 3D animatsiyalar chizish uchun mo'ljallangan"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Axure RP vizual bezakdan ko'ra chuqur mantiq va interaktiv prototiplashga ixtisoslashgan.",
+      "explanation": "Axure RP da Variables, if/else mantiqi, Dynamic Panel holatlari va brauzerda Preview sinovi mavjud."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Sahifa pastga aylantirilganda (scroll qilinganda) yuqori Header yoki mobil ilovaning pastki navigatsiya paneli (Bottom Navigation) joyidan siljimasdan doimiy ko'rinib turishi uchun Axure RP da qaysi sozlama ishlatiladi?",
+      "options": [
+        "Open Link",
+        "Pin to Browser",
+        "Lock Layer",
+        "Hide on Scroll"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Elementni brauzer oynasiga «qotirib qo'yish» (pin) funksiyasi.",
+      "explanation": "Pin to Browser sozlamasi Dinamik Panelni (masalan, Header yoki Bottom Navigation) ekran chetiga mahkamlab qo'yadi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Forma anatomiyasining to'liq tarkibi qaysi qatorda to'g'ri ko'rsatilgan?",
+      "options": [
+        "Faqat Input va CTA tugmasi",
+        "Label (doimiy nom) + Input (kiritish qutisi) + Placeholder (namuna matn) + Helper text (tushuntirish) + CTA (harakat tugmasi)",
+        "Breadcrumb + Dynamic Panel + SVG",
+        "Wireframe + Mockup + Prototip"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "8-dars xulosasidagi «Forma anatomiyasi» formulasini eslang.",
+      "explanation": "To'liq va qulay forma: Label, Input, Placeholder, Helper text va CTA tugmasidan tashkil topadi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Nima uchun kiritish maydoni ichidagi Placeholder hech qachon maydon tepasidagi Label o'rnini bosa olmaydi?",
+      "options": [
+        "Placeholder matni faqat ingliz tilida yoziladi",
+        "Foydalanuvchi yozishni boshlashi bilan Placeholder yo'qolib ketadi, bu esa chalg'ish, kognitiv yuklama ortishi va xatolarga sabab bo'ladi",
+        "Placeholder brauzerlarda umuman ko'rinmaydi",
+        "Label faqat parol maydonlari uchun kerak"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Foydalanuvchi maydonga matn yozayotganda aynan nima kiritayotganini unutib qo'yishi mumkin.",
+      "explanation": "Yozish boshlanganda Placeholder g'oyib bo'ladi. Doimiy ko'rinib turuvchi Label esa foydalanuvchiga har doim maydon nomini eslatib turadi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Foydalanuvchi O'zbekistonning 14 ta hududidan (12 viloyat, Toshkent shahri va Qoraqalpog'iston) bittasini tanlashi kerak. Bu holatda qaysi kiritish elementini tanlash eng to'g'ri?",
+      "options": [
+        "Checkbox",
+        "Dropdown (Select)",
+        "14 ta alohida Radio Button",
+        "Textarea"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Uzun ro'yxatdan faqat 1 ta variant tanlash va ekranda joyni tejash uchun qaysi element qulay?",
+      "explanation": "Variantlar soni ko'p bo'lganda (masalan, 14 ta hudud) ekranni to'ldirib yubormaslik uchun ochiluvchi ro'yxat — Dropdown (Select) ishlatiladi."
+    },
+    {
+      "id": 11,
+      "type": "multiple",
+      "question": "Kiritish maydonining (Input Field) asosiy holatlari (states) qatoriga qaysilar kiradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "Default (odatiy) va Focus (kursorda)",
+        "Filled (to'ldirilgan)",
+        "Error (xato) va Success (tasdiqlangan)",
+        "Disabled (nofaol)",
+        "Exported (eksport qilingan)"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "8-darsdagi 6 ta maydon holatini eslang.",
+      "explanation": "Kiritish maydoni Default, Focus, Filled, Error, Success va Disabled holatlariga ega bo'ladi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "«Inline Validation» tushunchasi nimani anglatadi?",
+      "options": [
+        "Xatolikni forma to'liq jo'natilgandan keyin alohida yangi sahifada ko'rsatish",
+        "Ma'lumot kiritilishi bilanoq xato yoki to'g'rilikni o'sha maydon tagida darhol va tushunarli ohangda ko'rsatish",
+        "Barcha maydonlarni bir qatorga gorizontal joylashtirish",
+        "Formani avtomatik o'chirib tashlash"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Foydalanuvchi «Yuborish» tugmasini bosishini kutmasdan, joyida tezkor teskari aloqa berish.",
+      "explanation": "Inline Validation foydalanuvchiga xatoni darhol maydon ostida ko'rsatib, uni tezda tuzatishga yordam beradi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "Yaxshi mikro-matn (Microcopy) qoidasiga ko'ra, elektron pochta noto'g'ri kiritilganda qaysi xabar eng to'g'ri hisoblanadi?",
+      "options": [
+        "«Xatolik! 400 Bad Request. Ma'lumot noto'g'ri.»",
+        "«Elektron pochtada @ belgisi tushib qoldi. Masalan: user@example.com»",
+        "«Invalid input!»",
+        "«Siz xato qildingiz, qayta urining.»"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Tizim foydalanuvchini ayblamasdan, do'stona tarzda xato sababini va yechimini ko'rsatishi kerak.",
+      "explanation": "Yaxshi mikro-matn tushunarli, do'stona bo'ladi va muammoni qanday tuzatishni aniq misol bilan ko'rsatadi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "«Form Fatigue» (formalardan charchash) muammosi nimadan kelib chiqadi va Expedia sayti tajribasi nimani isbotlagan?",
+      "options": [
+        "Ranglar juda yorqin bo'lishidan; rangni o'zgartirish daromadni oshirgan",
+        "Juda ko'p va keraksiz maydonlar so'rashdan; Expedia bittagina keraksiz maydonni («Kompaniya nomi») olib tashlab yillik daromadini 12 million dollarga oshirgan",
+        "Tugma juda katta bo'lishidan; tugmani kichraytirish foyda bergan",
+        "Parol maydonida ko'zcha belgisi borligidan"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "«Kamroq maydon — ko'proq natija» tamoyilini eslang.",
+      "explanation": "Ortiqcha va tushunarsiz maydonlar foydalanuvchini charchatib, formani tark etishga majbur qiladi. Keraksiz maydonlarni olib tashlash konversiyani keskin oshiradi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "«Annotated Wireframe» (Izohli simli ramka) ning oddiy wireframedan asosiy farqi nimada?",
+      "options": [
+        "U faqat rangli rasmlardan iborat bo'ladi",
+        "Unda har bir blok va tugmaning qanday ishlashi, shartlari va cheklovlarini dasturchilarga tushuntiruvchi raqamli eslatmalar (izohlar) bo'ladi",
+        "U faqat mobil telefonlar uchun chiziladi",
+        "Unda hech qanday matn yozilmaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Dasturchi chizmaga qarab mantiqni (masalan, tugma bosilganda modal ochiladimi yoki yangi sahifa?) aniq bilishi kerak.",
+      "explanation": "Annotated Wireframe — chizmadagi har bir elementning ishlash mantig'i va cheklovlari yozilgan texnik izohlar to'plami bo'lib, dizayner va dasturchi o'rtasidagi tushunmovchiliklarni bartaraf etadi."
+    },
+    {
+      "id": 16,
+      "type": "multiple",
+      "question": "Wireframe eksport formatlari va ularning asosiy vazifalari to'g'ri moslashtirilgan variantlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "PNG — tezkor ko'rish va taqdimot uchun",
+        "SVG — kattalashtirilganda sifati buzilmaydigan vektorli aniqlik va masshtab uchun",
+        "PDF — mijozga va dasturchiga topshiriladigan rasmiy loyiha hujjati (spetsifikatsiya) uchun",
+        "MP3 — dizayn ranglarini saqlash uchun"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "9-darsdagi 3 ta asosiy eksport formatini (PNG, SVG, PDF) eslang.",
+      "explanation": "PNG tezkor ko'rish, SVG vektorli aniqlik, PDF esa barcha sahifalar va izohlarni jamlagan rasmiy spetsifikatsiya uchun ishlatiladi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "Wireframeni Figmaga «Reference Layer» (referens qatlami) sifatida joylashtirganda qanday ikkita asosiy sozlama bajariladi?",
+      "options": [
+        "Rasmni 100% qora rangga bo'yash va o'chirish",
+        "Shaffoflikni (Opacity) 30–40% ga tushirish va qatlamni qulflab (Lock) qo'yish",
+        "Rasmni ikki baravar kattalashtirish va kesish",
+        "Faqat nomini o'zgartirish"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ustidan yangi UI elementlarini chizayotganda fon qatlami ko'zga xalaqit bermasligi va tasodifan surilib ketmasligi kerak.",
+      "explanation": "Opacity ni 30–40% ga tushirish ustki dizaynni aniq ko'rishga, Lock (qulflash) esa chizish jarayonida wireframe qatlamining joyidan siljib ketmasligiga yordam beradi."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "UX/UI dizaynda «Hand-off» atamasi qaysi jarayonni bildiradi?",
+      "options": [
+        "Loyihani bekor qilish jarayoni",
+        "Dizayner tomonidan tayyorlangan loyiha va texnik spetsifikatsiyalarni dasturchilarga topshirish jarayoni",
+        "Foydalanuvchidan intervyu olish jarayoni",
+        "Figmada yangi Frame yaratish"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ingliz tilida «qo'ldan-qo'lga topshirish» degan ma'noni anglatadi.",
+      "explanation": "Hand-off — tayyor dizayn, annotatsiyalar va eksport qilingan resurslarni ishlab chiqish (kod yozish) uchun dasturchilar jamoasiga topshirish bosqichidir."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Parol kiritish maydoniga «Ko'zcha» (Show/Hide password) belgisini qo'shish amaliyotda qanday natija bergan?",
+      "options": [
+        "Parolni xakerlar uchun osonlashtirgan",
+        "Foydalanuvchilarning ro'yxatdan o'tishdagi xatolarini 40% ga kamaytirgan",
+        "Sahifa yuklanishini sekinlashtirgan",
+        "Hech qanday o'zgarish bermagan"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "8-darsdagi «Bilasizmi?» bo'limidagi statistik faktga e'tibor bering.",
+      "explanation": "Foydalanuvchi o'zi yozgan parolni tekshira olishi tufayli ro'yxatdan o'tish va kirishdagi xatolar 40% ga kamaygan."
+    },
+    {
+      "id": 20,
+      "type": "multiple",
+      "question": "Radio Button va Checkbox elementlarining to'g'ri qo'llanilish holatlarini belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "To'lov turini (Naqd yoki Karta) tanlashda — Radio Button ishlatiladi",
+        "«Foydalanish shartlariga roziman» bandida — Checkbox ishlatiladi",
+        "Pitsaga bir nechta qo'shimcha masalliq (pishloq, qo'ziqorin, zaytun) tanlashda — Checkbox ishlatiladi",
+        "Bir vaqtning o'zida 5 ta variantni belgilash kerak bo'lganda — Radio Button ishlatiladi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Radio Button faqat bitta tanlov, Checkbox esa bir nechta tanlov yoki rozilik bildirish uchun ishlatiladi.",
+      "explanation": "Radio Button o'zaro bir-birini istisno qiluvchi yagona tanlov uchun, Checkbox esa bir nechta mustaqil tanlov yoki shartga rozilik bildirish uchun qo'llaniladi."
+    }
+  ]
+}

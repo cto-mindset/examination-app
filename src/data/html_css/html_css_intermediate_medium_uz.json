@@ -1,0 +1,253 @@
+{
+  "test_id": "html_css_intermediate_medium_uz",
+  "title": "HTML5 va CSS3 Amaliyot (O'rta Daraja)",
+  "difficulty": "medium",
+  "total_minutes": 20,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "HTML5 da <figure> va <figcaption> teglaridan foydalanishning asosiy maqsadi nima?",
+      "options": [
+        "Faqat SVG grafikalarini chizish uchun",
+        "Mustaqil mazmunga ega media-kontentni (rasm, diagramma, kod bloki) va uning izohini semantik jihatdan birlashtirish uchun",
+        "Rasmlarni avtomatik ravishda markazga joylashtirish uchun",
+        "Sahifadagi barcha rasmlarni galereya ko'rinishida chiqarish uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Rasm va uning ostidagi sarlavha/izohni bitta mantiqiy blok sifatida bog'lash.",
+      "explanation": "<figure> mustaqil kontentni (rasm, jadval, kod), <figcaption> esa ushbu kontentga tegishli sarlavha yoki izohni semantik bog'laydi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "HTML formadagi <input> elementida 'name' atributi nima uchun zarur?",
+      "options": [
+        "Input ichida xira yordamchi matn (placeholder) ko'rsatish uchun",
+        "Forma serverga yuborilganda (submit) kiritilgan qiymatni kalit (key) nomi bilan bog'lab jo'natish uchun",
+        "CSS da elementga stil berish uchun asosiy selektor sifatida",
+        "Input maydonini tahrirlab bo'lmaydigan qilish uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "FormData yoki HTTP so'rovida 'kalit=qiymat' juftligi shakllanishini eslang.",
+      "explanation": "Forma yuborilganda 'name' atributi bo'lmagan input qiymatlari umuman jo'natilmaydi; server ma'lumotlarni aynan 'name' kaliti orqali qabul qiladi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "CSS Flexbox konteynerida 'flex-wrap: wrap;' xususiyati yoqilganda qanday o'zgarishlar yuz beradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "Konteyner kengligiga sig'magan flex elementlar keyingi yangi qatorga (yoki ustunga) ko'chib o'tadi",
+        "Ko'p qatorli flex elementlar orasidagi vertikal bo'shliqni boshqarish uchun 'align-content' xususiyati ishlay boshlaydi",
+        "Barcha elementlar majburan bir qatorga siqilib joylashadi",
+        "Elementlarning kengligi avtomatik 100% ga tenglashadi"
+      ],
+      "correct_indices": [
+        0,
+        1
+      ],
+      "hint": "Standart 'nowrap' rejimida elementlar bir qatorga siqiladi; 'wrap' esa ularni yangi qatorga tushiradi.",
+      "explanation": "flex-wrap: wrap sig'magan elementlarni keyingi qatorga o'tkazadi va bir nechta qatorlar hosil bo'lganda align-content xususiyati faollashadi."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "CSS da 'position: sticky;' xususiyati to'g'ri ishlashi uchun qanday shart bajarilishi SHART?",
+      "options": [
+        "Elementga z-index: 1000 berilishi shart",
+        "Elementga kamida bitta chegara koordinatasi (masalan, top: 0; yoki bottom: 0;) berilishi kerak",
+        "Ota elementga position: relative berilishi shart",
+        "Element display: flex bo'lishi kerak"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Element sahifa aylantirilganda aynan qaysi nuqtaga yetganda 'yopishib' qolishini bilishi kerak.",
+      "explanation": "position: sticky elementga top, bottom, left yoki right qiymatlaridan kamida bittasi berilmaguncha oddiy relative kabi ishlaydi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Quyidagi CSS selektorlaridan qaysi biri <h2> tegidan DARHOL KEYIN kelgan bitta <p> tegini tanlaydi (Adjacent Sibling Combinator)?",
+      "options": [
+        "h2 ~ p",
+        "h2 > p",
+        "h2 + p",
+        "h2 p"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Qo'shni (bevosita keyingi) elementni tanlash uchun plyus (+) belgisidan foydalaniladi.",
+      "explanation": "h2 + p selektori bir xil ota element ichida <h2> dan darhol keyin keluvchi birinchi <p> elementini tanlaydi; h2 ~ p esa undan keyingi barcha <p> larni tanlaydi."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "HTML da bir guruh radio-tugmalardan (<input type='radio'>) foydalanuvchi faqat BITTASINI tanlay olishi uchun barcha radio-tugmalarda qaysi atribut bir xil qiymatga ega bo'lishi kerak?",
+      "options": [
+        "id",
+        "value",
+        "name",
+        "class"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Brauzer radio-tugmalarni aynan shu atribut qiymati orqali bitta guruhga birlashtiradi.",
+      "explanation": "Bir xil 'name' atributiga ega bo'lgan radio-tugmalar bitta guruh hisoblanadi va ulardan bir vaqtda faqat bittasini belgilash mumkin."
+    },
+    {
+      "id": 7,
+      "type": "multiple",
+      "question": "CSS da elementning o'lchamlarini va joylashuvini boshqarishda 'inline' va 'inline-block' elementlari o'rtasidagi asosiy farqlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "inline-block elementlarga width va height qiymatlarini berish mumkin, oddiy inline elementlarga esa ta'sir qilmaydi",
+        "inline-block elementlarda yuqori va pastki margin (margin-top / margin-bottom) to'liq ishlaydi va atrofdagi elementlarni suradi",
+        "Ikkalasi ham yangi qatordan boshlanmasdan bir qatorda yonma-yon joylasha oladi",
+        "inline-block element har doim 100% kenglikni egallaydi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "inline-block tashqi tomondan qator ichida joylashadi, ichki tomondan esa blok element kabi o'lcham va vertikal marginlarni qabul qiladi.",
+      "explanation": "inline-block bir qatorda joylashish xususiyatini saqlagan holda width, height va vertikal margin/padding qiymatlarini to'liq qabul qiladi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "CSS da 'background-size: contain;' va 'background-size: cover;' o'rtasidagi farq nimada?",
+      "options": [
+        "contain rasmni kesib tashlaydi, cover esa butunligicha ko'rsatadi",
+        "contain rasmning biror qismini kesmasdan butun rasmni konteyner ichiga sig'diradi (bo'sh joy qolishi mumkin); cover esa konteynerni bo'sh joy qoldirmasdan to'liq qoplaydi (rasm chetlari kesilishi mumkin)",
+        "cover faqat takrorlanuvchi (repeat) rasmlar uchun ishlaydi",
+        "Ikkalasi ham rasm nisbatlarini buzib cho'zadi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'contain' — ichiga to'liq sig'dirish, 'cover' — konteynerni to'liq qoplash.",
+      "explanation": "contain rasm proporsiyasini saqlab uni to'liq ko'rinadigan qilib sig'diradi; cover esa proporsiyani saqlagan holda konteynerning barcha qismini qoplaydi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "HTML <input> tegida 'readonly' va 'disabled' atributlari o'rtasidagi asosiy farq nimada?",
+      "options": [
+        "readonly maydonni yashiradi, disabled esa faqat kulrang qiladi",
+        "readonly maydon qiymati forma bilan birga serverga yuboriladi va fokusga tushadi; disabled maydon esa forma yuborilganda serverga jo'natilmaydi va fokusga tushmaydi",
+        "disabled maydonni foydalanuvchi tahrirlay oladi",
+        "Hech qanday farqi yo'q"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Forma submit qilinganda qaysi birining ma'lumoti yuborilishini eslang.",
+      "explanation": "readonly foydalanuvchiga matnni o'zgartirishga ruxsat bermaydi, lekin maydon fokuslanadi va qiymati serverga yuboriladi. disabled esa maydonni butunlay o'chiradi va qiymatini yubormaydi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "CSS da 'nth-child(even)' psevdo-klassi nimani tanlaydi?",
+      "options": [
+        "Ota element ichidagi barcha toq tartib raqamli (1, 3, 5...) farzand elementlarni",
+        "Ota element ichidagi barcha juft tartib raqamli (2, 4, 6...) farzand elementlarni",
+        "Faqat oxirgi elementni",
+        "Matni juft harflardan iborat elementlarni"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ingliz tilida 'even' — juft, 'odd' — toq sonlarni anglatadi.",
+      "explanation": ":nth-child(even) (yoki :nth-child(2n)) jadvallar va ro'yxatlarda juft qatorlarni (2, 4, 6...) ajratib ko'rsatish uchun ishlatiladi."
+    },
+    {
+      "id": 11,
+      "type": "multiple",
+      "question": "CSS da atribut selektorlari (Attribute Selectors) bo'yicha to'g'ri mosliklarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "a[href^='https'] — href qiymati 'https' bilan BOSHLANADIGAN havolalarni tanlaydi",
+        "a[href$='.pdf'] — href qiymati '.pdf' bilan TUGAYDIGAN havolalarni tanlaydi",
+        "a[href*='docs'] — href qiymati ichida 'docs' so'zi MAVJUD BO'LGAN havolalarni tanlaydi",
+        "a[href!='http'] — href qiymati 'http' ga teng bo'lmagan havolalarni tanlaydi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Regex belgilarini eslang: '^' — boshi, '$' — oxiri, '*' — ixtiyoriy qismida. CSS da '!=' operatori mavjud emas.",
+      "explanation": "^= boshlanishini, $= tugashini, *= tarkibida borligini tekshiradi. CSS da != sintaksisi yo'q (buning uchun :not([href='...']) ishlatiladi)."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "CSS Flexbox da elementlarning bo'sh joyni egallash koeffitsientini qaysi xususiyat belgilaydi?",
+      "options": [
+        "flex-shrink",
+        "flex-grow",
+        "flex-basis",
+        "flex-order"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Konteynerda ortiqcha bo'sh joy qolganda elementning 'o'sish' ulushini bildiruvchi xususiyat.",
+      "explanation": "flex-grow konteynerdagi mavjud bo'sh joyning qancha ulushi ushbu elementga taqsimlanishini aniqlaydi (standart qiymati 0)."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "CSS da 'transform: translate(-50%, -50%);' qoidasi ko'pincha 'position: absolute; top: 50%; left: 50%;' bilan birgalikda nima uchun ishlatiladi?",
+      "options": [
+        "Elementni sahifaning chap yuqori burchagiga yopishtirish uchun",
+        "Elementni o'z o'lchamining yarmiga teng masofada orqaga surib, ota konteynerning aniq gorizontal va vertikal markaziga joylashtirish uchun",
+        "Elementni 50 foizga kichraytirish uchun",
+        "Elementni 50 darajaga burish uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "top: 50% va left: 50% elementning chap yuqori burchagini markazga qo'yadi; translate(-50%, -50%) esa uning o'z markazini to'g'rilaydi.",
+      "explanation": "translate(-50%, -50%) elementni o'z kengligi va balandligining 50% qismiga chapga va yuqoriga siljitib, uni mukammal markazlashtiradi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "HTML5 da foydalanuvchiga matn kiritish maydonida oldindan tayyor tavsiyalar ro'yxatini (autocomplete) taklif qilish, lekin boshqa qiymat yozishga ham ruxsat berish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<select>",
+        "<datalist>",
+        "<optgroup>",
+        "<output>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "<input list='shaharlar'> atributi orqali bog'lanadigan teg.",
+      "explanation": "<datalist> tegi <input list='id'> bilan bog'lanib, foydalanuvchiga ochiladigan tavsiyalar ro'yxatini ko'rsatadi va erkin matn kiritishni ham cheklamaydi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "CSS da 'box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);' qoidasidagi uchta sonli qiymat (0, 4px, 12px) mos ravishda nimani anglatadi?",
+      "options": [
+        "X siljishi (offset-x), Y siljishi (offset-y), Xiralashish radiusi (blur-radius)",
+        "Kenglik, Balandlik, Qalinlik",
+        "Yuqori soya, Pastki soya, Yon soya",
+        "Burchak radiusi, Soya uzunligi, Shaffoflik"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Birinchi qiymat gorizontal, ikkinchisi vertikal siljishni, uchinchisi esa soya chetlarining yumshoqligini bildiradi.",
+      "explanation": "box-shadow sintaksisi: offset-x (0), offset-y (4px), blur-radius (12px), ixtiyoriy spread-radius va rang (rgba) tartibida yoziladi."
+    }
+  ]
+}

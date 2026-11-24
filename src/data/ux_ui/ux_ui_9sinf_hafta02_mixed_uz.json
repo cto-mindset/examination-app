@@ -1,0 +1,337 @@
+{
+  "test_id": "ux_ui_9sinf_hafta02_mixed_uz",
+  "title": "9-sinf UX/UI Dizayn: 2-hafta (4–6-darslar) Bo'yicha Umumiy Test",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Foydalanuvchi ssenariysi (User Scenario) nima va u qaysi 4 ta asosiy savolga javob berishi kerak?",
+      "options": [
+        "Ekranning rangli dizayni; Rang? Shrift? Ikon? O'lcham?",
+        "Muayyan personaning o'z maqsadiga yetish uchun ilovadan qanday foydalanishini ifodalovchi qisqa hayotiy hikoya; Kim? Qayerda/qachon? Nima maqsad bilan? Qanday qadamlar bilan?",
+        "Dasturchilar uchun texnik kod hujjati; Qaysi til? Qaysi server? Qancha vaqt? Qancha narx?",
+        "Saytning barcha sahifalari ro'yxati; Bosh sahifa? Profil? Savat? Aloqa?"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ssenariy — foydalanuvchining real hayotiy vaziyatda ilovadan foydalanish hikoyasidir.",
+      "explanation": "Foydalanuvchi ssenariysi — muayyan personaning maqsadiga erishish jarayonini tasvirlovchi hikoya bo'lib, u Kim? Qayerda/qachon? Nima maqsad bilan? Qanday qadamlar bilan? degan 4 savolga javob beradi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "User Flow blok-sxemasida to'rtburchaklar, romblar va o'qlar mos ravishda nimani anglatadi?",
+      "options": [
+        "To'rtburchak — qaror nuqtasi; Romb — ekran; O'q — xato xabari",
+        "To'rtburchak — ekranlar; Romb — qaror qabul qilish shartlari (Ha / Yo'q); O'qlar — harakat yo'nalishi",
+        "To'rtburchak — tugma; Romb — rasm o'rni; O'q — foydalanuvchi hissiyoti",
+        "To'rtburchak — foydalanuvchi; Romb — sarlavha; O'q — sahifa o'lchami"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Algoritm blok-sxemalaridagi kabi romb shartli tarmoqlanish (Decision Node) uchun ishlatiladi.",
+      "explanation": "User Flow da to'rtburchaklar ekranlarni, romblar (Decision Node) shartli qaror nuqtalarini (Ha / Yo'q), o'qlar esa foydalanuvchining harakat yo'nalishini bildiradi."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "User Flow loyihalashda «Happy Path» atamasi nimani bildiradi?",
+      "options": [
+        "Ilovada barcha xatoliklar yig'ilgan sahifani",
+        "Foydalanuvchining hech qanday to'siq va xatoliklarsiz o'z maqsadiga yetib boradigan eng ideal va qisqa harakat yo'lini",
+        "Foydalanuvchi ilovani o'chirib tashlagan holatni",
+        "Faqat ro'yxatdan o'tish ekranining dizaynini"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "User Flow chizishda eng birinchi bo'lib muammosiz asosiy yo'l chiziladi.",
+      "explanation": "Happy Path — foydalanuvchi kutilmagan xatoliklarsiz (parol unutish, internet uzilishi kabilarsiz) maqsadiga yetib boradigan eng qisqa va ideal yo'ldir."
+    },
+    {
+      "id": 4,
+      "type": "multiple",
+      "question": "User Flow tuzishdagi «Edge Cases» (kutilmagan holatlar) ga qaysi misollar kiradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "Foydalanuvchi parolini esdan chiqarib qo'yishi",
+        "To'lov paytida internet aloqasining uzilib qolishi",
+        "Savatga qo'shilgan mahsulotning omborda qolmaganligi",
+        "Foydalanuvchining muammosiz kirib xaridni muvaffaqiyatli yakunlashi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Ideal yo'ldan (Happy Path) tashqarida yuz berishi mumkin bo'lgan muammoli vaziyatlarni tanlang.",
+      "explanation": "Parol esdan chiqishi, internet uzilishi va tovar qolmasligi kutilmagan holatlar (Edge Cases) hisoblanadi; muammosiz xarid esa Happy Path dir."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Customer Journey Map (CJM) oddiy User Flow dan qaysi muhim jihati bilan farq qiladi?",
+      "options": [
+        "CJM faqat bitta tugmaning rangini ko'rsatadi",
+        "CJM foydalanuvchining mahsulot bilan birinchi tanishuvidan to foydalanishgacha bo'lgan to'liq hissiy sayohatini, muloqot nuqtalarini (touchpoints) va og'riq nuqtalarini (pain points) qamrab oladi",
+        "CJM da faqat ekranlar ketma-ketligi va romblar chiziladi",
+        "CJM faqat dasturchilar uchun kod yozishda ishlatiladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "User Flow ekrandagi qadamlarga, CJM esa mijozning umumiy tajribasi va emotsiyalariga e'tibor qaratadi.",
+      "explanation": "CJM mijozning brend/ilova bilan barcha muloqot nuqtalaridagi harakatlari, hissiy holati (+ / -) va og'riq nuqtalarini xaritaga tushiradi."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "Ssenariyda «Natijalar orasidan eng arzonini tanladi va birgina bosish bilan buyurtma berdi» deb yozilgan bo'lsa, interfeysda qaysi elementlar bo'lishi shart?",
+      "options": [
+        "Faqat rasm galereyasi va video pleyer",
+        "Narx ko'rsatkichi, saralash (filter) va ko'zga tashlanadigan CTA (harakatga chaqiruvchi) tugma",
+        "Faqat parolni tiklash oynasi",
+        "Chat va ovozli xabar yuborish tugmasi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ssenariydagi har bir harakat tegishli UI elementini talab qiladi.",
+      "explanation": "Eng arzonini tanlash uchun narx va saralash (filter), bir bosishda buyurtma berish uchun esa aniq CTA (Call to Action) tugmasi zarur."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "UX sohasida yaxshi ishlab chiqilgan User Flow tufayli foydalanuvchi amalni bajarishda ortiqcha o'ylanib qolmasligi qaysi mashhur qoida bilan ataladi?",
+      "options": [
+        "«Pixel Perfect»",
+        "«Don't Make Me Think» (Meni o'ylashga majbur qilma)",
+        "«Mobile First»",
+        "«Lorem Ipsum»"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "4-darsdagi «Bilasizmi?» bo'limidagi mashhur UX iborasini eslang.",
+      "explanation": "«Don't Make Me Think» qoidasiga ko'ra, interfeys va foydalanuvchi oqimi shunchalik tushunarli bo'lishi kerakki, odam keyingi qadamni o'ylab o'tirmasdan darhol tushunishi lozim."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Wireframe ning ikki darajasi — Low-fidelity (Low-fi) va High-fidelity (High-fi) qanday farqlanadi?",
+      "options": [
+        "Low-fi — rangli va pikselli maket; High-fi — qalamda chizilgan oddiy chizma",
+        "Low-fi — ranglarsiz, oq-qora va tezkor chiziladigan past aniqlikdagi skelet; High-fi — haqiqiy ranglar va detallarga boy yuqori aniqlikdagi maket",
+        "Low-fi faqat kompyuterda, High-fi esa faqat qog'ozda chiziladi",
+        "Ularning o'rtasida hech qanday farq yo'q"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "«Low» — past aniqlik (sodda va tez), «High» — yuqori aniqlik (batafsil va rangli).",
+      "explanation": "Low-fidelity wireframe tezda struktura va mantiqni kelishib olish uchun oq-qora shaklda chiziladi; High-fidelity esa yakuniy dizaynga yaqin, aniq o'lchamli va detallarga boy bo'ladi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Wireframe chizishda ichiga burchakdan burchakka diagonal xoch («X») chizilgan to'rtburchak nimani bildiradi?",
+      "options": [
+        "Sahifani yopish tugmasini",
+        "Rasm o'rnini ko'rsatuvchi ramziy belgini (Image Placeholder)",
+        "Xatolik yuz bergan maydonni",
+        "O'chirilgan blokni"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Haqiqiy surat o'rniga vaqtinchalik joy belgilash uchun ishlatiladigan standart simvol.",
+      "explanation": "Ichiga «X» chizilgan to'rtburchak Image Placeholder bo'lib, yakuniy dizaynda o'sha joyda rasm turishini anglatadi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Wireframe da matnlar bilan ishlashda qaysi yondashuv eng to'g'ri hisoblanadi?",
+      "options": [
+        "Barcha tugma va sarlavhalar ham faqat «Lorem Ipsum» bilan yozilishi kerak",
+        "Uzun oddiy matnlar o'rniga Lorem Ipsum yoki chiziqlar qo'yish mumkin, lekin muhim sarlavhalar va tugma yozuvlari (masalan, «Sotib olish») aniq tushunarli tilda yozilishi shart",
+        "Wireframe da umuman hech qanday matn yozilmaydi",
+        "Faqat raqamlardan foydalanish kerak"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Foydalanuvchi yoki buyurtmachi qaysi tugma qanday vazifa bajarishini darhol tushunishi kerak.",
+      "explanation": "Paragraflar uchun Lorem Ipsum yoki chiziqlar ishlatilsa-da, sarlavhalar va asosiy tugmalar («Ro'yxatdan o'tish», «Sotib olish») aniq matnda yozilishi kerak."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Balsamiq dasturining asosiy o'ziga xosligi va kuchli tomoni nimada?",
+      "options": [
+        "3D o'yinlar va murakkab animatsiyalar yaratishida",
+        "Qog'ozga qalam bilan chizilgan (hand-drawn/sketch) uslubida piksel ketidan quvmasdan juda tez (10–15 daqiqada) ilova tuzilmasini yaratish imkonini berishida",
+        "To'g'ridan-to'g'ri mobil ilova kodini generatsiya qilishida",
+        "Faqat rangli fotosuratlarni tahrirlashida"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Balsamiq «qog'oz va qalam» tezligida raqamli wireframe chizish uchun yaratilgan.",
+      "explanation": "Balsamiq ning sketch uslubi dizayner va buyurtmachini vizual bezaklarga chalg'itmaydi va qisqa vaqtda ko'plab struktura variantlarini sinab ko'rish imkonini beradi."
+    },
+    {
+      "id": 12,
+      "type": "multiple",
+      "question": "Balsamiq ishchi muhitining asosiy qismlari va ularning vazifalari to'g'ri moslashtirilgan variantlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Canvas — markazda joylashgan, elementlar teriladigan asosiy ishchi maydon",
+        "UI Library — toifalarga bo'lingan tayyor bloklar paneli (Containers, Forms, Text, Media...)",
+        "Quick Add — klaviaturadan nomini yozib istalgan elementni bir soniyada ekranga qo'shish vositasi",
+        "Property Inspector — o'ng tomondagi panel bo'lib, tanlangan elementning o'lchami, shrifti va holatini sozlaydi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "5-darsdagi «Balsamiq ishchi muhiti qismlari» ro'yxatini eslang.",
+      "explanation": "Barcha 4 ta ta'rif to'g'ri: Canvas (ish maydoni), UI Library (tayyor elementlar), Quick Add (tezkor qidirib qo'shish) va Property Inspector (xususiyatlarni sozlash) Balsamiq ning asosiy qismlaridir."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "Nima uchun dizaynni to'g'ridan-to'g'ri Figmada rangli chizishdan ko'ra avval Wireframe dan boshlash vaqtni tejaydi?",
+      "options": [
+        "Chunki Figma da ranglar kam",
+        "Chunki strukturadagi xatoni 15 daqiqalik wireframe bosqichida 1 daqiqada tuzatish mumkin; 3 kunlik tayyor rangli dizaynni qayta chizish esa katta vaqt yo'qotishiga olib keladi",
+        "Chunki wireframe avtomatik ravishda HTML kodga aylanadi",
+        "Chunki buyurtmachilar rangli dizaynni yoqtirmaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Qog'ozda yoki Balsamiqda o'zgartirish kiritish tayyor UI dizaynni qayta ishlashdan o'nlab marta arzon va tez.",
+      "explanation": "Wireframe bosqichida ortiqcha bo'limlar yoki noto'g'ri joylashgan tugmalar darhol aniqlanib, minimal vaqt sarfi bilan tuzatiladi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Axure RP dasturi Balsamiq dan qaysi jihati bilan keskin ajralib turadi va murakkab loyihalarda afzal ko'riladi?",
+      "options": [
+        "Faqat qo'lda chizilgan qiyshiq chiziqlar chizishi bilan",
+        "Aniq geometriyali texnik maketlar, shartli mantiq (masalan, «agar savatda 3 tadan ko'p tovar bo'lsa, 10% chegirma chiqsin») va murakkab interaktiv prototiplar yaratish imkoniyati bilan",
+        "Faqat mobil telefonlarda ishlashi bilan",
+        "Unda sahifalar soni 1 ta bilan cheklanganligi bilan"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Axure RP da haqiqiy dasturchi kabi shartli hodisalar (Interactions) va mantiq yozish mumkin.",
+      "explanation": "Balsamiq tezkor eskizlar uchun qulay bo'lsa, Axure RP murakkab mantiq, shartli o'tishlar va yuqori aniqlikdagi interaktiv prototiplar (masalan, bank va korporativ tizimlar) uchun ajralmas vositadir."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Axure RP da interfeysning eng asosiy «g'ishti» (deyarli barcha sarlavha, banner, karta va tugmalar yasaladigan vidjet) qaysi?",
+      "options": [
+        "Triangle (Uchburchak)",
+        "Rectangle (To'rtburchak)",
+        "Audio Player",
+        "Map Widget"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Veb va mobil interfeyslardagi deyarli barcha bloklar to'g'ri to'rtburchak shaklidan boshlanadi.",
+      "explanation": "Rectangle (To'rtburchak) vidjeti Axure RP da eng ko'p ishlatiladigan asosiy element bo'lib, undan tugmalar, kartalar, bannerlar va konteynerlar yasaladi."
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "Kulrang tuslar ierarxiyasida (Grayscale Hierarchy) eng to'q kulrang (#1E293B) odatda qaysi elementlarga beriladi?",
+      "options": [
+        "Sahifaning orqa foniga",
+        "Asosiy sarlavhalar va eng muhim harakat tugmalariga (CTA)",
+        "Ikkilamchi sanalar va ko'zga tashlanmaydigan izohlarga",
+        "Bo'limlarni ajratuvchi yengil fon qutilariga"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "«Visual Weight» (vizual og'irlik) qoidasiga ko'ra, element qanchalik to'q bo'lsa, ko'z unga shunchalik birinchi qaraydi.",
+      "explanation": "To'q kulrang (#1E293B) eng yuqori vizual og'irlikka ega bo'lib, foydalanuvchi diqqatini birinchi navbatda jalb qilishi kerak bo'lgan asosiy sarlavhalar va CTA tugmalariga beriladi."
+    },
+    {
+      "id": 17,
+      "type": "multiple",
+      "question": "Kulrang tuslar palitrasidagi (Grayscale Hierarchy) tuslar va ularning vazifalari to'g'ri ko'rsatilgan qatorlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Oq (#FFFFFF) — toza fon yoki ustki kartalar uchun",
+        "Och kulrang (#F1F5F9) — sahifaning orqa foni, bo'limlarni ajratuvchi qutilar uchun",
+        "O'rta kulrang (#94A3B8) — ikkilamchi matnlar, ramkalar, sanalar va muallif nomlari uchun",
+        "To'q kulrang (#1E293B) — sahifa fonini yashirish uchun"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "6-darsdagi 4 pog'onali Grayscale palitrasini eslang.",
+      "explanation": "Oq (#FFFFFF) ustki kartalar, och kulrang (#F1F5F9) bo'lim fonlari, o'rta kulrang (#94A3B8) ikkilamchi matn va ramkalar, to'q kulrang (#1E293B) esa asosiy sarlavha va CTA tugmalar uchun ishlatiladi."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "Axure RP dagi «Dynamic Panel» (Dinamik panel) atamasi nimani anglatadi?",
+      "options": [
+        "Dasturni yopish menyusini",
+        "Bitta joyda bir nechta holatni (state — masalan, karusel, tablar yoki ochilib-yopiluvchi blok) ko'rsatuvchi interaktiv blokni",
+        "Faqat rang tanlash oynasini",
+        "Faylni PDF qilib saqlash tugmasini"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Bitta konteyner ichida turli holatlar (states) o'rtasida almashish imkonini beruvchi vidjet.",
+      "explanation": "Dynamic Panel — Axure RP ning kuchli vositasi bo'lib, bitta hududda bir nechta holatlarni (state) almashtirib ko'rsatishga xizmat qiladi."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Professional UX/UI ish oqimining (workflow) to'g'ri ketma-ketligi qaysi qatorda berilgan?",
+      "options": [
+        "Front-end Kod -> Wireframe -> User Flow -> UI Dizayn (Figma) -> Ssenariy",
+        "Ssenariy -> User Flow -> Wireframe (Balsamiq/Axure) -> UI Dizayn (Figma) -> Front-end Kod (HTML/CSS)",
+        "UI Dizayn (Figma) -> Ssenariy -> Wireframe -> User Flow -> Front-end Kod",
+        "Wireframe -> Ssenariy -> Front-end Kod -> User Flow -> UI Dizayn"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "G'oya va foydalanuvchi hikoyasidan boshlab, skelet, vizual dizayn va oxirida dasturlashgacha bo'lgan mantiqiy yo'l.",
+      "explanation": "Professional ish oqimi: Ssenariy -> User Flow -> Wireframe (Balsamiq/Axure) -> UI Dizayn (Figma) -> Front-end Kod (HTML/CSS) tartibida kechadi."
+    },
+    {
+      "id": 20,
+      "type": "multiple",
+      "question": "Axure RP da yaratilgan loyihani eksport qilish va Figmaga tayyorlash bo'yicha to'g'ri fikrlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Tayyor wireframe PNG yoki SVG formatida eksport qilinib, Figmaga asosiy qolip (Reference Layer) sifatida yuklanadi",
+        "Axure RP dagi Pages panelida sahifalarni tushunarli nomlash (Home_books, Search_results, Profile) jamoa ishini osonlashtiradi",
+        "Axure RP prototiplarini to'g'ridan-to'g'ri HTML sahifa sifatida saqlab, brauzerda ochib sinash mumkin",
+        "Figmaga o'tganda wireframe proporsiyalarini butunlay buzib tashlash kerak"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Wireframe Figmada 100% bir xil proporsiyada dizayn chizish uchun asosiy qolip (reference) bo'lib xizmat qiladi.",
+      "explanation": "Wireframe PNG/SVG ko'rinishida Figmaga Reference Layer qilib yuklanadi, sahifalar tartibli nomlanadi va Axure RP prototiplarini HTML qilib brauzerda tekshirish mumkin."
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "test_id": "css3_comprehensive_uz",
+  "title": "CSS va CSS3 Bo'yicha Mukammal Test",
+  "difficulty": "mixed",
+  "total_minutes": 30,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "CSS kaskadida (Specificity) quyidagi selektorlardan qaysi biri eng yuqori ustuvorlikka (prioritetga) ega?",
+      "options": [
+        "Element selektori (masalan, p)",
+        "Klass selektori (masalan, .card)",
+        "ID selektori (masalan, #header)",
+        "Universal selektor (*)"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ustuvorlik darajasi o'sish tartibi: universal -> element -> klass -> ID -> inline style.",
+      "explanation": "ID selektori (#header) 0-1-0-0 vaznga ega bo'lib, klass (0-0-1-0), element (0-0-0-1) va universal (0-0-0-0) selektorlaridan yuqori ustuvorlikka ega."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "CSS Box Model (quti modeli) tarkibiy qismlari ichkaridan tashqariga qarab qaysi tartibda joylashgan?",
+      "options": [
+        "Content -> Margin -> Border -> Padding",
+        "Content -> Padding -> Border -> Margin",
+        "Padding -> Content -> Border -> Margin",
+        "Content -> Border -> Padding -> Margin"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Avval matn (kontent), keyin ichki bo'shliq, so'ngra chegara va eng tashqarida tashqi masofa joylashadi.",
+      "explanation": "CSS Box Model ichkaridan tashqariga qarab: Content (kontent) -> Padding (ichki bo'shliq) -> Border (chegara) -> Margin (tashqi masofa) tartibida tuzilgan."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "Elementni oddiy hujjat oqimidan (normal document flow) chiqarib yuboradigan CSS 'position' qiymatlarini belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "static",
+        "relative",
+        "absolute",
+        "fixed",
+        "sticky"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ],
+      "hint": "Sahifada boshqa elementlar joylashuviga umuman ta'sir qilmaydigan va ular uchun bo'sh joy qoldirmaydigan ikki holatni tanlang.",
+      "explanation": "position: absolute va position: fixed elementlarni hujjat oqimidan to'liq chiqaradi. static, relative va sticky esa oqimdagi dastlabki o'rnini saqlab qoladi."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "'box-sizing: border-box;' xususiyati element o'lchamini hisoblashda qanday o'zgarish kiritadi?",
+      "options": [
+        "Margin qiymatini width va height ichiga qo'shib hisoblaydi",
+        "Padding va border qiymatlarini belgilangan width va height ichiga kiritadi",
+        "Elementning minimal kengligini avtomatik 100% qiladi",
+        "Border qalinligini nolga tenglashtiradi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Standart 'content-box' da padding va border element kengligini kattalashtirib yuboradi, 'border-box' esa buni cheklaydi.",
+      "explanation": "box-sizing: border-box qo'llanilganda, elementning padding va border o'lchamlari uning umumiy width va height qiymati ichida hisoblanadi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Flexbox konteynerida elementlarni asosiy o'q (main axis) bo'ylab tekislash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "align-items",
+        "align-content",
+        "justify-content",
+        "flex-wrap"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ko'ndalang o'q (cross axis) uchun 'align-items', asosiy o'q uchun esa 'justify-...' ishlatiladi.",
+      "explanation": "justify-content xususiyati flex elementlarini asosiy o'q (default holatda gorizontal) bo'ylab taqsimlaydi va tekislaydi."
+    },
+    {
+      "id": 6,
+      "type": "multiple",
+      "question": "CSS da nisbiy o'lchov birliklari (relative length units) qatoriga qaysilar kiradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "rem",
+        "px",
+        "vw",
+        "em",
+        "cm"
+      ],
+      "correct_indices": [
+        0,
+        2,
+        3
+      ],
+      "hint": "Shrift o'lchami yoki brauzer oynasi o'lchamiga bog'liq ravishda o'zgaruvchi birliklarni tanlang.",
+      "explanation": "rem (ildiz shriftga nisbatan), em (ota element shriftiga nisbatan) va vw (viewport kengligiga nisbatan) nisbiy birliklardir. px va cm mutlaq birliklar hisoblanadi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "'rem' o'lchov birligi nimaga nisbatan hisoblanadi?",
+      "options": [
+        "Bevosita ota (parent) elementning font-size qiymatiga",
+        "Ildiz element (<html>) ning font-size qiymatiga",
+        "Ekran kengligining 1 foiziga",
+        "<body> elementining line-height qiymatiga"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'rem' qisqartmasi 'Root EM' degan ma'noni anglatadi.",
+      "explanation": "1rem har doim hujjatning ildiz elementi bo'lgan <html> tegining font-size qiymatiga (odatda brauzerlarda 16px) teng bo'ladi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Quyidagi CSS selektorlaridan qaysi biri <div> ichidagi faqat bevosita (to'g'ridan-to'g'ri) farzand <p> elementlarini tanlaydi?",
+      "options": [
+        "div p",
+        "div > p",
+        "div + p",
+        "div ~ p"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Child combinator (farzand kombinatori) sifatida katta belgisi ishlatiladi.",
+      "explanation": "div > p selektori faqat <div> ning bevosita ichida joylashgan <p> teglarini tanlaydi; chuqurroq ichki qatlamlardagi <p> larga ta'sir qilmaydi."
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "question": "CSS Grid tizimida ustun va qatorlar orasidagi bo'shliqni belgilash uchun qaysi xususiyatlardan foydalanish mumkin? (Bir nechta javobni belgilang)",
+      "options": [
+        "gap",
+        "row-gap",
+        "column-gap",
+        "grid-spacing",
+        "cell-padding"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Zamonaviy CSS da Grid va Flexbox uchun umumiy bo'lgan 'gap' oilasiga kiruvchi xususiyatlarni belgilang.",
+      "explanation": "gap (qisqartma), row-gap (qatorlar orasi) va column-gap (ustunlar orasi) CSS Grid katakchalari orasidagi masofani boshqaradi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Elementning 'z-index' xususiyati to'g'ri ishlashi uchun ushbu elementga qanday shart qo'yilgan?",
+      "options": [
+        "Element display: block bo'lishi shart",
+        "Elementning position qiymati static dan boshqa (relative, absolute, fixed yoki sticky) bo'lishi kerak",
+        "Elementga background-color berilgan bo'lishi shart",
+        "Element width va height qiymatlariga ega bo'lishi kerak"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "z-index faqat 'positioned' (joylashuvi belgilangan) elementlar va flex/grid bolalariga ishlaydi.",
+      "explanation": "Odatiy holatda barcha elementlar position: static bo'ladi va ularga z-index ta'sir qilmaydi. z-index ishlashi uchun position: relative, absolute, fixed yoki sticky bo'lishi lozim."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "CSS da psevdo-elementlarni (pseudo-elements) psevdo-klasslardan (pseudo-classes) ajratib turuvchi standart sintaksis qaysi?",
+      "options": [
+        "Bitta ikki nuqta (:before)",
+        "Ikkita ikki nuqta (::before)",
+        "Undov belgisi (!before)",
+        "Dollar belgisi ($before)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "CSS3 spetsifikatsiyasiga ko'ra ::after, ::before, ::placeholder kabi psevdo-elementlar ikkita nuqta bilan yoziladi.",
+      "explanation": "CSS3 da psevdo-klasslar bitta ikki nuqta (:hover, :focus), psevdo-elementlar esa ikkita ikki nuqta (::before, ::after, ::first-letter) bilan yoziladi."
+    },
+    {
+      "id": 12,
+      "type": "multiple",
+      "question": "Elementni sahifada ko'rinmas qilish usullaridan qaysi birlari elementning hujjatdagi joyini (bo'sh joyini) SAQLAB QOLADI? (Bir nechta javobni belgilang)",
+      "options": [
+        "display: none;",
+        "visibility: hidden;",
+        "opacity: 0;",
+        "position: absolute; left: -9999px;"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ],
+      "hint": "Element ko'zga ko'rinmaydi, lekin atrofdagi elementlar uning o'rnini egallab olmaydigan usullarni tanlang.",
+      "explanation": "visibility: hidden va opacity: 0 elementni shaffof yoki yashirin qiladi, lekin uning sahifadagi o'lchami va o'rni saqlanib qoladi. display: none esa elementni oqimdan butunlay olib tashlaydi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "CSS Custom Properties (o'zgaruvchilar) qanday e'lon qilinadi va chaqiriladi?",
+      "options": [
+        "E'lon qilish: $main-color: red; | Chaqirish: $main-color",
+        "E'lon qilish: --main-color: red; | Chaqirish: var(--main-color)",
+        "E'lon qilish: @main-color: red; | Chaqirish: val(@main-color)",
+        "E'lon qilish: var-main-color: red; | Chaqirish: use(var-main-color)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "O'zgaruvchi nomi ikkita tire (--) bilan boshlanadi va var() funksiyasi orqali o'qiladi.",
+      "explanation": "Sof CSS da o'zgaruvchilar '--nomi: qiymat;' shaklida (ko'pincha :root ichida) e'lon qilinadi va 'var(--nomi)' funksiyasi yordamida ishlatiladi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Kontent elementning belgilangan o'lchamlaridan tashqariga chiqib ketganda, faqat kerak bo'lganda aylantirish chizig'ini (scrollbar) chiqarish uchun qaysi xususiyat va qiymat ishlatiladi?",
+      "options": [
+        "overflow: hidden;",
+        "overflow: scroll;",
+        "overflow: auto;",
+        "overflow: visible;"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'scroll' har doim chiziqni ko'rsatadi, bu qiymat esa faqat kontent sig'maganda qo'shadi.",
+      "explanation": "overflow: auto kontent qutiga sig'sa scrollbar chiqarmaydi, agar sig'may qolsa avtomatik ravishda scrollbar qo'shadi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Media query yordamida ekran kengligi 768px va undan kichik bo'lgan qurilmalar uchun stil yozishning to'g'ri sintaksisi qaysi?",
+      "options": [
+        "@media screen and (max-width: 768px) { ... }",
+        "@media screen and (min-width: 768px) { ... }",
+        "@media (width <= 768px) only { ... }",
+        "@responsive (max: 768px) { ... }"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Maksimal kenglik 768px gacha bo'lgan ekranlarni nishonga olish uchun 'max-width' ishlatiladi.",
+      "explanation": "max-width: 768px sharti 0px dan 768px gacha bo'lgan barcha ekran kengliklarida ichidagi CSS qoidalarini faollashtiradi."
+    },
+    {
+      "id": 16,
+      "type": "multiple",
+      "question": "CSS 'transition' xususiyati qaysi kichik xususiyatlarni o'z ichiga oluvchi qisqartma (shorthand) hisoblanadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "transition-property",
+        "transition-duration",
+        "transition-timing-function",
+        "transition-delay",
+        "transition-iteration-count"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Takrorlanishlar soni (iteration-count) 'animation' ga tegishli, 'transition' ga emas.",
+      "explanation": "transition xususiyati transition-property, transition-duration, transition-timing-function va transition-delay xususiyatlarini birlashtiradi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "CSS Grid da 'grid-template-columns: repeat(3, 1fr);' qoidasi nimani anglatadi?",
+      "options": [
+        "Har biri 1 piksel bo'lgan 3 ta ustun yaratadi",
+        "Mavjud bo'sh joyni teng 3 qismga bo'lib, 3 ta bir xil kenglikdagi ustun yaratadi",
+        "3 ta qator va 1 ta ustun yaratadi",
+        "Ustunlarni 3 marta takrorlab, har biriga 1rem kenglik beradi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'fr' birligi 'fraction' (bo'sh joy ulushi) degan ma'noni bildiradi.",
+      "explanation": "1fr konteynerdagi mavjud bo'sh joyning 1 ulushini bildiradi. repeat(3, 1fr) uchta teng kenglikdagi ustunni hosil qiladi."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "Rasmni (<img>) o'z konteyneri o'lchamiga moslashtirganda nisbatlarini buzmasdan (cho'zib yubormasdan) konteynerni to'liq qoplashini ta'minlash uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "background-size: cover;",
+        "object-fit: cover;",
+        "image-fit: contain;",
+        "aspect-ratio: fill;"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Fon rasmlari uchun 'background-size', <img> va <video> teglari uchun esa 'object-fit' qo'llaniladi.",
+      "explanation": "object-fit: cover <img> yoki <video> elementining proporsiyasini saqlagan holda belgilangan o'lchamni to'liq qoplashini (ortiqcha qismini kesib) ta'minlaydi."
+    },
+    {
+      "id": 19,
+      "type": "multiple",
+      "question": "Flexbox konteynerida 'flex-direction: column;' o'rnatilganda qanday o'zgarishlar yuz beradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "Asosiy o'q (main axis) vertikal yo'nalishga o'zgaradi",
+        "justify-content endi elementlarni vertikal (yuqoridan pastga) tekislaydi",
+        "align-items endi elementlarni gorizontal (chapdan o'ngga) tekislaydi",
+        "Elementlar avtomatik ravishda teskari tartibda joylashadi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "O'qlar o'z o'rnini almashtirganda justify-content va align-items ning yo'nalishlari ham shunga mos ravishda almashadi.",
+      "explanation": "flex-direction: column asosiy o'qni vertikal qiladi. Natijada justify-content vertikal, align-items esa gorizontal tekislashni bajaradi."
+    },
+    {
+      "id": 20,
+      "type": "single",
+      "question": "Quyidagi CSS kodida '.box' elementining umumiy gorizontal kengligi (ekranda egallaydigan jami kenglik, margin hisobga olinmaganda) nechaga teng bo'ladi?\n\n.box {\n  box-sizing: content-box;\n  width: 200px;\n  padding: 20px;\n  border: 5px solid black;\n}",
+      "options": [
+        "200px",
+        "225px",
+        "250px",
+        "240px"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "content-box rejimida chap va o'ng tomondagi padding hamda border qiymatlari width ustiga qo'shiladi.",
+      "explanation": "Umumiy kenglik = width (200px) + chap padding (20px) + o'ng padding (20px) + chap border (5px) + o'ng border (5px) = 250px."
+    }
+  ]
+}

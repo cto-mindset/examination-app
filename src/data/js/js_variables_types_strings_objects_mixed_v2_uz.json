@@ -1,0 +1,335 @@
+{
+  "test_id": "js_variables_types_strings_objects_mixed_v2_uz",
+  "title": "JavaScript: O'zgaruvchilar, Ma'lumot Turlari, String, Boolean va Obyektlar (2-Versiya)",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+      "options": [
+        "true",
+        "false",
+        "NaN",
+        "TypeError"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "IEEE 754 suzuvchi nuqtali sonlar (floating-point) arifmetikasida 0.1 + 0.2 ning aniq qiymati 0.30000000000000004 ga teng bo'ladi.",
+      "explanation": "JavaScript da o'nlik kasrlar ikkilik sanoq tizimida saqlangani sababli 0.1 + 0.2 = 0.30000000000000004 bo'ladi va 0.3 ga qat'iy teng emas (false)."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Hoisting (ko'tarilish) mexanizmi tufayli quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconsole.log(a);\nvar a = 15;",
+      "options": [
+        "15",
+        "ReferenceError: a is not defined",
+        "undefined",
+        "null"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'var' bilan e'lon qilingan o'zgaruvchining faqat e'loni (declaration) yuqoriga ko'tariladi, qiymat tayinlash (initialization) esa joyida qoladi.",
+      "explanation": "var a; qatori kod boshiga ko'tariladi va unga avtomatik 'undefined' beriladi, 15 qiymati esa keyingi qatorda tayinlanadi."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconst matn = 'Frontend Dasturchi';\nconsole.log(matn.indexOf('Dastur'), matn.indexOf('Backend'));",
+      "options": [
+        "9, -1",
+        "8, 0",
+        "9, undefined",
+        "10, false"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "indexOf() topilgan qismning boshlang'ich indeksini, topilmasa esa -1 qiymatini qaytaradi.",
+      "explanation": "'Frontend ' 9 ta belgidan iborat (0-dan 8-gacha), 'Dastur' 9-indeksdan boshlanadi. 'Backend' satrda yo'qligi uchun -1 qaytadi."
+    },
+    {
+      "id": 4,
+      "type": "multiple",
+      "question": "JavaScript da biror o'zgaruvchining haqiqiy obyekt (null va massiv emas) ekanligini tekshirish uchun qaysi shartlar birgalikda tekshirilishi kerak? (Bir nechta javobni belgilang)",
+      "options": [
+        "typeof x === 'object'",
+        "x !== null",
+        "!Array.isArray(x)",
+        "x instanceof String"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "typeof null va typeof [] ham 'object' qaytarishini hisobga oling.",
+      "explanation": "Oddiy obyektni aniqlash uchun typeof x === 'object', qiymat null emasligi (x !== null) va massiv emasligi (!Array.isArray(x)) tekshiriladi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Satrni (String) ma'lum bir ajratuvchi belgi asosida massivga bo'luvchi metod qaysi?\n\nconst tillar = 'HTML,CSS,JS';",
+      "options": [
+        "tillar.join(',')",
+        "tillar.split(',')",
+        "tillar.slice(',')",
+        "tillar.divide(',')"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Natija ['HTML', 'CSS', 'JS'] massivini qaytarishi kerak.",
+      "explanation": "split(',') metodi satrni vergul belgisi bo'yicha qismlarga ajratib, massiv (array) ko'rinishida qaytaradi."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "Logical Nullish Assignment (??=) operatori quyidagi kodda 'config.port' qiymatini nimaga o'zgartiradi?\n\nconst config = { port: 0, host: null };\nconfig.port ??= 3000;\nconfig.host ??= 'localhost';\nconsole.log(config.port, config.host);",
+      "options": [
+        "3000, 'localhost'",
+        "0, 'localhost'",
+        "0, null",
+        "3000, null"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'??=' faqat chap tomon 'null' yoki 'undefined' bo'lgandagina yangi qiymat tayinlaydi.",
+      "explanation": "config.port qiymati 0 (null yoki undefined emas), shuning uchun u 0 ligicha qoladi. config.host esa null bo'lgani uchun 'localhost' qiymatini oladi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Obyekt ichida ma'lum bir xususiyat (property) uning o'ziga tegishli ekanligini (prototype zanjiridan meros olinmaganligini) tekshiruvchi eng zamonaviy metod qaysi?",
+      "options": [
+        "Object.hasOwn(obj, 'kalit')",
+        "'kalit' in obj",
+        "obj.includes('kalit')",
+        "Object.contains(obj, 'kalit')"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "'in' operatori prototype zanjiridagi (masalan, 'toString') xususiyatlar uchun ham true qaytaradi; ES2022 da yangi statik metod qo'shilgan.",
+      "explanation": "Object.hasOwn(obj, 'kalit') (eski obj.hasOwnProperty o'rnida) faqat obyektning o'ziga tegishli xususiyatlar uchun true qaytaradi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconst a = { x: 1, y: 2 };\nconst b = { y: 3, z: 4 };\nconst c = { ...a, ...b };\nconsole.log(c);",
+      "options": [
+        "{ x: 1, y: 2, z: 4 }",
+        "{ x: 1, y: 3, z: 4 }",
+        "{ x: 1, y: [2, 3], z: 4 }",
+        "TypeError: Duplicate key 'y'"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Spread operatori (...) bilan obyektlar birlashtirilganda, bir xil kalitlarning keyinroq kelgani oldingisini ustidan yozadi (override).",
+      "explanation": "b obyekti a dan keyin yoyilgani uchun b dagi 'y: 3' qiymati a dagi 'y: 2' ni yangilaydi va { x: 1, y: 3, z: 4 } hosil bo'ladi."
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "question": "Quyidagi tip konvertatsiyasi (Type Coercion) ifodalaridan qaysilari TRUE qaytaradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "null == undefined",
+        "null === undefined",
+        "'' == 0",
+        "false == '0'"
+      ],
+      "correct_indices": [
+        0,
+        2,
+        3
+      ],
+      "hint": "Loose equality (==) da null faqat undefined ga teng; bo'sh satr va '0' esa songa (0) aylantiriladi.",
+      "explanation": "null == undefined (true), null === undefined (false, turlari har xil), '' == 0 (true, ikkalasi 0 ga aylanadi), false == '0' (true, ikkalasi 0 ga aylanadi)."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Matn ichidagi barcha mos kelgan so'zlarni almashtirish uchun qaysi String metodidan foydalaniladi?\n\nconst matn = 'olma, anor, olma';",
+      "options": [
+        "matn.replace('olma', 'banan')",
+        "matn.replaceAll('olma', 'banan')",
+        "matn.swap('olma', 'banan')",
+        "matn.changeAll('olma', 'banan')"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Oddiy replace() faqat birinchi uchragan so'zni almashtiradi; barchasini almashtirish uchun ES2021 da maxsus metod qo'shilgan.",
+      "explanation": "replaceAll('olma', 'banan') satrdagi barcha 'olma' so'zlarini 'banan' ga o'zgartiradi ('banan, anor, banan')."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Ikki qiymatning bir-biriga mutlaqo bir xil ekanligini (hatto NaN === NaN ni true va +0 === -0 ni false deb) tekshiruvchi statik metod qaysi?",
+      "options": [
+        "Object.equal(a, b)",
+        "Object.is(a, b)",
+        "Number.isSame(a, b)",
+        "Reflect.compare(a, b)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "SameValue algoritmini amalga oshiruvchi 2 harfli Object metodi.",
+      "explanation": "Object.is(NaN, NaN) -> true va Object.is(+0, -0) -> false qaytaradi, bu uni === operatoridan farqlab turadi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconst user = {\n  ism: 'Kamola',\n  yosh: 24,\n  kasb: 'Dizayner'\n};\nconst { ism, ...qolganlari } = user;\nconsole.log(qolganlari);",
+      "options": [
+        "['yosh', 'kasb']",
+        "{ yosh: 24, kasb: 'Dizayner' }",
+        "{ ism: 'Kamola' }",
+        "undefined"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Obyekt destructuring da Rest operatori (...qolganlari) ajratib olinmagan barcha xususiyatlarni yangi obyektga yig'adi.",
+      "explanation": "'ism' alohida o'zgaruvchiga olinadi, qolgan barcha xususiyatlar (yosh va kasb) esa 'qolganlari' nomli yangi obyektga joylanadi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "Obyekt xususiyatlarini o'chirish uchun qaysi operatordan foydalaniladi va u muvaffaqiyatli bajarilganda nima qaytaradi?",
+      "options": [
+        "remove obj.key (undefined qaytaradi)",
+        "delete obj.key (true qaytaradi)",
+        "unset obj.key (null qaytaradi)",
+        "obj.drop('key') (false qaytaradi)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Obyektdan kalit-qiymat juftligini butunlay olib tashlovchi maxsus kalit so'z.",
+      "explanation": "delete obj.key operatori obyektdan ko'rsatilgan xususiyatni o'chiradi va amal muvaffaqiyatli bo'lsa true qaytaradi."
+    },
+    {
+      "id": 14,
+      "type": "multiple",
+      "question": "JavaScript da 'Short-circuit evaluation' (qisqa tutashuvli hisoblash) qoidalariga ko'ra quyidagi ifodalarning natijalarini to'g'ri belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "'Salom' && 'Dunyo' -> 'Dunyo' qaytaradi",
+        "'' && 'Dunyo' -> '' qaytaradi",
+        "'Salom' || 'Dunyo' -> 'Salom' qaytaradi",
+        "null || 'Zaxira' -> 'Zaxira' qaytaradi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "'&&' birinchi falsy qiymatni (yoki hammasi truthy bo'lsa oxirgisini), '||' esa birinchi truthy qiymatni (yoki hammasi falsy bo'lsa oxirgisini) qaytaradi.",
+      "explanation": "Barcha 4 ta natija to'g'ri: mantiqiy && va || operatorlari har doim boolean emas, balki hisoblash to'xtagan operandning asl qiymatini qaytaradi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconst str = 'Salom';\nstr[0] = 'X';\nconsole.log(str);",
+      "options": [
+        "'Xalom'",
+        "'Salom'",
+        "undefined",
+        "TypeError (Strict rejimda)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Satrlar o'zgarmas (immutable) bo'lgani uchun indeks orqali belgini o'zgartirish oddiy rejimda e'tiborsiz qoldiriladi.",
+      "explanation": "JavaScript da string elementlarini indeks orqali o'zgartirib bo'lmaydi. Non-strict rejimda str[0] = 'X' hech qanday o'zgarish qilmaydi va 'Salom' chiqadi."
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "JSON.stringify() metodi quyidagi obyektni JSON satriga o'tkazganda qaysi xususiyatlarni TASHLAB KETADI (o'tkazmaydi)?\n\nconst obj = {\n  ism: 'Anvar',\n  yosh: undefined,\n  salom: function() {},\n  faol: true\n};",
+      "options": [
+        "Faqat 'faol' ni",
+        "'yosh' (undefined) va 'salom' (function) xususiyatlarini",
+        "Hech birini tashlab ketmaydi",
+        "Faqat 'ism' ni"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "JSON formatida funksiyalar, undefined qiymatlar va Symbol kalitlar mavjud emas.",
+      "explanation": "JSON.stringify() obyekt ichidagi qiymati undefined, function yoki Symbol bo'lgan xususiyatlarni avtomatik o'tkazib yuboradi (natija: '{\"ism\":\"Anvar\",\"faol\":true}')."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "Obyekt kalitlari va qiymatlaridan iborat `[ ['a', 1], ['b', 2] ]` ko'rinishidagi massivni qaytadan `{ a: 1, b: 2 }` obyektiga aylantiruvchi metod qaysi?",
+      "options": [
+        "Object.toObject(arr)",
+        "Object.fromEntries(arr)",
+        "Object.create(arr)",
+        "Object.parse(arr)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Object.entries() metodining teskari amali.",
+      "explanation": "Object.fromEntries() [kalit, qiymat] juftliklaridan iborat massiv yoki Map ni oddiy JavaScript obyektiga aylantiradi."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "Quyidagi kod natijasi qanday bo'ladi?\n\nconsole.log(!!'0', !!0, !!{});",
+      "options": [
+        "false, false, false",
+        "true, false, true",
+        "true, true, false",
+        "false, true, true"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ikkita undov belgisi (!!) har qanday qiymatni qat'iy boolean (true yoki false) turiga o'tkazadi.",
+      "explanation": "'0' bo'sh bo'lmagan satr (true), 0 raqami falsy (false), {} bo'sh obyekt esa truthy (true) qiymat beradi."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Template literal ichida maxsus 'Tagged Template' funksiyasi qanday chaqiriladi?",
+      "options": [
+        "highlight(`Salom ${ism}`)",
+        "highlight`Salom ${ism}`",
+        "`Salom ${ism}`@highlight",
+        "tag(highlight, `Salom ${ism}`)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Funksiya nomidan so'ng oddiy qavslar '()' qo'yilmasdan to'g'ridan-to'g'ri ters tirnoqlar (` `) yoziladi.",
+      "explanation": "Tagged templates sintaksisida funksiya nomi to'g'ridan-to'g'ri template literal oldidan yoziladi: fn`matn ${qiymat}` (masalan, styled-components yoki GraphQL gql da ishlatiladi)."
+    },
+    {
+      "id": 20,
+      "type": "single",
+      "question": "Property Descriptor da 'enumerable: false' qilib belgilangan obyekt xususiyati qayerda KO'RINMAYDI?",
+      "options": [
+        "obj.xususiyat orqali to'g'ridan-to'g'ri o'qilganda",
+        "for...in tsiklida va Object.keys(obj) ro'yxatida",
+        "in operatori bilan tekshirilganda",
+        "Object.getOwnPropertyDescriptor() chaqirilganda"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'enumerable' — sanab o'tiladigan (iteratsiyada ko'rinadigan) degan ma'noni anglatadi.",
+      "explanation": "enumerable: false xususiyatni to'g'ridan-to'g'ri o'qish mumkin, lekin u for...in, Object.keys() va spread ({ ...obj }) kabi sanab o'tish amallarida yashirin bo'ladi."
+    }
+  ]
+}

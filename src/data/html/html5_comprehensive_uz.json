@@ -1,0 +1,347 @@
+{
+  "test_id": "html5_comprehensive_uz",
+  "title": "HTML va HTML5 Bo'yicha Mukammal Test",
+  "difficulty": "mixed",
+  "total_minutes": 30,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "HTML5 hujjatining eng yuqori qismida brauzerga hujjat turini bildiruvchi qaysi deklaratsiya yoziladi?",
+      "options": [
+        "<!DOCTYPE html5>",
+        "<!DOCTYPE html>",
+        "<doctype html>",
+        "<?xml version='1.0'?>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "HTML5 da bu deklaratsiya oldingi HTML versiyalariga qaraganda ancha qisqartirilgan.",
+      "explanation": "HTML5 standartida hujjat turini ko'rsatish uchun aynan <!DOCTYPE html> deklaratsiyasi ishlatiladi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Sahifadagi eng asosiy sarlavhani belgilash uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<head>",
+        "<header>",
+        "<h1>",
+        "<h6>"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Sarlavha teglari 1 dan 6 gacha raqamlanadi va 1 eng kattasini anglatadi.",
+      "explanation": "<h1> tegi sahifadagi eng muhim va asosiy sarlavhani (heading) belgilash uchun ishlatiladi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "Quyidagilardan qaysilari HTML5 da kiritilgan semantik (semantic) teglar hisoblanadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "<article>",
+        "<div>",
+        "<section>",
+        "<span>",
+        "<nav>"
+      ],
+      "correct_indices": [
+        0,
+        2,
+        4
+      ],
+      "hint": "O'z nomidan ichidagi kontentning vazifasini aniq bildirib turuvchi teglarni tanlang.",
+      "explanation": "<article>, <section> va <nav> teglari kontent ma'nosini bildiruvchi semantik teglardir. <div> va <span> esa semantik bo'lmagan konteynerlardir."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Giperhavolani (link) yangi brauzer oynasida yoki yangi tabda ochish uchun <a> tegiga qaysi atribut qo'shiladi?",
+      "options": [
+        "open='_new'",
+        "target='_blank'",
+        "href='_blank'",
+        "rel='newtab'"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Atribut nomi inglizcha 'nishon' ma'nosini bildiradi.",
+      "explanation": "target='_blank' atributi havolani brauzerning yangi varag'ida (tabida) ochishni ta'minlaydi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "Rasm yuklanmay qolganda uning o'rnida matn ko'rsatish va ekran o'quvchi (screen reader) dasturlar uchun tavsif berishda <img> tegining qaysi atributidan foydalaniladi?",
+      "options": [
+        "title",
+        "src",
+        "alt",
+        "caption"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'Alternative text' iborasining qisqartmasini eslang.",
+      "explanation": "alt atributi rasm tasvirini matn shaklida ifodalaydi; rasm yuklanmasa shu matn ko'rinadi hamda SEO va accessibility uchun muhimdir."
+    },
+    {
+      "id": 6,
+      "type": "multiple",
+      "question": "Quyidagi teglardan qaysilari yopuvchi tegga ega bo'lmagan (void / self-closing) elementlar hisoblanadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "<br>",
+        "<p>",
+        "<hr>",
+        "<input>",
+        "<textarea>"
+      ],
+      "correct_indices": [
+        0,
+        2,
+        3
+      ],
+      "hint": "Ichida matn yoki boshqa teg saqlamaydigan elementlarni tanlang.",
+      "explanation": "<br>, <hr> va <input> bo'sh (void) elementlar bo'lib, ularda yopuvchi teg (masalan, </br>) bo'lmaydi. <p> va <textarea> esa yopuvchi teg talab qiladi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Tartiblangan (raqamlangan) ro'yxat yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<dl>",
+        "<list>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Inglizcha 'Ordered List' so'zlarining bosh harflaridan olingan.",
+      "explanation": "<ol> (Ordered List) elementlarni raqamlar yoki harflar bilan tartiblab chiqaradi, <ul> esa belgilangan (bullet) ro'yxat yaratadi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "HTML jadvalida (<table>) ustun sarlavhasi katakchasini yaratish uchun qaysi teg qo'llaniladi?",
+      "options": [
+        "<td>",
+        "<tr>",
+        "<th>",
+        "<thead>"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'Table Header' so'zlarining qisqartmasi.",
+      "explanation": "<th> (Table Header) jadval sarlavhasi katakchasini bildiradi va odatda matnni qalin (bold) hamda markazlashgan holda ko'rsatadi."
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "question": "HTML5 da <input> tegining 'type' atributi uchun qaysi qiymatlar mavjud? (Bir nechta javobni belgilang)",
+      "options": [
+        "email",
+        "date",
+        "range",
+        "datetime-picker",
+        "color"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "hint": "HTML5 da elektron pochta, sana, slayder va rang tanlash uchun maxsus input turlari qo'shilgan.",
+      "explanation": "email, date, range va color HTML5 da standart <input> turlari hisoblanadi. 'datetime-picker' degan standart tur mavjud emas (datetime-local ishlatiladi)."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Forma maydonini foydalanuvchi tomonidan majburiy to'ldirilishi shart qilish uchun qaysi atribut ishlatiladi?",
+      "options": [
+        "validate",
+        "mandatory",
+        "required",
+        "important"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Ingliz tilida 'talab qilinadigan' degan ma'noni anglatuvchi mantiqiy (boolean) atribut.",
+      "explanation": "required atributi forma yuborilishidan (submit) oldin ushbu maydon bo'sh emasligini brauzer darajasida tekshiradi."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Qaysi teg sahifa haqidagi metama'lumotlar, CSS ulanishlari va sahifa sarlavhasini (<title>) o'z ichiga oladi, lekin sahifa oynasida bevosita ko'rinmaydi?",
+      "options": [
+        "<body>",
+        "<header>",
+        "<meta>",
+        "<head>"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "hint": "Hujjatning 'bosh' qismi bo'lib, brauzer va qidiruv tizimlari uchun xizmat qiladi.",
+      "explanation": "<head> tegi hujjatning texnik ma'lumotlari, <title>, <meta>, <link> va <script> teglarini o'z ichiga oluvchi konteynerdir."
+    },
+    {
+      "id": 12,
+      "type": "multiple",
+      "question": "Quyidagi elementlardan qaysilari odatiy holatda (default) 'block-level' (blok) element hisoblanadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "<div>",
+        "<span>",
+        "<p>",
+        "<a>",
+        "<section>"
+      ],
+      "correct_indices": [
+        0,
+        2,
+        4
+      ],
+      "hint": "Har doim yangi qatordan boshlanadigan va ota elementining butun kengligini egallaydigan elementlarni tanlang.",
+      "explanation": "<div>, <p> va <section> blok elementlardir. <span> va <a> esa qator ichidagi (inline) elementlar hisoblanadi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "HTML sahifada boshqa bir veb-sahifani ichki oyna (frame) sifatida joylashtirish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<embed>",
+        "<iframe>",
+        "<frame>",
+        "<window>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'Inline Frame' so'zlarining qisqartmasi.",
+      "explanation": "<iframe> (Inline Frame) joriy HTML hujjat ichiga boshqa HTML sahifa yoki tashqi resursni (masalan, YouTube video yoki xarita) joylashtirish uchun ishlatiladi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Ochiladigan ro'yxat (dropdown menu) yaratish uchun qaysi teglar juftligidan foydalaniladi?",
+      "options": [
+        "<input type='dropdown'> va <item>",
+        "<select> va <option>",
+        "<datalist> va <li >",
+        "<dropdown> va <choice>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Asosiy teg 'tanlash', ichki teg esa 'variant' ma'nosini bildiradi.",
+      "explanation": "<select> tegi ochiladigan ro'yxat konteynerini, <option> tegi esa undagi har bir tanlov variantini yaratadi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Mobil qurilmalarda sahifaning moslashuvchan (responsive) ko'rinishini ta'minlash uchun <head> ichida qaysi meta teg yoziladi?",
+      "options": [
+        "<meta name='responsive' content='true'>",
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+        "<meta name='screen' content='mobile-first'>",
+        "<meta charset='UTF-8'>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ko'rish maydoni (viewport) kengligini qurilma kengligiga tenglashtiruvchi meta tegni toping.",
+      "explanation": "name='viewport' meta tegi brauzerga sahifa o'lchami va masshtabini qurilma ekraniga moslashtirish bo'yicha ko'rsatma beradi."
+    },
+    {
+      "id": 16,
+      "type": "multiple",
+      "question": "HTML5 da multimedia (audio va video) bilan ishlashga oid to'g'ri fikrlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "<video> tegi ichida bir nechta formatdagi fayllarni berish uchun <source> tegidan foydalaniladi",
+        "'controls' atributi ijro etish, pauza va ovoz tugmalarini chiqaradi",
+        "<audio> tegi faqat MP3 formatini qo'llab-quvvatlaydi",
+        "'muted' atributi videoni ovozsiz holatda boshlaydi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        3
+      ],
+      "hint": "Brauzerlar mosligi uchun bir nechta manba berish va boshqaruv atributlarini yodga oling.",
+      "explanation": "<source> tegi turli formatlarni (masalan, MP4, WebM) berish imkonini beradi, 'controls' boshqaruv panelini qo'shadi, 'muted' esa ovozni o'chiradi. <audio> MP3 dan tashqari WAV va OGG formatlarini ham qo'llab-quvvatlaydi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "<label> tegini muayyan <input> maydoni bilan bog'lash uchun <label> ning qaysi atributi <input> ning 'id' atributi bilan bir xil qiymatga ega bo'lishi kerak?",
+      "options": [
+        "name",
+        "target",
+        "for",
+        "link"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Matn ustiga bosilganda kursor tegishli input ichiga o'tishini ta'minlovchi 3 harfli atribut.",
+      "explanation": "<label for='email'> va <input id='email'> ko'rinishida 'for' va 'id' qiymatlari mos kelsa, label bosilganda input faollashadi."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "Jadval katakchasini gorizontal ravishda 2 ta ustunga birlashtirish uchun qaysi atribut ishlatiladi?",
+      "options": [
+        "rowspan='2'",
+        "colspan='2'",
+        "merge='2'",
+        "span='2'"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'Column span' (ustun oralig'i) so'zlaridan yasalgan.",
+      "explanation": "colspan='2' atributi katakchani gorizontal yo'nalishda 2 ta ustun kengligida birlashtiradi. Vertikal birlashtirish uchun rowspan ishlatiladi."
+    },
+    {
+      "id": 19,
+      "type": "multiple",
+      "question": "HTML global atributlari (deyarli barcha HTML teglarida ishlatish mumkin bo'lgan atributlar) qatoriga qaysilar kiradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "id",
+        "class",
+        "href",
+        "data-*",
+        "style"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "hint": "Faqat havolalarga tegishli bo'lgan atributni ro'yxatdan chiqarib tashlang.",
+      "explanation": "id, class, style va maxsus ma'lumot saqlovchi data-* atributlari global atributlardir. href esa faqat <a>, <link>, <area>, <base> kabi maxsus teglarda ishlatiladi."
+    },
+    {
+      "id": 20,
+      "type": "single",
+      "question": "HTML5 da JavaScript yordamida dinamik ravishda 2D va 3D grafikalar chizish uchun qaysi tegdan foydalaniladi?",
+      "options": [
+        "<svg>",
+        "<canvas>",
+        "<graphics>",
+        "<draw>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Rassomlar rasm chizadigan mato (xolst) nomini eslang.",
+      "explanation": "<canvas> tegi veb-sahifada skriptlar (odatda JavaScript) orqali piksel darajasida grafikalar, o'yinlar va animatsiyalar chizish uchun mo'ljallangan konteynerdir."
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "test_id": "ux_ui_9sinf_hafta01_mixed_uz",
+  "title": "9-sinf UX/UI Dizayn: 1-hafta (1–3-darslar) Bo'yicha Umumiy Test",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "UX (User Experience) va UI (User Interface) tushunchalari o'rtasidagi asosiy farq qaysi savollar juftligida to'g'ri ifodalangan?",
+      "options": [
+        "UX: «Qanday ko'rinadi?» | UI: «Qulaymi?»",
+        "UX: «Qulaymi?» | UI: «Qanday ko'rinadi?»",
+        "UX: «Qancha turadi?» | UI: «Qachon tayyor bo'ladi?»",
+        "UX: «Qaysi dasturlash tilida yozilgan?» | UI: «Qaysi serverda turibdi?»"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "UX foydalanuvchining umumiy tajribasi va qulayligini, UI esa ekranning tashqi vizual ko'rinishini anglatadi.",
+      "explanation": "UX (foydalanuvchi tajribasi) mahsulotdan foydalanish qanchalik oson va qulay ekanligini («Qulaymi?»), UI (foydalanuvchi interfeysi) esa rang, tugma, shrift va ikonlarning ko'rinishini («Qanday ko'rinadi?») o'rganadi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Restoran o'xshatishida taomning chiroyli bezatilishi, idish va stol bezagi nimaga mos keladi?",
+      "options": [
+        "UX (User Experience)",
+        "UI (User Interface)",
+        "User Research",
+        "User Flow"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ko'z bilan ko'riladigan tashqi bezak va vizual uyg'unlikka e'tibor bering.",
+      "explanation": "Restoranda taomning bezagi va idishlar UI ga, menyuning tushunarliligi, ofitsiant tezligi va hisob to'lash qulayligi esa UX ga mos keladi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "UI dizaynerning asosiy vazifalari qatoriga qaysilar kiradi? (Bir nechta javobni belgilang)",
+      "options": [
+        "Ranglar palitrasi va shriftlarni tanlash",
+        "Ikonlar va tugmalarning bir xil vizual uslubda bo'lishini ta'minlash",
+        "Foydalanuvchilardan chuqur intervyu olish va og'riq nuqtalarini aniqlash",
+        "Barcha ekranlarda umumiy vizual uyg'unlik yaratish"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        3
+      ],
+      "hint": "Tadqiqot va intervyu UX dizaynerning ishi; UI dizayner esa vizual ko'rinish bilan ishlaydi.",
+      "explanation": "UI dizayner ranglar, shriftlar, ikonlar va vizual uyg'unlik bilan shug'ullanadi. Foydalanuvchi muammolarini o'rganish va intervyu olish UX dizayner vazifasidir."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Ilova juda chiroyli va rangli animatsiyalarga ega, lekin «To'lash» tugmasi uchinchi menyuning ichida yashiringan bo'lsa, bu qaysi yo'nalishdagi muammo hisoblanadi?",
+      "options": [
+        "Faqat UI muammosi",
+        "UX muammosi",
+        "Server xatoligi",
+        "Shrift tanlash xatosi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Foydalanuvchi o'z maqsadiga (to'lov qilishga) oson va tez yetib bora olmayapti.",
+      "explanation": "Tashqi ko'rinish (UI) chiroyli bo'lsa-da, kerakli tugmani topish qiyinligi va qadamlar murakkabligi foydalanuvchi tajribasi (UX) muammosidir."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "UI dizaynning 4C tamoyilidagi «Control» (nazorat) tushunchasi nimani anglatadi?",
+      "options": [
+        "Barcha sahifalarda tugmalarning rangi bir xil bo'lishini",
+        "Foydalanuvchi o'z harakatini boshqara olishi va xato qilganda uni orqaga qaytara olishini (masalan, Undo yoki Back tugmasi)",
+        "Ekranda faqat bitta asosiy tugma bo'lishini",
+        "Dizaynerning dasturchilar ustidan nazoratini"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Rasmni tasodifan o'chirib yuborganda «Bekor qilish» (Undo) tugmasi chiqishi aynan shu tamoyilga misoldir.",
+      "explanation": "Control tamoyiliga ko'ra, tizim foydalanuvchiga harakatlarni boshqarish va xatoni bekor qilish (Undo, Back) imkonini berishi kerak."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "«Cognitive Load» (kognitiv yuklama) tamoyiliga ko'ra yaxshi dizayn qanday bo'lishi kerak?",
+      "options": [
+        "Bitta ekranda iloji boricha ko'proq banner, tugma va ranglar joylashtirilishi kerak",
+        "Ekran ortiqcha elementlar bilan yuklanmasligi, foydalanuvchi miyasini charchatmasligi va ekranda bitta asosiy harakat ajralib turishi kerak",
+        "Barcha matnlar kichik shriftda yozilishi kerak",
+        "Foydalanuvchi har bir sahifada kamida 10 ta qaror qabul qilishi kerak"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Inson miyasining diqqat va xotira resurslari cheklangan.",
+      "explanation": "Cognitive Load tamoyili ekrandagi ortiqcha shovqin va elementlarni kamaytirib, foydalanuvchining diqqatini asosiy maqsadga qaratishni talab qiladi."
+    },
+    {
+      "id": 7,
+      "type": "multiple",
+      "question": "UI dizaynning 4C tamoyilini tashkil etuvchi to'rtta tushunchani belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Control (nazorat)",
+        "Consistency (izchillik)",
+        "Comfortability (qulaylik)",
+        "Cognitive Load (ortiqcha yuklamaslik)",
+        "Creativity (ijodkorlik)"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "C harfi bilan boshlanuvchi to'rtta asosiy UI tamoyilini tanlang.",
+      "explanation": "UI dizaynning 4C tamoyili: Control, Consistency, Comfortability va Cognitive Load dan iborat."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "«Consistency» (izchillik) tamoyili UI va UX da qanday farqlanadi?",
+      "options": [
+        "UI da ko'rinish (rang, tugma, shrift bir xilligi) haqida, UX da esa mantiq (bir xil amal har joyda bir xil ishlashi) haqida",
+        "UI da tezlik haqida, UX da esa ranglar haqida",
+        "Hech qanday farqi yo'q, faqat nomlari har xil",
+        "UX da faqat shriftlar bir xilligi nazarda tutiladi"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Svetofor misolini eslang: tashqi ko'rinishi va ishlash qoidasi hamma joyda bir xil.",
+      "explanation": "UI izchilligi elementlarning vizual bir xilligini, UX izchilligi esa tizimning ishlash mantig'i hamma sahifalarda bir xil bo'lishini ta'minlaydi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Foydalanuvchi «To'lash» tugmasini bosganda ekranda «Yuklanmoqda...» yozuvi chiqishi yoki tugma rangining o'zgarishi qaysi UX tamoyiliga kiradi?",
+      "options": [
+        "Persona",
+        "Feedback (teskari aloqa)",
+        "Wireframe",
+        "Segmentatsiya"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Tizim «jim» turmasdan, foydalanuvchining harakatiga javob berishi kerak.",
+      "explanation": "Feedback — tizimning foydalanuvchi amaliga beradigan javobi bo'lib, u bosish qabul qilinganini bildiradi va tugmani qayta-qayta bosishning oldini oladi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Wireframe, Mockup va Prototip o'rtasidagi asosiy farq qaysi variantda to'g'ri ko'rsatilgan?",
+      "options": [
+        "Wireframe — rangli maket; Mockup — bosiladigan model; Prototip — kulrang skelet",
+        "Wireframe — past aniqlikdagi rangsiz sxematik skelet; Mockup — rang va shriftli statik ko'rinish; Prototip — bosib ko'rish mumkin bo'lgan interaktiv model",
+        "Uchalasi ham bir xil narsa, faqat turli dasturlarda yaratiladi",
+        "Prototip faqat dasturchilar kod yozib bo'lgandan keyin yaratiladi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Rangsiz chizma -> rangli statik rasm -> bosiladigan jonli model ketma-ketligini eslang.",
+      "explanation": "Wireframe elementlar joylashuvini ko'rsatuvchi rangsiz skelet, Mockup dizaynning yakuniy statik ko'rinishi, Prototip esa bosib tekshirish mumkin bo'lgan interaktiv modeldir."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Nima uchun dastlabki bosqichda Wireframe odatda kulrang (rangsiz) holda chiziladi?",
+      "options": [
+        "Rangli qalamlar qimmat bo'lgani uchun",
+        "E'tibor rang va bezaklarga chalg'imasdan, faqat elementlarning joylashuvi va tuzilishini muhokama qilish uchun",
+        "Kompyuter ekranlari dastlab ranglarni ko'rsata olmagani uchun",
+        "Foydalanuvchilarga kulrang rang ko'proq yoqqani uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Uy qurishdan oldingi me'moriy reja chizmasida devor va eshiklar joyi kelishib olinadi, bo'yoq esa keyin tanlanadi.",
+      "explanation": "Kulrang wireframe jamoaga rang va chiroyli rasmlarga chalg'imasdan, ekran tuzilishi va elementlar mantiqiy joylashuvini to'g'ri baholash imkonini beradi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Dizayn jarayonining (Design Process) to'g'ri ketma-ketligi qaysi qatorda berilgan?",
+      "options": [
+        "Mockup (UI) -> Wireframe -> Tadqiqot -> Test -> Prototip",
+        "Tadqiqot -> Wireframe -> Mockup (UI) -> Prototip -> Test va iteratsiya",
+        "Prototip -> Tadqiqot -> Wireframe -> Test -> Mockup (UI)",
+        "Test -> Prototip -> Mockup (UI) -> Wireframe -> Tadqiqot"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Avval foydalanuvchi o'rganiladi, keyin skelet chiziladi, so'ngra dizayn berilib, sinovdan o'tkaziladi.",
+      "explanation": "Dizayn jarayoni foydalanuvchini o'rganishdan (tadqiqot) boshlanib, wireframe, UI (mockup), prototip va testlash orqali qayta takomillashtirish (iteratsiya) bilan davom etadi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "Foydalanuvchi tadqiqotlarida (User Research) sifat (Qualitative) va miqdor (Quantitative) usullari qaysi savollarga javob beradi?",
+      "options": [
+        "Sifat: «Qancha?» | Miqdor: «Nega?»",
+        "Sifat: «Nega?» | Miqdor: «Qancha?»",
+        "Ikkalasi ham faqat «Kim?» savoliga javob beradi",
+        "Sifat: «Qayerda?» | Miqdor: «Qachon?»"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Intervyu muammo sababini ('nega?'), so'rovnoma va analitika esa raqamlarni ('qancha?') aniqlaydi.",
+      "explanation": "Sifat usullari (intervyu, kuzatuv) foydalanuvchi xatti-harakati sabablarini («Nega?»), miqdor usullari (so'rovnoma, ma'lumot tahlili) esa statistik ko'rsatkichlarni («Qancha?») aniqlaydi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "200 nafar o'quvchidan qaysi mobil ilovadan ko'proq foydalanishini tez va statistik aniqlash uchun qaysi tadqiqot usuli eng mos keladi?",
+      "options": [
+        "Chuqur intervyu (Interview)",
+        "So'rovnoma (Survey)",
+        "Fokus guruh",
+        "Kuzatuv (Observation)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ko'p odamga bir xil savollar berib, javoblarni sanash imkonini beruvchi miqdoriy usul.",
+      "explanation": "So'rovnoma (Survey) ko'p sonli foydalanuvchilardan qisqa vaqt ichida miqdoriy ma'lumot yig'ish uchun eng qulay usuldir."
+    },
+    {
+      "id": 15,
+      "type": "multiple",
+      "question": "Yaxshi tadqiqot (intervyu va so'rovnoma) savolini tuzish qoidalariga ko'ra quyidagilardan qaysilari TO'G'RI? (Bir nechta javobni belgilang)",
+      "options": [
+        "Savol neytral bo'lishi va foydalanuvchini ma'lum bir javobga undamasligi kerak",
+        "Bitta savol ichida ikkita alohida narsani (masalan, «tez va chiroylimi?») aralashtirib so'ramaslik kerak",
+        "Intervyuda «Ha/yo'q» bilan tugaydigan yopiq savollar o'rniga «Qanday?» va «Nega?» kabi ochiq savollar berish kerak",
+        "«Bizning ilova juda qulay, shunday emasmi?» kabi savollar eng yaxshi natija beradi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Javobga undovchi (leading) savollar noto'g'ri ma'lumot yig'ilishiga olib keladi.",
+      "explanation": "Tadqiqot savollari neytral, aniq, bitta mavzuga qaratilgan va intervyuda ochiq shaklda bo'lishi shart."
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "Kuzatuv (Observation) usulida «Faol kuzatuv» va «Passiv kuzatuv» o'rtasidagi asosiy farq nimada?",
+      "options": [
+        "Faol kuzatuvda dizayner jarayonga aralashib «bu nima uchun?» deb savol berishi mumkin; passiv kuzatuvda esa hech narsa demasdan faqat kuzatib yozib boradi",
+        "Passiv kuzatuv faqat video kamera orqali o'tkaziladi",
+        "Faol kuzatuvda foydalanuvchi o'rniga dizayner tugmalarni bosadi",
+        "Hech qanday farqi yo'q"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "Kuzatuvchining jarayonda ishtirok etish darajasiga e'tibor bering.",
+      "explanation": "Faol kuzatuvda tadqiqotchi savollar berib muloqot qiladi, passiv kuzatuvda esa foydalanuvchining tabiiy harakatiga aralashmasdan faqat kuzatadi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "UX dizaynda «Persona» nima va u qanday yaratiladi?",
+      "options": [
+        "Dizayner o'z tasavvuridan to'qib chiqargan fantastik qahramon",
+        "Haqiqiy foydalanuvchi tadqiqotlari (intervyu, so'rovnoma, kuzatuv) natijalari asosida yaratilgan tipik foydalanuvchining batafsil profili",
+        "Kompaniya rahbarining tarjimai holi",
+        "Ilovaning texnik hujjati"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Persona taxmin asosida emas, balki real tadqiqot ma'lumotlari asosida shakllantiriladi.",
+      "explanation": "Persona — tadqiqot natijalaridan yig'ilgan maqsadli auditoriya vakilining umumlashtirilgan portreti bo'lib, dizayn qarorlarini qabul qilishda yordam beradi."
+    },
+    {
+      "id": 18,
+      "type": "multiple",
+      "question": "Foydalanuvchi ehtiyojini aniqlashda e'tiborga olinadigan uchta asosiy omilni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Kontekst (qayerda, qachon va qanday sharoitda foydalanishi)",
+        "Og'riq nuqtalari — Pain points (duch keladigan qiyinchilik va muammolar)",
+        "Maqsad (foydalanuvchi nimaga erishmoqchi ekanligi)",
+        "Foydalanuvchining sevimli rangi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "3-dars xulosasidagi «Ehtiyojni uch narsa belgilaydi» qoidasini eslang.",
+      "explanation": "Foydalanuvchi ehtiyojini uchta asosiy omil belgilaydi: Kontekst, Og'riq nuqtalari (pain points) va Maqsad."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Foydalanuvchi tadqiqotini o'tkazishda quyidagilardan qaysi biri JIDDIY XATO hisoblanadi?",
+      "options": [
+        "Turli yosh va tajribadagi foydalanuvchilarni o'rganish",
+        "Faqat o'zingizga o'xshagan yaqin do'stlaringizdan so'rab, barcha auditoriya uchun xulosa chiqarish",
+        "Intervyudan oldin ruxsat so'rash va javoblarni yozib borish",
+        "Foydalanuvchining gapini bo'lmasdan oxirigacha tinglash"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Yaqin do'stlaringizning odatlari va bilim darajasi siznikiga o'xshash bo'ladi, boshqa auditoriyanikiga emas.",
+      "explanation": "Faqat yaqin do'stlardan so'rash natijalarni bir yoqlama qilib qo'yadi; tadqiqotda haqiqiy maqsadli auditoriyaning turli vakillari qatnashishi kerak."
+    },
+    {
+      "id": 20,
+      "type": "single",
+      "question": "«User flow» (foydalanuvchi oqimi) tushunchasi nimani anglatadi?",
+      "options": [
+        "Saytga bir kunda kirgan foydalanuvchilar sonini",
+        "Foydalanuvchining ilova yoki sayt ichida o'z maqsadiga erishish uchun bosib o'tadigan qadamlar ketma-ketligi va yo'lini",
+        "Serverdan kelayotgan internet tezligini",
+        "Dizaynerlar jamoasining ish jadvalini"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Bosh ekrandan boshlab to yakuniy harakatgacha (masalan, kitobni yuklab olishgacha) bo'lgan qadamlar sxemasi.",
+      "explanation": "User flow — foydalanuvchining mahsulot ichida ma'lum bir vazifani bajarish uchun bosib o'tadigan qadamlar sxemasi."
+    }
+  ]
+}

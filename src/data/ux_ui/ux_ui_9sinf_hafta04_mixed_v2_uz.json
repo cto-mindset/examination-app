@@ -1,0 +1,339 @@
+{
+  "test_id": "ux_ui_9sinf_hafta04_mixed_v2_uz",
+  "title": "9-sinf UX/UI Dizayn: 4-hafta (10–12-darslar) Bo'yicha Test (2-Versiya)",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Tipografiyada shrift qalinligi (Font Weight) uchun ishlatiladigan sonli qiymatlar qaysi qatorda to'g'ri moslashtirilgan?",
+      "options": [
+        "Regular — 100, Medium — 200, SemiBold — 300, Bold — 400",
+        "Regular — 400, Medium — 500, SemiBold — 600, Bold — 700",
+        "Regular — 500, Medium — 600, SemiBold — 700, Bold — 800",
+        "Regular — 300, Medium — 400, SemiBold — 500, Bold — 600"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Oddiy (Regular) matn qalinligi 400 dan boshlanadi va har bir darajada 100 ga oshib boradi.",
+      "explanation": "Standart tipografiya shkalasida Regular (400), Medium (500), SemiBold (600) va Bold (700) qalinlik qiymatlariga mos keladi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "«Shakl funksiyadan keyin» tamoyiliga ko'ra, nima uchun GOV.UK (davlat xizmatlari portali) Sans Serif, The Atlantic (uzun maqolalar jurnali) esa Serif shriftidan foydalanadi?",
+      "options": [
+        "GOV.UK dizaynerlari Serif shriftini yoqtirmagani uchun",
+        "GOV.UK da maqsad foydalanuvchiga tez va aniq xizmat ko'rsatish (tezkor skanerlash), The Atlantic da esa uzoq badiiy va tahliliy matnlarni qulay o'qishdir",
+        "The Atlantic faqat qog'ozda chiqadigan gazeta bo'lgani uchun",
+        "GOV.UK da shrift o'lchami 32px dan kichik bo'lmagani uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Foydalanuvchining sahifadagi asosiy maqsadiga (tez xizmat olish vs uzoq o'qish) e'tibor bering.",
+      "explanation": "Shrift turi mahsulot vazifasiga qarab tanlanadi: tezkor xizmat portallari uchun toza Sans Serif, uzoq maqola va kitob mutolaasi uchun esa ko'zni satr bo'ylab yetaklovchi Serif mos keladi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "10-darsga ko'ra shrift bilan ishlashda e'tiborga olinadigan 4 ta muhim jihatni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Oila (Font Family)",
+        "O'lcham (Font Size)",
+        "Qalinlik (Font Weight)",
+        "Interval (Line Height / Letter Spacing)",
+        "Fayl hajmi (Megabayt)"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Tipografiya panelida sozlanadigan 4 ta asosiy parametrni tanlang.",
+      "explanation": "Shriftning 4 muhim jihati: Font Family (oila), Font Size (o'lcham), Font Weight (qalinlik) va Interval (satrlararo va harflararo masofa)."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Mobil ekranlarda Sans Serif shriftlarning Serif shriftlarga qaraganda 20% tezroq o'qilishining asosiy sababi nimada?",
+      "options": [
+        "Sans Serif harflari har doim qalinroq bo'ladi",
+        "Kichik pikselli mobil ekranlarda Serif shriftlaridagi mayda ilmoqchalar (chiziqchalar) xiralashib, ko'zni toliqtirishi mumkin; Sans Serif esa tekis va aniq ko'rinadi",
+        "Mobil telefonlar Serif shriftlarini qo'llab-quvvatlamaydi",
+        "Sans Serif faqat katta harflardan iborat"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Kichik ekranlardagi piksellar zichligi va harflar uchidagi bezaklarni o'ylab ko'ring.",
+      "explanation": "Sans Serif harflarida ortiqcha ilmoqchalar bo'lmagani sababli ular kichik ekranlarda tiniq ko'rinadi va ko'zni kamroq charchatadi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "UI dizaynda sarlavhalar va kichik eslatmalar (masalan, sana, muallif) uchun tavsiya etiladigan standart o'lchamlar (Font Size) qaysi qatorda to'g'ri ko'rsatilgan?",
+      "options": [
+        "Sarlavhalar: 12px | Kichik eslatmalar: 24–32px",
+        "Sarlavhalar: 24–32px | Kichik eslatmalar: 12px",
+        "Sarlavhalar: 14–16px | Kichik eslatmalar: 6px",
+        "Sarlavhalar: 60–80px | Kichik eslatmalar: 20px"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Asosiy matn 14–16px bo'lsa, sarlavha undan kattaroq, kichik eslatma esa sal kichikroq bo'ladi.",
+      "explanation": "Tipografik ierarxiyada sarlavhalar uchun 24–32px, asosiy matn uchun 14–16px, kichik eslatma va sanalar uchun esa 12px tavsiya etiladi."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "«Google Fonts» (fonts.google.com) platformasi dizayner va dasturchilar uchun nima vazifani bajaradi?",
+      "options": [
+        "Faqat pullik va yopiq shriftlarni sotadigan do'kon",
+        "Veb-sayt va ilovalar uchun bepul hamda ochiq kodli shriftlar katalogi",
+        "Faqat rasmlarni tahrirlash dasturi",
+        "Rang kontrastini o'lchaydigan kalkulyator"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Inter, Roboto va Merriweather kabi mashhur shriftlarni bepul yuklab olish va ulash mumkin bo'lgan katalog.",
+      "explanation": "Google Fonts — dizaynerlar va veb-dasturchilar uchun bepul, ochiq kodli shriftlarning eng yirik katalogidir."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Qahvaxona logotipi uchun «Pacifico» (skript), texnologiya yangiliklari banneri uchun esa «Roboto» (sans serif) tanlanishi qanday kayfiyat yaratadi?",
+      "options": [
+        "Pacifico — jiddiy va rasmiy; Roboto — badiiy va romantik",
+        "Pacifico — samimiy va iliq; Roboto — toza va neytral",
+        "Ikkalasi ham bir xil rasmiy kayfiyat beradi",
+        "Roboto faqat qahvaxonalar uchun mos"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Qo'l yozuviga o'xshash shrift iliqlik, tekis geometrik shrift esa zamonaviy aniqlik bag'ishlaydi.",
+      "explanation": "Skript shriftlar (Pacifico) samimiy va iliq muhit, Sans Serif (Roboto) esa texnologik, toza va neytral ko'rinish yaratadi."
+    },
+    {
+      "id": 8,
+      "type": "multiple",
+      "question": "Keksa yoki ko'rish qobiliyati past foydalanuvchilar uchun matnni qulay qilish (Accessibility) usullarini belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Shrift o'lchamini yetarlicha katta qilish (kamida 16px va undan yuqori)",
+        "Matn va fon o'rtasida yuqori kontrast (kamida 4.5:1) ta'minlash",
+        "O'qilishi oson, toza Sans Serif shriftlaridan foydalanish",
+        "Barcha matnlarni och kulrang fonda 10px dekorativ shriftda yozish"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "10-darsdagi 11-topshiriq («Kirish imkoniyati») talablarini eslang.",
+      "explanation": "Ko'rishi past foydalanuvchilar uchun yetarli shrift o'lchami, yuqori rang kontrasti va aniq o'qiladigan Sans Serif shriftlari zarur."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Figma dasturida matn yozish asbobini tanlash va ekrandagi biror obyekt rangini pipetka bilan olish uchun qaysi tezkor tugmalar (shortcuts) ishlatiladi?",
+      "options": [
+        "Matn: M | Pipetka: P",
+        "Matn: T | Pipetka: I",
+        "Matn: F | Pipetka: C",
+        "Matn: A | Pipetka: R"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Text -> T, Eyedropper (Inglizcha «I» harfi) -> I.",
+      "explanation": "Figma'da matn vositasi (Text) uchun «T», rang pipetkasi (Eyedropper) uchun esa «I» tugmasi bosiladi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Veb va UI dizaynda keng ishlatiladigan `#1877F2` kabi HEX rang kodi qaysi sanoq tizimiga asoslangan?",
+      "options": [
+        "Ikkilik (binary) sanoq tizimi",
+        "O'nlik (decimal) sanoq tizimi",
+        "O'n oltilik (hexadecimal) sanoq tizimi",
+        "Sakkizlik (octal) sanoq tizimi"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Kodda 0–9 raqamlaridan tashqari A–F harflari ham qatnashadi.",
+      "explanation": "HEX (Hexadecimal) — 16-lik sanoq tizimidagi rang kodi bo'lib, qizil (R), yashil (G) va ko'k (B) kanallarini juft belgilar bilan ifodalaydi."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "HSB rang modelidan foydalanib bitta rangning 4 xil och va to'q soyasini (monoxromatik palitra) yaratishda qaysi ko'rsatkich O'ZGARMAS qoladi?",
+      "options": [
+        "Saturation (to'yinganlik)",
+        "Brightness (yorqinlik)",
+        "Hue (rang toni)",
+        "Opacity (shaffoflik)"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "11-darsdagi 1-topshiriqni («Monoxromatik to'rtburchaklar») eslang.",
+      "explanation": "Monoxromatik palitra bitta rang oilasidan iborat bo'lgani uchun Hue (H — rangning o'zi) bir xil saqlanadi, faqat Saturation (S) va Brightness (B) o'zgartiriladi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Qizil rang Yevropa moliya bozorida pasayishni, Xitoyda esa o'sish va omadni bildiradi. Xalqaro ilova loyihalayotgan dizayner bundan qanday xulosa chiqarishi kerak?",
+      "options": [
+        "Xalqaro ilovalarda qizil rangni butunlay taqiqlash kerak",
+        "Maqsadli auditoriya madaniyatini o'rganish va muhim holatlarni faqat rang bilan emas, qo'shimcha ikonka (masalan, yuqori/past strelka) va matn bilan ham ifodalash kerak",
+        "Barcha mamlakatlar uchun faqat qora va oq rang ishlatish kerak",
+        "Madaniy farqlar UI dizaynga hech qanday ta'sir qilmaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Rang ma'nosi madaniyatga qarab o'zgarishi mumkin, shuning uchun qo'shimcha vizual belgilar muhim.",
+      "explanation": "Turli madaniyatlarda ranglar turlicha talqin qilinadi; shuning uchun auditoriyani bilish va ma'lumotni ikonka hamda matn bilan mustahkamlash zarur."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "Oq fonli UI kartasini sifatli «Tungi rejim»ga (Dark Mode) o'tkazishning eng to'g'ri usuli qaysi?",
+      "options": [
+        "Fonni ham, kartani ham bir xil sof qora (#000000) qilish",
+        "Asosiy fonni juda to'q kulrang, kartani undan biroz ochroq kulrang, matnni esa ko'zni qamashtirmaydigan och kulrang qilish",
+        "Barcha ranglarni shunchaki teskarisiga (invert) o'girib qo'yish",
+        "Tungi rejimda matnlarni sariq, fonni qizil qilish"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "11-darsdagi 8-topshiriq («Tungi rejim») qoidasini eslang: chuqurlik va ko'z qulayligi muhim.",
+      "explanation": "Tungi rejimda asosiy fon juda to'q kulrang, ustki karta biroz ochroq kulrang va matn och kulrang bo'lsa, ierarxiya saqlanadi va ko'z toliqmaydi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "Nima uchun och sariq fonga oq matn yozilgan tugmani interfeysda ishlatib bo'lmaydi?",
+      "options": [
+        "Sariq va oq ranglar bitta oilaga tegishli bo'lgani uchun",
+        "Kontrast nisbati juda past bo'lib, WCAG 4.5:1 talabiga javob bermaydi va matnni o'qish qiyinlashadi",
+        "Brauzerlar sariq fonda oq matnni ko'rsata olmaydi",
+        "Bu 60-30-10 qoidasidagi 60% ni buzgani uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ikkala rang ham yorug' (brightness yuqori) bo'lgani uchun ular bir-biridan ajralmaydi.",
+      "explanation": "Sariq fonda oq matnning kontrast nisbati WCAG standartidagi 4.5:1 chegarasidan ancha past bo'ladi, bu esa barcha foydalanuvchilar uchun o'qishni qiyinlashtiradi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Google va Apple kabi yirik kompaniyalar tugma ranglarini tanlashda nima uchun ko'plab A/B testlar o'tkazishadi?",
+      "options": [
+        "Dizaynerlarning bo'sh vaqtini to'ldirish uchun",
+        "Tugma rangining hatto kichik o'zgarishi foydalanuvchilarning bosish faolligiga va kompaniya daromadiga qanday ta'sir qilishini aniq o'lchash uchun",
+        "Eng arzon rang kodini topish uchun",
+        "Yangi rang g'ildiragini ixtiro qilish uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "11-darsdagi «Bilasizmi?» bo'limini eslang.",
+      "explanation": "A/B testlar real foydalanuvchilarda qaysi rang va kontrast ko'proq konversiya va daromad keltirishini statistik jihatdan aniqlashga yordam beradi."
+    },
+    {
+      "id": 16,
+      "type": "multiple",
+      "question": "Agar bitta ekranda 7 xil yorqin rang, och sariq fonda oq matn va 5 ta bir xil yorqin rangli tugma ishlatilgan bo'lsa, unda qaysi UI xatolari mavjud? (Bir nechta javobni belgilang)",
+      "options": [
+        "Haddan tashqari ko'p rang ishlatilgan (60-30-10 qoidasi buzilgan)",
+        "Matn va fon kontrasti juda past (WCAG talabi buzilgan)",
+        "Asosiy harakat tugmasi (CTA) qolgan tugmalardan ajralib turmaydi",
+        "8-point Grid o'rniga 10-point Grid ishlatilgan"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "11-darsdagi 10-topshiriq («Xatoni toping») shartini tahlil qiling.",
+      "explanation": "Ekranda ranglar haddan tashqari ko'p (vizual shovqin), sariq-oq juftligida kontrast past va 5 ta bir xil yorqin tugma orasida bitta asosiy CTA ajralmaydi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "UI kompozitsiyasida «Ritm» tamoyili qanday yaratiladi?",
+      "options": [
+        "Har bir kartaga har xil o'lcham va tasodifiy masofalar berish orqali",
+        "Bir xil intervallar (masalan, 8px, 16px), takroriy kartalar va bir uslubdagi ikonalar oqimi orqali",
+        "Faqat sahifaga audio musiqa qo'shish orqali",
+        "Barcha matnlarni markazga tekislash orqali"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Takrorlanish va bir xil oraliqlar ko'zga yoqimli tartib hissini beradi.",
+      "explanation": "Kompozitsiyadagi ritm teng oraliqlar (8-point grid), bir xil tuzilishdagi kartalar va takrorlanuvchi vizual elementlar yordamida hosil qilinadi."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "Figma dasturida ikkita element orasidagi aniq masofani (masalan, 16px yoki 24px ekanligini) qizil o'lchov chiziqlari bilan tekshirish uchun qaysi klaviatura tugmasi bosib turiladi?",
+      "options": [
+        "Shift",
+        "Alt (macOS da Option)",
+        "Tab",
+        "Enter"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "12-darsdagi 4-topshiriqni («8-point oraliqlar») eslang.",
+      "explanation": "Figma'da biror elementni tanlab, «Alt» (Mac'da Option) tugmasini bosib sichqonchani boshqa element ustiga olib borsangiz, ular orasidagi aniq piksel masofasi ko'rinadi."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Apple kompaniyasi o'z mahsulot taqdimot sahifalarida ekran maydonining taxminan qancha qismini toza bo'sh joy (White Space) sifatida qoldiradi?",
+      "options": [
+        "5–10% qismini",
+        "20% qismini",
+        "60% dan ortiq qismini",
+        "Umuman bo'sh joy qoldirmaydi"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "12-darsdagi «Bilasizmi?» bo'limidagi Apple misolini eslang.",
+      "explanation": "Apple taqdimot sahifalarining 60% dan ortig'ini toza bo'sh joy (White Space) qilib qoldiradi, bu esa mahsulotga maksimal e'tibor qaratish va premium taassurot uyg'otish imkonini beradi."
+    },
+    {
+      "id": 20,
+      "type": "multiple",
+      "question": "Veb-sahifaning bosh qismini (Hero Section) «Z-pattern» naqshi bo'yicha loyihalashda elementlar qaysi tartibda joylashtiriladi? (Bir nechta javobni belgilang)",
+      "options": [
+        "Yuqori chap burchakda — Logotip",
+        "Yuqori o'ng burchakda — Menyu yoki «Kirish» tugmasi",
+        "O'rta qismda — Markaziy rasm yoki illyustratsiya",
+        "Pastki o'ng tomonda — Yorqin asosiy CTA («Boshlash») tugmasi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Ko'z harakati Z harfi bo'ylab yuqori chapdan -> yuqori o'ngga -> diagonal pastki chap/markazga -> pastki o'ngga o'tadi.",
+      "explanation": "Z-pattern bo'yicha barcha 4 ta nuqta to'g'ri joylashtirilgan: Logotip -> Menyu/Kirish -> Markaziy rasm -> Asosiy CTA tugma."
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "test_id": "js_basics_easy_v2_uz",
+  "title": "JavaScript Asoslari (2-Versiya, Oson Daraja)",
+  "difficulty": "easy",
+  "total_minutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "JavaScript da o'zgaruvchiga keyinchalik yangi qiymat tayinlash (o'zgartirish) mumkin bo'lgan zamonaviy kalit so'z qaysi?",
+      "options": [
+        "const",
+        "let",
+        "fixed",
+        "final"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "ES6 (2015) da kiritilgan 3 harfli kalit so'z.",
+      "explanation": "let kalit so'zi orqali e'lon qilingan o'zgaruvchining qiymatini keyinchalik o'zgartirish mumkin, const esa o'zgarmasdir."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nlet ism = 'Ali';\nconsole.log(`Salom, ${ism}!`);",
+      "options": [
+        "Salom, ${ism}!",
+        "Salom, Ali!",
+        "Salom, ism!",
+        "Sintaksis xatosi yuz beradi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ters tirnoqlar (` `) va ${} belgisi o'zgaruvchi qiymatini matn ichiga joylashtiradi (Template Literals).",
+      "explanation": "Template literals (` `) ichida ${ism} ifodasi o'zgaruvchining qiymati ('Ali') bilan almashtiriladi va 'Salom, Ali!' chiqadi."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "Massivning (array) birinchi elementini olish uchun qaysi indeksdan foydalaniladi?",
+      "options": [
+        "1",
+        "0",
+        "-1",
+        "first"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Dasturlashda massiv indekslari noldan boshlab sanaladi.",
+      "explanation": "JavaScript massivlarida elementlar 0 dan boshlab indekslanadi (masalan: arr[0])."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Obyekt (object) xususiyatiga (property) murojaat qilishning to'g'ri usuli qaysi?\n\nlet talaba = { ism: 'Sardor', yosh: 20 };",
+      "options": [
+        "talaba->ism",
+        "talaba.ism",
+        "talaba(ism)",
+        "talaba::ism"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Obyekt nomi va kalit nomi nuqta (.) bilan ajratiladi.",
+      "explanation": "Obyekt xususiyatlariga nuqta orqali (talaba.ism) yoki kvadrat qavslar orqali (talaba['ism']) murojaat qilinadi."
+    },
+    {
+      "id": 5,
+      "type": "multiple",
+      "question": "Quyidagi tsikllardan (loops) qaysilari JavaScript da mavjud? (Bir nechta javobni belgilang)",
+      "options": [
+        "for",
+        "while",
+        "do...while",
+        "foreach...in"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Standart takrorlash operatorlarini tanlang.",
+      "explanation": "JavaScript da for, while va do...while tsikllari mavjud (shuningdek for...of va for...in). 'foreach...in' sintaksisi mavjud emas."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "Matnli satrning (string) barcha harflarini KATTA harflarga o'tkazish uchun qaysi metod ishlatiladi?",
+      "options": [
+        "toUpper()",
+        "toUpperCase()",
+        "upperCase()",
+        "capitalize()"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "camelCase uslubida yozilgan 'toUpperCase' metodini tanlang.",
+      "explanation": "toUpperCase() metodi matndagi barcha harflarni katta harfga aylantirib yangi satr qaytaradi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Matn ko'rinishidagi sonni (masalan, '42') butun songa (number) aylantirish uchun qaysi funksiyadan foydalaniladi?",
+      "options": [
+        "toInt('42')",
+        "parseInt('42')",
+        "stringToNumber('42')",
+        "int('42')"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'parse' va 'Int' so'zlari birikmasidan iborat ichki funksiya.",
+      "explanation": "parseInt('42') yoki Number('42') matn ko'rinishidagi raqamni number turiga o'tkazadi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconsole.log(Boolean(''));",
+      "options": [
+        "true",
+        "false",
+        "undefined",
+        "null"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Bo'sh satr ('') JavaScript da yolg'on (falsy) qiymat hisoblanadi.",
+      "explanation": "JavaScript da bo'sh matn (''), 0, null, undefined va NaN qiymatlari mantiqiy turga o'tkazilganda false qaytaradi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "Massivning oxirgi elementini o'chirib tashlash uchun qaysi metod qo'llaniladi?",
+      "options": [
+        "push()",
+        "pop()",
+        "deleteLast()",
+        "remove()"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "push() oxiriga qo'shadi, bu metod esa oxiridan sug'urib oladi.",
+      "explanation": "pop() metodi massivning eng oxirgi elementini olib tashlaydi va o'sha elementni qaytaradi."
+    },
+    {
+      "id": 10,
+      "type": "multiple",
+      "question": "JavaScript da o'zgaruvchi nomlash (identifier) qoidalariga ko'ra qaysi nomlar TO'G'RI hisoblanadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "foydalanuvchiYoshi",
+        "$narx",
+        "_maxfiyKalit",
+        "2chiElement",
+        "let"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "O'zgaruvchi nomi raqam bilan boshlanmasligi va kalit so'z (reserved word) bo'lmasligi kerak.",
+      "explanation": "O'zgaruvchi nomlari harf, dollar ($) yoki pastki chiziq (_) bilan boshlanishi mumkin. Raqam bilan boshlanishi (2chiElement) yoki kalit so'z (let) bo'lishi mumkin emas."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Foydalanuvchidan matnli ma'lumot kiritishni so'rovchi muloqot oynasini ochish uchun qaysi funksiya ishlatiladi?",
+      "options": [
+        "alert()",
+        "confirm()",
+        "prompt()",
+        "input()"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Foydalanuvchiga kiritish maydoni (input box) taqdim etuvchi brauzer funksiyasi.",
+      "explanation": "prompt('Ismingiz nima?') foydalanuvchidan matn kiritishni so'raydi va kiritilgan qiymatni string sifatida qaytaradi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Quyidagi kod natijasi qanday bo'ladi?\n\nconsole.log('5' + 3);",
+      "options": [
+        "8",
+        "'53'",
+        "2",
+        "NaN"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'+' operatori matn (string) bilan ishlatilganda sonni ham matnga aylantirib birlashtiradi (concatenation).",
+      "explanation": "'5' satr bo'lgani uchun '+' operatori arifmetik qo'shish emas, balki satrlarni birlashtirish amalini bajaradi va '53' hosil bo'ladi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "Arrow function (strelkali funksiya) yozishning to'g'ri sintaksisi qaysi?",
+      "options": [
+        "const qoshish = (a, b) -> a + b;",
+        "const qoshish = (a, b) => a + b;",
+        "const qoshish => (a, b) { a + b };",
+        "function => qoshish(a, b) { return a + b; }"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Tenglik va katta belgilaridan iborat '=>' o'qidan foydalaniladi.",
+      "explanation": "ES6 arrow funksiyalari '(parametrlar) => ifoda' ko'rinishida yoziladi."
+    },
+    {
+      "id": 14,
+      "type": "single",
+      "question": "CSS selektori orqali (masalan, '.btn' yoki '#header') hujjatdagi birinchi mos kelgan elementni tanlash uchun qaysi DOM metodi ishlatiladi?",
+      "options": [
+        "document.querySelector('.btn')",
+        "document.getElementByClass('.btn')",
+        "document.select('.btn')",
+        "document.find('.btn')"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "CSS selektorlarini to'g'ridan-to'g'ri qabul qiluvchi universal metod.",
+      "explanation": "document.querySelector() ko'rsatilgan CSS selektoriga mos keluvchi birinchi elementni qaytaradi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Quyidagi kod necha marta 'Salom' so'zini konsolga chiqaradi?\n\nfor (let i = 0; i < 4; i++) {\n  console.log('Salom');\n}",
+      "options": [
+        "3 marta",
+        "4 marta",
+        "5 marta",
+        "0 marta"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "i o'zgaruvchisi 0, 1, 2, 3 qiymatlarini qabul qiladi.",
+      "explanation": "i = 0 dan boshlanib, i < 4 sharti bajarilguncha (0, 1, 2, 3) tsikl jami 4 marta aylanadi."
+    }
+  ]
+}

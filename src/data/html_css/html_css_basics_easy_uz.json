@@ -1,0 +1,172 @@
+{
+  "test_id": "html_css_basics_easy_uz",
+  "title": "HTML va CSS Asoslari (Oson Daraja)",
+  "difficulty": "easy",
+  "total_minutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "HTML hujjatida sahifaning brauzer yorlig'ida (tab) ko'rinadigan sarlavhasini belgilash uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<header>",
+        "<title>",
+        "<h1>",
+        "<meta>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Bu teg <head> bo'limi ichida yoziladi.",
+      "explanation": "<title> tegi veb-sahifaning nomini belgilaydi va u brauzer oynasining yuqori qismidagi tabda ko'rinadi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "HTML da giperhavola (link) yaratish uchun qaysi teg va manzil atributidan foydalaniladi?",
+      "options": [
+        "<link src='...'>",
+        "<a href='...'>",
+        "<href url='...'>",
+        "<url link='...'>"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Anchor (langar) so'zining bosh harfi bilan ataladigan tegni tanlang.",
+      "explanation": "<a href='manzil'>Havola matni</a> tegi foydalanuvchini boshqa sahifaga yoki tashqi manzilga yo'naltirish uchun ishlatiladi."
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "Sahifaga rasm joylashtirish uchun qaysi HTML tegidan foydalaniladi?",
+      "options": [
+        "<image>",
+        "<pic>",
+        "<img>",
+        "<photo>"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'Image' so'zining 3 harfli qisqartmasi.",
+      "explanation": "<img> tegi sahifaga rasm qo'shish uchun ishlatiladi va odatda 'src' (rasm manzili) hamda 'alt' atributlari bilan yoziladi."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Yangi qatorga o'tish (qator tashlash) uchun qaysi yopuvchi tegsiz HTML tegi ishlatiladi?",
+      "options": [
+        "<lb>",
+        "<break>",
+        "<br>",
+        "<newline>"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "'Break' so'zining 2 harfli qisqartmasi.",
+      "explanation": "<br> (line break) tegi matn ichida yangi qatorga tushish uchun ishlatiladi va yopuvchi tegga ega emas."
+    },
+    {
+      "id": 5,
+      "type": "multiple",
+      "question": "Quyidagilardan qaysilari HTML da ro'yxat (list) yaratishda ishlatiladigan teglar hisoblanadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Tartiblanmagan ro'yxat, tartiblangan ro'yxat va ro'yxat elementi teglarini tanlang.",
+      "explanation": "<ul> tartiblanmagan ro'yxatni, <ol> raqamlangan ro'yxatni, <li> esa ro'yxat ichidagi har bir bandni bildiradi."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "CSS da matnning rangini o'zgartirish uchun qaysi xususiyat ishlatiladi?",
+      "options": [
+        "font-color",
+        "text-color",
+        "color",
+        "background-color"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Eng qisqa bitta so'zdan iborat xususiyat.",
+      "explanation": "CSS da matn rangini belgilash uchun 'color' xususiyatidan foydalaniladi (masalan: color: red;)."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "CSS da elementning ichki fon rangini o'zgartirish uchun qaysi xususiyat qo'llaniladi?",
+      "options": [
+        "bgcolor",
+        "background-color",
+        "color-bg",
+        "box-color"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'background' va 'color' so'zlari chiziqcha bilan biriktirilgan.",
+      "explanation": "background-color xususiyati elementning orqa foniga rang berish uchun ishlatiladi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "CSS da 'class' nomi 'card' bo'lgan elementni qanday selektor bilan tanlaymiz?",
+      "options": [
+        "#card",
+        ".card",
+        "*card",
+        "card"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Klass selektori oldidan nuqta belgisi qo'yiladi.",
+      "explanation": "Klass (class) selektorlari har doim nuqta (.) bilan boshlanadi: .card { ... }."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "CSS da elementning tashqi chegarasidan tashqaridagi bo'shliq (masofa) qaysi xususiyat bilan beriladi?",
+      "options": [
+        "padding",
+        "margin",
+        "border",
+        "spacing"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Ichki bo'shliq 'padding', tashqi masofa esa 'm' harfi bilan boshlanadi.",
+      "explanation": "margin elementning tashqi tomonidan boshqa elementlargacha bo'lgan bo'shliqni belgilaydi."
+    },
+    {
+      "id": 10,
+      "type": "multiple",
+      "question": "CSS da matnni bezash va o'lchamini o'zgartirishga oid to'g'ri xususiyatlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "font-size: 16px; (shrift o'lchamini belgilaydi)",
+        "text-align: center; (matnni markazga tekislaydi)",
+        "font-weight: bold; (matnni qalin qiladi)",
+        "text-color: green; (matn rangini o'zgartiradi)"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "CSS da 'text-color' degan xususiyat mavjud emasligini yodda tuting.",
+      "explanation": "font-size shrift o'lchamini, text-align tekislashni, font-weight esa matn qalinligini boshqaradi. Rang uchun 'color' ishlatiladi."
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "test_id": "js_variables_types_strings_objects_mixed_uz",
+  "title": "JavaScript: O'zgaruvchilar, Ma'lumot Turlari, String, Boolean va Obyektlar",
+  "difficulty": "mixed",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconsole.log(typeof null);",
+      "options": [
+        "'null'",
+        "'undefined'",
+        "'object'",
+        "'boolean'"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Bu JavaScript tilining yaratilish davridan qolgan mashhur tarixiy xatolik (bug) hisoblanadi.",
+      "explanation": "JavaScript da typeof null natijasi 'object' qaytaradi. Bu tilning birinchi versiyasidagi xatolik bo'lib, orqaga moslik (backward compatibility) sababli o'zgartirilmagan."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "'var' va 'let' / 'const' o'zgaruvchilari o'rtasidagi ko'rinish doirasi (scope) bo'yicha asosiy farq nimada?",
+      "options": [
+        "var blok doirasiga (block scope), let va const esa funksiya doirasiga (function scope) ega",
+        "var funksiya doirasiga (function scope), let va const esa blok doirasiga (block scope — { }) ega",
+        "Uchalasi ham faqat global doirada ishlaydi",
+        "let faqat sikllar ichida ishlaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "if (...) { } yoki for (...) { } jingalak qavslari ichida e'lon qilingan o'zgaruvchilarni eslang.",
+      "explanation": "var funksiya chegarasi bilan cheklanadi (if yoki for blokidan tashqariga chiqib ketadi), let va const esa har qanday '{ ... }' blok ichida izolyatsiyalanadi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "Quyidagi qiymatlardan qaysilari JavaScript da 'falsy' (mantiqiy Boolean turiga o'tkazilganda false beruvchi) qiymatlar hisoblanadi? (Bir nechta javobni belgilang)",
+      "options": [
+        "0",
+        "'' (bo'sh satr)",
+        "NaN",
+        "[] (bo'sh massiv)",
+        "null"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "hint": "JavaScript da barcha obyektlar, shu jumladan bo'sh massiv [] va bo'sh obyekt {} ham 'truthy' hisoblanadi.",
+      "explanation": "JavaScript da falsy qiymatlar ro'yxati: false, 0, -0, 0n, '', null, undefined va NaN. Bo'sh massiv [] esa obyekt bo'lgani uchun truthy (true) qaytaradi."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconst matn = 'JavaScript';\nconsole.log(matn.slice(4, 10));",
+      "options": [
+        "'Java'",
+        "'Script'",
+        "'aScrip'",
+        "'Scrip'"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "slice(start, end) metodi start indeksidan boshlab end indeksigacha (end kirmaydi) bo'lgan qismni kesib oladi.",
+      "explanation": "'JavaScript' satrida 0:'J', 1:'a', 2:'v', 3:'a', 4:'S' dan boshlanadi. slice(4, 10) 4-indeksdan 9-indeksgacha bo'lgan 'Script' qismini qaytaradi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "'const' bilan e'lon qilingan obyekt ustida quyidagi amallardan qaysi birini bajarish MUMKIN?\n\nconst user = { ism: 'Bekzod', yosh: 22 };",
+      "options": [
+        "user = { ism: 'Aziz', yosh: 25 };",
+        "user.yosh = 23;",
+        "user = null;",
+        "const user = {};"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "const o'zgaruvchining xotiradagi havolasini (reference) o'zgartirishni taqiqlaydi, obyekt ichidagi xususiyatlarni emas.",
+      "explanation": "const obyektga yangi obyekt tayinlashga (user = ...) yo'l qo'ymaydi, biroq obyektning ichki xususiyatlarini (user.yosh = 23) o'zgartirish yoki qo'shish mumkin."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "Temporal Dead Zone (TDZ — vaqtinchalik o'lik zona) nima?",
+      "options": [
+        "Garbage Collector xotirani tozalaydigan vaqt oralig'i",
+        "Blok boshlanishidan to 'let' yoki 'const' o'zgaruvchisi kodda e'lon qilingan qatorgacha bo'lgan hudud bo'lib, unda o'zgaruvchiga murojaat qilish ReferenceError beradi",
+        "setTimeout funksiyasining kutish vaqti",
+        "Serverdan javob kelguncha kutish holati"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "let va const hoist qilinadi, lekin initsializatsiya qilinmaguncha ulardan foydalanib bo'lmaydi.",
+      "explanation": "let va const o'zgaruvchilari e'lon qilingan qatordan yuqorida TDZ da turadi va ularga oldindan murojaat qilinsa ReferenceError yuzaga keladi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Optional Chaining (?.) operatori quyidagi kodda qanday natija qaytaradi?\n\nconst talaba = { ism: 'Dilshod' };\nconsole.log(talaba.manzil?.shahar);",
+      "options": [
+        "TypeError: Cannot read properties of undefined",
+        "undefined",
+        "null",
+        "'' (bo'sh satr)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'manzil' xususiyati mavjud bo'lmagani uchun '?.' operatori xatolik chiqarmasdan hisoblashni to'xtatadi.",
+      "explanation": "Optional chaining (?.) chap tomondagi qiymat null yoki undefined bo'lsa, TypeError chiqarish o'rniga darhol 'undefined' qaytaradi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "Nullish Coalescing (??) va mantiqiy YOKI (||) operatorlari o'rtasidagi asosiy farq quyidagi kodda qanday namoyon bo'ladi?\n\nconst ball = 0;\nconsole.log(ball || 100, ball ?? 100);",
+      "options": [
+        "0, 0",
+        "100, 0",
+        "0, 100",
+        "100, 100"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'||' barcha falsy qiymatlarni (shu jumladan 0 ni) inkor qiladi; '??' esa faqat null va undefined ni tekshiradi.",
+      "explanation": "0 falsy qiymat bo'lgani uchun '0 || 100' natijasi 100 bo'ladi. '??' operatori esa faqat null yoki undefined bo'lsagina o'ng tomonni oladi, shuning uchun '0 ?? 100' natijasi 0 chiqadi."
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "question": "JavaScript da satr (String) metodlari bo'yicha to'g'ri fikrlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "JavaScript da satrlar o'zgarmas (immutable) — metodlar asl satrni o'zgartirmasdan yangi satr qaytaradi",
+        "'salom'.padStart(8, '*') natijasi '***salom' bo'ladi",
+        "'ha'.repeat(3) natijasi 'hahaha' bo'ladi",
+        "'abc'.charAt(10) xatolik (IndexOutOfBoundsError) tashlaydi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Indeks chegaradan chiqib ketganda charAt() xato chiqarmasdan bo'sh satr ('') qaytaradi.",
+      "explanation": "Satrlar immutable; padStart(8, '*') uzunlikni 8 taga yetkazish uchun boshiga 3 ta '*' qo'shadi; repeat(3) satrni 3 marta takrorlaydi."
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "question": "Obyektning barcha kalitlari (keys) va qiymatlarini `[kalit, qiymat]` ko'rinishidagi ichma-ich massivlar ro'yxati sifatida qaytaruvchi statik metod qaysi?",
+      "options": [
+        "Object.keys(obj)",
+        "Object.values(obj)",
+        "Object.entries(obj)",
+        "Object.pairs(obj)"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Obyektni Map ga o'tkazishda yoki for...of bilan aylanishda eng ko'p ishlatiladigan metod.",
+      "explanation": "Object.entries(obj) obyektning o'ziga tegishli sanab o'tiladigan xususiyatlarini [key, value] juftliklari massivida qaytaradi."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconst a = { son: 10 };\nconst b = a;\nb.son = 99;\nconsole.log(a.son);",
+      "options": [
+        "10",
+        "99",
+        "undefined",
+        "TypeError"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Obyektlar qiymat bo'yicha emas, balki xotiradagi havola (reference) bo'yicha nusxalanadi.",
+      "explanation": "b = a amali yangi obyekt yaratmaydi, balki xotiradagi bitta obyektga ikkinchi havola beradi. Shu sababli b orqali qilingan o'zgarish a da ham ko'rinadi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "Object Destructuring (obyektni yoyish) va standart qiymat berish natijasida konsolga nima chiqadi?\n\nconst kitob = { nomi: 'Oʻtkan kunlar' };\nconst { nomi: sarlavha, muallif = 'Abdulla Qodiriy' } = kitob;\nconsole.log(sarlavha, muallif);",
+      "options": [
+        "'Oʻtkan kunlar' undefined",
+        "'Oʻtkan kunlar' 'Abdulla Qodiriy'",
+        "ReferenceError: sarlavha is not defined",
+        "undefined 'Abdulla Qodiriy'"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'nomi: sarlavha' o'zgaruvchi nomini o'zgartiradi, '=' esa xususiyat mavjud bo'lmaganda zaxira qiymat beradi.",
+      "explanation": "Destructuring jarayonida 'nomi' qiymati 'sarlavha' o'zgaruvchisiga o'tkaziladi, 'muallif' obyektda yo'qligi sababli default qiymat ('Abdulla Qodiriy') olinadi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "JavaScript da 'NaN === NaN' ifodasining natijasi nimaga teng va qiymatning NaN ekanligini eng aniq tekshirish usuli qaysi?",
+      "options": [
+        "true; typeof x === 'NaN'",
+        "false; Number.isNaN(x)",
+        "false; x == NaN",
+        "true; isNaN(x)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "IEEE 754 standartiga ko'ra NaN o'ziga-o'zi ham teng emas.",
+      "explanation": "NaN === NaN har doim false qaytaradi. Global isNaN('salom') esa matnni songa aylantirib true beradi, shuning uchun eng aniq tekshiruv Number.isNaN(x) dir."
+    },
+    {
+      "id": 14,
+      "type": "multiple",
+      "question": "Obyektni muzlatish va himoyalash metodlari ('Object.freeze()' va 'Object.seal()') o'rtasidagi farqlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "Object.freeze(obj) obyektga yangi xususiyat qo'shishni, o'chirishni va mavjud qiymatlarni o'zgartirishni ham taqiqlaydi",
+        "Object.seal(obj) yangi xususiyat qo'shish va o'chirishni taqiqlaydi, LEKIN mavjud xususiyatlarning qiymatini o'zgartirishga ruxsat beradi",
+        "Ikkala metod ham chuqur (nested) ichki obyektlarga avtomatik ta'sir qilmaydi (shallow operation)",
+        "Object.freeze() obyektni xotiradan butunlay o'chiradi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "'freeze' to'liq muzlatadi (read-only), 'seal' esa faqat strukturani muhrlaydi (qiymat o'zgarishi mumkin).",
+      "explanation": "Object.freeze obyektni o'zgarmas qiladi, Object.seal esa faqat qo'shish/o'chirishni bloklaydi. Ikkalasi ham faqat birinchi darajali (shallow) xususiyatlarga ishlaydi."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconsole.log(Boolean('false'));\nconsole.log(Boolean(0));",
+      "options": [
+        "false, false",
+        "true, false",
+        "false, true",
+        "true, true"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "'false' qo'shtirnoq ichida yozilgan — bu bo'sh bo'lmagan matn (string).",
+      "explanation": "Bo'sh bo'lmagan har qanday satr (hatto 'false' yoki '0' matni ham) Boolean ga o'tkazilganda true beradi; 0 raqami esa false beradi."
+    },
+    {
+      "id": 16,
+      "type": "single",
+      "question": "JavaScript da 'Symbol' ma'lumot turining asosiy vazifasi nimadan iborat?",
+      "options": [
+        "Matematik formulalarni saqlash",
+        "Obyektlar uchun hech qachon bir-biriga to'qnash kelmaydigan noyob (unique) xususiyat kalitlarini yaratish",
+        "Faqat bitta belgidan iborat char turini yaratish",
+        "JSON formatiga o'tkazishni tezlashtirish"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Symbol('id') === Symbol('id') har doim false qaytaradi.",
+      "explanation": "Har bir Symbol() chaqiruvi mutlaqo noyob identifikator yaratadi, bu esa obyektlarda kalit nomlari to'qnashuvining (collision) oldini oladi."
+    },
+    {
+      "id": 17,
+      "type": "single",
+      "question": "Quyidagi kod natijasi nima bo'ladi?\n\nconst kalit = 'rang';\nconst mashina = {\n  [kalit]: 'qora'\n};\nconsole.log(mashina.rang);",
+      "options": [
+        "undefined",
+        "'qora'",
+        "'kalit'",
+        "SyntaxError"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Kvadrat qavslar '[kalit]' Computed Property Names (hisoblanadigan xususiyat nomlari) sintaksisini bildiradi.",
+      "explanation": "ES6 Computed Property Names yordamida o'zgaruvchi qiymatini ('rang') obyekt yaratish paytida kalit nomi sifatida ishlatish mumkin."
+    },
+    {
+      "id": 18,
+      "type": "single",
+      "question": "JavaScript da 'BigInt' ma'lumot turi nima uchun kiritilgan va u qanday yoziladi?",
+      "options": [
+        "O'nlik kasr sonlarni aniq hisoblash uchun (masalan, 0.1 + 0.2)",
+        "Number.MAX_SAFE_INTEGER (2^53 - 1) dan katta butun sonlar bilan aniqlikni yo'qotmasdan ishlash uchun; son oxiriga 'n' qo'shib yoziladi (masalan, 9007199254740993n)",
+        "Manfiy cheksizlikni ifodalash uchun",
+        "Faqat 64-bitli ikkilik sonlar uchun"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Oddiy Number turi 9007199254740991 dan katta butun sonlarda aniqlikni yo'qotadi.",
+      "explanation": "BigInt ixtiyoriy uzunlikdagi katta butun sonlarni aniq saqlash va hisoblash imkonini beradi; raqam oxiriga 'n' qo'shish yoki BigInt() orqali yaratiladi."
+    },
+    {
+      "id": 19,
+      "type": "single",
+      "question": "Ichma-ich obyektlarga ega obyektdan chuqur nusxa (Deep Clone) olishning eng zamonaviy va ichki (built-in) JavaScript funksiyasi qaysi?",
+      "options": [
+        "Object.assign({}, obj)",
+        "{ ...obj }",
+        "structuredClone(obj)",
+        "Object.deepCopy(obj)"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "hint": "Spread ({ ...obj }) va Object.assign() faqat sayoz (shallow) nusxa oladi; zamonaviy brauzer va Node.js da maxsus global funksiya mavjud.",
+      "explanation": "structuredClone() obyektni ichidagi barcha nested obyektlar, massivlar, Date, Map va Set lar bilan birga to'liq chuqur nusxalaydi (deep clone)."
+    },
+    {
+      "id": 20,
+      "type": "single",
+      "question": "Quyidagi kod bajarilganda konsolga nima chiqadi?\n\nconsole.log('10' - '4' + '2');",
+      "options": [
+        "'62'",
+        "8",
+        "'1042'",
+        "NaN"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "hint": "'-' operatori satrlarni songa aylantirib ayiradi, keyingi '+' esa son va satrni birlashtiradi.",
+      "explanation": "Amallar chapdan o'ngga bajariladi: avval '10' - '4' = 6 (number), so'ngra 6 + '2' = '62' (string) hosil bo'ladi."
+    }
+  ]
+}

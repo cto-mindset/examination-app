@@ -1,0 +1,255 @@
+{
+  "test_id": "html_css_advanced_hard_uz",
+  "title": "HTML5 va CSS3 Chuqurlashtirilgan Texnik Test (Qiyin Daraja)",
+  "difficulty": "hard",
+  "total_minutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "HTML <script> tegida 'defer' va 'async' atributlari o'rtasidagi asosiy bajarilish (execution) farqi nimada?",
+      "options": [
+        "Ikkalasi ham HTML parsingni to'xtatib, darhol yuklanadi va bajariladi",
+        "'async' skript yuklanishi bilanoq HTML parsingni to'xtatib bajariladi; 'defer' esa HTML hujjat to'liq parse qilingandan so'ng DOMContentLoaded hodisasidan oldin yozilgan tartibda bajariladi",
+        "'defer' faqat tashqi modullarda (type='module') ishlaydi, 'async' esa inline skriptlarda",
+        "'async' skriptlar har doim yozilgan ketma-ketlikda bajariladi, 'defer' esa tasodifiy tartibda"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Qaysi biri DOM daraxti to'liq tayyor bo'lishini kutadi va skriptlar ketma-ketligini saqlab qoladi?",
+      "explanation": "'async' skript yuklab olingan zahoti (tartibni kutmasdan) parserni to'xtatib ishga tushadi. 'defer' esa parallel yuklanadi va HTML parsing tugagach, hujjatdagi ketma-ketligi bo'yicha DOMContentLoaded dan oldin bajariladi."
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "question": "HTML5 <dialog> elementini JavaScript orqali 'dialog.show()' va 'dialog.showModal()' metodlari bilan ochish o'rtasidagi asosiy farq nimada?",
+      "options": [
+        "show() faqat mobil qurilmalarda ishlaydi",
+        "showModal() dialogni Top Layer ga joylashtiradi, ::backdrop psevdo-elementini yaratadi, orqa fondagi elementlarni 'inert' qiladi va Esc tugmasi bilan yopishni yoqadi; show() esa oddiy oqimda ko'rsatadi",
+        "showModal() dialogni avtomatik 5 soniyadan keyin yopadi",
+        "Hech qanday farqi yo'q, ikkalasi ham bir xil vazifani bajaradi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Top Layer, ::backdrop va orqa sahifa bilan o'zaro ta'sirni bloklash xususiyatlarini eslang.",
+      "explanation": "showModal() dialogni brauzerning maxsus Top Layer qatlamiga chiqaradi (z-index muammolarisiz), ::backdrop qatlamini faollashtiradi va tashqi elementlarni nofaol (inert) holatga keltiradi."
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "question": "Shadow DOM (Encapsulation) bilan ishlashda CSS stillarining tashqaridan ichkariga yoki ichkaridan tashqariga ta'sir qilish mexanizmlari haqida qaysi fikrlar to'g'ri? (Bir nechta javobni belgilang)",
+      "options": [
+        "Tashqi global CSS klasslari (masalan, .btn) Shadow DOM ichidagi elementlarga avtomatik ta'sir qilmaydi",
+        "CSS Custom Properties (--var-name) va merosxo'r (inherited) xususiyatlar (color, font-family) Shadow DOM chegarasidan o'ta oladi",
+        "::part() psevdo-elementi orqali Shadow DOM ichidagi part atributiga ega elementlarni tashqaridan stillash mumkin",
+        ":host() psevdo-klassi Shadow DOM ning tashqi konteyner elementini ichkaridan turib tanlaydi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Shadow DOM klass selektorlarini izolyatsiya qiladi, biroq CSS o'zgaruvchilari, ::part() va :host() maxsus ko'prik vazifasini bajaradi.",
+      "explanation": "Barcha 4 ta bayonot to'g'ri: Shadow DOM selektorlarni izolyatsiya qiladi, lekin inherited xususiyatlar hamda CSS custom properties ichkariga kiradi; :host() va ::part() esa rasmiy stil API laridir."
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "HTML <picture> elementi va <img srcset='...' sizes='...'> atributlari o'rtasidagi asosiy arxitekturaviy farq nimada?",
+      "options": [
+        "<picture> faqat SVG rasmlar uchun ishlatiladi",
+        "<picture> 'Art Direction' (ekran o'lchamiga qarab rasmning kesilgan shaklini yoki nisbatini o'zgartirish) va yangi formatlar (AVIF/WebP) zaxirasi uchun qat'iy ko'rsatma beradi; srcset/sizes esa brauzerga bir xil rasmning optimal o'lchamini (DPR va viewport asosida) tanlash erkinligini beradi",
+        "srcset faqat Retina ekranlarda ishlaydi",
+        "<picture> elementi ichida <img> tegi yozilishi shart emas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Brauzerning o'zi tarmoq tezligi va piksel zichligiga qarab tanlashi (Resolution Switching) vs dasturchining qat'iy media sharti (Art Direction).",
+      "explanation": "<picture> va <source media='...'> brauzerni aniq rasmni yuklashga majbur qiladi (Art Direction); img srcset/sizes esa brauzerga qurilma DPR va ekran kengligiga qarab eng tejamkor variantni tanlash imkonini beradi."
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "HTML <template> tegi ichiga joylashtirilgan kontent (masalan, <img src='hero.jpg'> va <script>) sahifa yuklanganda qanday holatda bo'ladi?",
+      "options": [
+        "Rasm yuklanadi va skript bajariladi, lekin display: none bilan yashiriladi",
+        "Kontent DOM daraxtining bir qismi sifatida render qilinmaydi, rasm tarmoqdan yuklanmaydi va skript bajarilmaydi — toki JavaScript orqali klonlanib DOM ga qo'shilmaguncha",
+        "Kontent faqat SEO botlari uchun ko'rinadi",
+        "Brauzer <template> ichidagi barcha teglarni o'chirib tashlaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "DocumentFragment holatida nofaol (inert) saqlanadigan HTML shablon mexanizmi.",
+      "explanation": "<template> tegi ichidagi HTML parse qilinadi, biroq DocumentFragment ichida nofaol (inert) saqlanadi: resurslar yuklanmaydi va kodlar ishga tushmaydi."
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "question": "HTML <link rel='preload' as='font' href='font.woff2' crossorigin> tegida nima uchun shrift (font) fayli o'z domenimizda (same-origin) turgan bo'lsa ham 'crossorigin' atributini yozish MAJBURIY?",
+      "options": [
+        "WOFF2 formati faqat CORS rejimida ochiladi",
+        "CSS spetsifikatsiyasiga ko'ra shriftlar har doim anonim CORS rejimida yuklanadi; crossorigin yozilmasa brauzer shriftni ikki marta (biri CORS siz preload da, ikkinchisi CORS bilan CSS da) yuklab oladi",
+        "crossorigin shriftni avtomatik siqadi",
+        "Brauzer xavfsizlik xatosi berib sahifani bloklaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Kesh kalitlari (cache key) mos kelmasligi sababli ikki martalik yuklanish (double-fetching) muammosi.",
+      "explanation": "Shriftlar spetsifikatsiya bo'yicha CORS so'rovi bilan olinadi. Agar preload da crossorigin bo'lmasa, u boshqa kesh bo'limiga tushadi va CSS @font-face uni qaytadan yuklaydi."
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "question": "Accessibility (WAI-ARIA) qoidalariga ko'ra, 'aria-hidden=\"true\"' atributi qo'yilgan <button> elementi bilan nima sodir bo'ladi?",
+      "options": [
+        "Tugma ekranda ko'rinmay qoladi va klaviatura bilan bosilmaydi",
+        "Tugma ekran o'quvchilardan (Accessibility Tree) yashiriladi, LEKIN ekranda ko'rinib turadi va Tab tugmasi bilan fokusga tushishda davom etadi (bu jiddiy accessibility xatosi hisoblanadi)",
+        "Tugma avtomatik disabled holatiga o'tadi",
+        "Tugma faqat mobil qurilmalarda ko'rinadi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "ARIA atributlari brauzerning vizual ko'rinishini yoki klaviatura fokusini (tabindex) o'zgartirmaydi.",
+      "explanation": "aria-hidden='true' faqat Accessibility Tree ni o'zgartiradi; fokuslanuvchi elementga (button, a, input) uni qo'llash ko'zi ojiz foydalanuvchilar uchun 'bo'sh fokus' tuzog'ini yaratadi."
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "question": "CSS da ':has()' selektori va specificity hisoblash qoidasiga ko'ra, quyidagi selektorning specificity vazni nechaga teng?\n\narticle:has(> h2.title, #featured) p",
+      "options": [
+        "(0, 1, 2)",
+        "(1, 0, 2)",
+        "(1, 1, 2)",
+        "(0, 2, 3)"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": ":has() ham xuddi :is() kabi o'z argumentlari ro'yxatidagi ENG YUQORI specificity ga ega selektor vaznini oladi.",
+      "explanation": ":has() ichida '> h2.title' (0, 1, 1) va '#featured' (1, 0, 0) bor. Eng yuqorisi '#featured' (1, 0, 0) olinadi, unga 'article' (0, 0, 1) va 'p' (0, 0, 1) qo'shilib, jami (1, 0, 2) hosil bo'ladi."
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "question": "CSS Custom Properties da 'Cyclic Dependency' (siklik bog'liqlik) yuz berganda brauzer qanday yo'l tutadi?\n\n:root {\n  --a: var(--b);\n  --b: var(--a);\n}\np {\n  color: red;\n  color: var(--a, blue);\n}",
+      "options": [
+        "Brauzer cheksiz siklga tushib qotib qoladi",
+        "Ikkala o'zgaruvchi ham 'guaranteed-invalid' qiymatiga aylanadi va p elementi fallback qiymat — 'blue' rangini oladi",
+        "p elementi 'red' rangida qoladi",
+        "Sintaksis xatosi tufayli butun CSS fayl bekor qilinadi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "O'zgaruvchilar siklga tushganda ular yaroqsiz (invalid) deb topiladi va var() funksiyasining zaxira (fallback) qiymati ishga tushadi.",
+      "explanation": "Siklik bog'liqlik aniqlanganda brauzer --a va --b ni yaroqsiz (guaranteed-invalid) deb belgilaydi, natijada var(--a, blue) o'zining zaxira qiymati bo'lgan 'blue' ni qaytaradi."
+    },
+    {
+      "id": 10,
+      "type": "multiple",
+      "question": "HTML 'popover' atributi (Popover API) va <dialog modal> o'rtasidagi asosiy farqlarni belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "popover='auto' ochilganda tashqariga bosilganda (light dismiss) avtomatik yopiladi",
+        "popover elementi ochilganda sahifaning qolgan qismini 'inert' (bloklangan) qilmaydi",
+        "popover ham Top Layer qatlamida render qilinadi va z-index dan ustun turadi",
+        "popover faqat JavaScript yordamida ochilishi mumkin, HTML atributlari (popovertarget) bilan ochib bo'lmaydi"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Popover API JavaScript yozmasdan ham button popovertarget='id' orqali boshqariladi va light-dismiss xususiyatiga ega.",
+      "explanation": "Popover Top Layer ga chiqadi, 'auto' rejimida tashqariga bosilganda yopiladi, sahifani bloklamaydi (non-modal) va HTML atributlari (popovertarget) orqali JS siz ham ishlaydi."
+    },
+    {
+      "id": 11,
+      "type": "single",
+      "question": "CSS da 'height: 100vh;' o'rniga zamonaviy mobil brauzerlarda 'height: 100dvh;' ishlatilishining asosiy sababi nimada?",
+      "options": [
+        "100dvh elementni GPU da tezlashtiradi",
+        "100vh mobil brauzerlarning dinamik manzil satri (address bar) ochiq yoki yopiqligini hisobga olmaydi va kontent pastki qismini kesib qo'yadi; 100dvh (Dynamic Viewport Height) esa ekran balandligi o'zgarishiga real vaqtda moslashadi",
+        "100vh faqat gorizontal ekranlarda ishlaydi",
+        "100dvh scrollbar kengligini ayirib tashlaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Dynamic (dvh), Small (svh) va Large (lvh) viewport birliklari mobil brauzer panellari muammosini hal qilish uchun yaratilgan.",
+      "explanation": "Mobil brauzerlarda sahifa aylantirilganda manzil satri kichrayadi yoki kattalashadi. 100dvh joriy ko'rinib turgan viewport balandligiga dinamik ravishda moslashadi."
+    },
+    {
+      "id": 12,
+      "type": "single",
+      "question": "CSS Grid da bir nechta elementni bitta grid katakchasiga (cell) ustma-ust joylashtirishning (position: absolute ishlatmasdan) eng toza usuli qaysi?",
+      "options": [
+        "Barcha elementlarga display: inline-grid berish",
+        "Konteynerda grid-template-areas belgilab, barcha ichki elementlarga bir xil 'grid-area: 1 / 1;' (yoki bir xil area nomi) berish",
+        "Elementlarga float: left berish",
+        "grid-auto-flow: stack; xususiyatini yoqish"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Grid katakchalarida elementlar bir xil qator va ustun koordinatasiga qo'yilsa, ular bir-birining ustiga tushadi va konteyner balandligini eng katta elementga qarab saqlab qoladi.",
+      "explanation": "Barcha farzand elementlarga 'grid-area: 1 / 1;' berilganda ular bitta katakchada ustma-ust joylashadi (z-index bilan boshqarish mumkin) va position: absolute dan farqli o'laroq konteyner balandligi nolga tushib ketmaydi."
+    },
+    {
+      "id": 13,
+      "type": "single",
+      "question": "HTML <form> ichida 'novalidate' atributi va <button formnovalidate> atributi qanday farq qiladi?",
+      "options": [
+        "Ikkalasi ham bir xil: formadagi barcha validatsiyani butunlay o'chiradi",
+        "formnovalidate faqat o'sha tugma (masalan, 'Qoralama sifatida saqlash') bosilganda brauzer validatsiyasini chetlab o'tadi, asosiy 'Yuborish' tugmasi esa validatsiyani bajaraveradi",
+        "novalidate faqat type='email' maydonlariga ta'sir qiladi",
+        "formnovalidate JavaScript validatsiyasini ham o'chiradi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "Bitta formada ikkita submit tugma bo'lganda (Saqlash vs Yuborish) tugma darajasidagi nazoratni eslang.",
+      "explanation": "formnovalidate submit tugmasiga beriladi va faqat shu tugma orqali forma yuborilganda HTML5 constraint validation tekshiruvini o'tkazib yuboradi."
+    },
+    {
+      "id": 14,
+      "type": "multiple",
+      "question": "CSS '@supports' (Feature Queries) qoidasining to'g'ri sintaksisi va imkoniyatlarini belgilang. (Bir nechta javobni belgilang)",
+      "options": [
+        "@supports (display: grid) { ... }",
+        "@supports selector(:has(a)) { ... }",
+        "@supports not (backdrop-filter: blur(5px)) { ... }",
+        "@supports (var(--color)) { ... }"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Xususiyat-qiymat juftligini, 'selector()' funksiyasi orqali selektor qo'llab-quvvatlanishini va 'not / and / or' mantiqiy operatorlarini tekshirish mumkin.",
+      "explanation": "@supports xususiyatlarni (@supports (display: grid)), mantiqiy inkorni (not) va selektorlarni (@supports selector(:has(a))) tekshiradi. var(--color) esa syntactically har doim true qaytaradi (to'g'risi '--a: 0')."
+    },
+    {
+      "id": 15,
+      "type": "single",
+      "question": "Cumulative Layout Shift (CLS — sahifa yuklanayotganda elementlarning sakrab siljib ketishi) ko'rsatkichini nolga tushirish uchun <img> tegida 'width' va 'height' atributlarini ko'rsatish qanday mexanizm orqali ishlaydi?",
+      "options": [
+        "Brauzer rasmni yuklamasdan turib uning hajmini 0px qilib turadi",
+        "Zamonaviy brauzerlar HTML dagi width va height atributlaridan rasmning ichki 'aspect-ratio' nisbatini rasm yuklanishidan oldin hisoblab, sahifada aniq o'lchamdagi bo'sh joy ajratib qo'yadi",
+        "Rasmni avtomatik ravishda Base64 formatiga o'giradi",
+        "width va height faqat rasm CSS da width: auto bo'lgandagina ishlaydi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "hint": "User-Agent stylesheet dagi 'aspect-ratio: attr(width) / attr(height);' qoidasini eslang.",
+      "explanation": "Brauzerlar rasm yuklanishidan oldin uning HTML width va height atributlaridan tomonlar nisbatini (aspect-ratio) hisoblab, responsive (width: 100%; height: auto;) holatda ham to'g'ri balandlikni oldindan band qilib qo'yadi."
+    }
+  ]
+}
