@@ -20,13 +20,17 @@
 Talablar / Prerequisites: [Bun](https://bun.sh/) va [Rust / Tauri CLI](https://v2.tauri.app/start/prerequisites/).
 
 ```bash
-# 1. Kutubxonalarni o'rnatish / Install dependencies
+# 1. Repozitoriyni klonlash / Clone the repository
+git clone https://github.com/cto-mindset/examination-app.git
+cd examination-app
+
+# 2. Kutubxonalarni o'rnatish / Install dependencies
 bun install
 
-# 2. Dasturni ishga tushirish (Tauri + Vite dev) / Run in development mode
+# 3. Dasturni ishga tushirish (Tauri + Vite dev) / Run in development mode
 bun run tauri dev
 
-# 3. Ishlab chiqarish (Production) build yaratish / Build desktop installer
+# 4. Ishlab chiqarish (Production) build yaratish / Build desktop installer
 bun run tauri build
 ```
 
@@ -53,7 +57,8 @@ bun run build
    [`src/config.js`](src/config.js) faylida `GITHUB_RAW_BASE_URL` qiymatini o'zingizning GitHub Raw manzilingizga o'zgartiring:
    ```js
    export const GITHUB_RAW_BASE_URL =
-     "https://raw.githubusercontent.com/<USERNAME>/<EXAM_DATA_REPO>/main";
+     "https://raw.githubusercontent.com/cto-mindset/examination-app/main/github-repo-data";
    ```
+   *(Agar alohida data ombor ishlatsangiz, uning `main` branch manzilini ko'rsating. Shuningdek, `src/config.js` dagi `isDemoUrlConfigured()` funksiyasidan `cto-mindset` tekshiruvini olib tashlashni unutmang.)*
 
    > **Eslatma:** Standart demo rejimda `admin` / `123456` hisobi ishlaydi. GitHub omboriga yuklashdan oldin `users.json` dagi parol xeshlarini yangilang.

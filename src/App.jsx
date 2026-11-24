@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import Dashboard from "./components/Dashboard";
 import LoginScreen from "./components/LoginScreen";
 import TestRunner from "./components/TestRunner";
+import UpdateChecker from "./components/UpdateChecker";
 import { getTestContent, syncCoreData } from "./utils/syncEngine";
 import "./App.css";
 
@@ -53,28 +54,7 @@ function App() {
     setTestLoadError("");
   };
 
-  if (!currentUser) {
-    return (
-      <LoginScreen
-        usersData={usersData}
-        syncStatus={syncStatus}
-        isSyncing={isSyncing}
-        onRefreshSync={performSync}
-        onLoginSuccess={(user) => setCurrentUser(user)}
-      />
-    );
-  }
-
-  if (activeTest) {
-    return (
-      <TestRunner
-        testData={activeTest}
-        onExit={() => setActiveTest(null)}
-      />
-    );
-  }
-
-  return (
+  let content = (
     <Dashboard
       user={currentUser}
       manifest={manifestData}
@@ -84,6 +64,32 @@ function App() {
       onStartTest={handleStartTest}
       onLogout={handleLogout}
     />
+  );
+
+  if (!currentUser) {
+    content = (
+      <LoginScreen
+        usersData={usersData}
+        syncStatus={syncStatus}
+        isSyncing={isSyncing}
+        onRefreshSync={performSync}
+        onLoginSuccess={(user) => setCurrentUser(user)}
+      />
+    );
+  } else if (activeTest) {
+    content = (
+      <TestRunner
+        testData={activeTest}
+        onExit={() => setActiveTest(null)}
+      />
+    );
+  }
+
+  return (
+    <>
+      {content}
+      <UpdateChecker />
+    </>
   );
 }
 
